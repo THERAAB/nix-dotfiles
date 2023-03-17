@@ -20,6 +20,8 @@
     };
   }
   
+  networking.hostName = "nix-desktop";
+  
   nix = {
     # Flake setup
     package = pkgs.nixVersions.stable;
