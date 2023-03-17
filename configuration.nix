@@ -21,6 +21,7 @@
   }
   
   networking.hostName = "nix-desktop";
+  networking.networkmanager.enable = true;
   
   nix = {
     # Flake setup
