@@ -18,7 +18,7 @@
       devices = ["nodev"];
       efiSupport = true;
     };
-  }
+  };
   
   networking.hostName = "nix-desktop";
   networking.networkmanager.enable = true;
