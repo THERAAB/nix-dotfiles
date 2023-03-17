@@ -23,6 +23,9 @@
   networking.hostName = "nix-desktop";
   networking.networkmanager.enable = true;
   
+  time.timeZone = "America/New_York";
+  i18n.defaultLocale = "en_US.utf8";
+  
   nix = {
     # Flake setup
     package = pkgs.nixVersions.stable;
