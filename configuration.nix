@@ -10,6 +10,16 @@
     ./hardware-configuration.nix
   ];
   
+  boot = {
+    kernelPackages = pkgs.linuxPackages_latest;
+    loader.efi.canTouchEfiVariables = true;
+    loader.grub = {
+      enable = true;
+      devices = ["nodev"];
+      efiSupport = true;
+    };
+  }
+  
   nix = {
     # Flake setup
     package = pkgs.nixVersions.stable;
