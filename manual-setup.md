@@ -27,4 +27,6 @@ sudo updatedb
 ```console
 protonup
 ```
-### Set monitor refresh rate to 100Hz
+### Gnome Settings
+- Set monitor refresh rate to 100Hz
+- Disable screen blank
