@@ -7,6 +7,10 @@
       /home/raab/.config/scripts/restart_openrazer_loop.sh &
       ${pkgs.steam}/bin/steam -silent &
     '';
+    serviceConfig = {
+      User = "raab";
+      Group = "users";
+    };
   };
   # Delay start for 60s because it needs to run after home-manager for /home/raab/.config/scripts/ to exist
   # There's a better way to do this with wantedBy, but lazy
