@@ -22,9 +22,6 @@
       sleep-inactive-ac-type = "nothing";
       power-button-action = "interactive";
     };
-    "org/gnome/desktop/peripherals/mouse" = {
-      speed = -0.14893617021276596;
-    };
     "org/gnome/settings-daemon/plugins/media-keys" = {
       custom-keybindings = ["/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"];
     };
