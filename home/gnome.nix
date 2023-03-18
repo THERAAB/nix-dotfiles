@@ -23,12 +23,20 @@
       power-button-action = "interactive";
     };
     "org/gnome/settings-daemon/plugins/media-keys" = {
-      custom-keybindings = ["/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"];
+      custom-keybindings = [
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
+      ];
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       command = "kitty";
       name = "Launch Kitty";
       binding = "<Alt>Return";
+    };
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
+      command = "/home/raab/.config/scripts/switch_audio.sh switch";
+      name = "Switch Audio";
+      binding = "<Alt>slash";
     };
     "org/gnome/mutter" = {
       dynamic-workspaces = false;
