@@ -20,5 +20,6 @@
     age
     sops
     ssh-to-age
+    pavucontrol
   ];
 }
