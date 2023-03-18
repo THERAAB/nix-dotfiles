@@ -64,7 +64,7 @@ sudo git clone https://github.com/THERAAB/nix-dotfiles instructions
 gnome-text-editor instructions/wipe-disk-and-install.sh &
 ```
 I recommend copy-pasting what commands you need because this script is dangerous (will wipe entire system). It also
-expects you to have 1 nvme and 1 sda device
+expects you to have 4 nvme devices to be run in RAID 0 on btrfs
 ### Reboot, activate tailscale
 ```console
 sudo tailscale up
