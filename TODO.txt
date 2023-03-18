@@ -1,0 +1,5 @@
+scripts for:
+- headphones
+- autostart
+- audio switch
+- mouse
