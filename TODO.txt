@@ -2,3 +2,4 @@ scripts for:
 - autostart
 - mouse/headphone battery
 replace kitty
+Btrfs raid
