@@ -1,5 +1,4 @@
 scripts for:
-- headphones
 - autostart
-- mouse
+- mouse/headphone battery
 replace kitty

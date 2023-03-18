@@ -1,5 +1,5 @@
 #!/bin/sh
 maestral start &
-~/.config/qtile/scripts/headphone_lights.sh &
-~/.config/qtile/scripts/restart_openrazer_loop.sh &
+/home/raab/.config/scripts/headphone_lights.sh &
+/home/raab/.config/scripts/restart_openrazer_loop.sh &
 steam -silent &
