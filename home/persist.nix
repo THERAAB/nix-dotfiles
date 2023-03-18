@@ -46,6 +46,10 @@
       ".ssh/known_hosts"
       ".ssh/id_rsa"
       ".config/monitors.xml"
+      ".zcompdump"
+      ".zcompdump-nix-desktop-5.9.zwc"
+      ".zcompdump-nix-desktop-5.9"
+      ".zsh_history"
     ];
   };
 }
