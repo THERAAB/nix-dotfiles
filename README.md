@@ -8,7 +8,7 @@ This repo contains everything needed to rebuild my desktop from scratch, with th
 
 ## What's inside
 My NixOS Desktop, with:
-- [GNOME 42](https://www.gnome.org/) on [Wayland](https://wiki.archlinux.org/title/Wayland)
+- [GNOME](https://www.gnome.org/) on [Wayland](https://wiki.archlinux.org/title/Wayland)
 - Declarative/Reproducible builds using [NixOS](https://nixos.org/)
 - An Ephemeral root/home storage scheme (See [Erase your darlings](https://grahamc.com/blog/erase-your-darlings) and [NixOS Impermanence](https://github.com/nix-community/impermanence))
 - Secret management with [sops-nix](https://github.com/Mic92/sops-nix/blob/master/README.md)
