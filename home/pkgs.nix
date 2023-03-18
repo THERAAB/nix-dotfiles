@@ -17,8 +17,6 @@
     unigine-heaven
     zoom-us
     neovide
-    rpi-imager
-    libnotify
     glibc
     file
     ncdu_2

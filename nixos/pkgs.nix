@@ -9,7 +9,6 @@
     openrazer-daemon
     microcodeAmd
     pulseaudio # needed to use pactl on pipewire
-    lxsession
     efibootmgr
     htop
     dmidecode

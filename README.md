@@ -4,6 +4,8 @@ A [NixOS](https://nixos.org/) configuration repository for my desktop dotfiles
 [NixOS](https://nixos.org/) allows you to create a fully declarative operating system using the [Nix language](https://nixos.wiki/wiki/Overview_of_the_Nix_Language).
 This repo contains everything needed to rebuild my desktop from scratch, with the only manual steps being in the README file below.
 
+![screenshot-png](https://github.com/THERAAB/nix-dotfiles/blob/main/assets/screenshot.png?raw=true "PNG of Screenshot")
+
 ## What's inside
 My NixOS Desktop, with:
 - Declarative/Reproducible builds using [NixOS](https://nixos.org/)

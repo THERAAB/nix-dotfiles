@@ -51,7 +51,7 @@
       enable-hot-corners = false;
     };
     "org/gnome/desktop/background" = {
-      picture-uri-dark = "file:///nix/persist/nix-dotfiles/wall.jpg";
+      picture-uri-dark = "file:///nix/persist/nix-dotfiles/assets/wall.jpg";
     };
   };
 
