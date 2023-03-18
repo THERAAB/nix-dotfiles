@@ -21,5 +21,6 @@
     sops
     ssh-to-age
     pavucontrol
+    libnotify
   ];
 }

@@ -1,16 +1,19 @@
 #!/bin/sh
-kantoSPDIF="alsa_output.pci-0000_19_00.6.iec958-stereo"
+kantoSPDIF="alsa_output.pci-0000_1b_00.6.iec958-stereo"
 logitechHeadphones="alsa_output.usb-Logitech_G733_Gaming_Headset-00.iec958-stereo"
+
+headPhoneIcon="/run/current-system/sw/share/icons/Adwaita/96x96/devices/audio-headset-symbolic.symbolic.png"
+kantoIcon="/run/current-system/sw/share/icons/Adwaita/96x96/devices/audio-speakers-symbolic.symbolic.png"
 
 currentDefault="$(pactl get-default-sink)"
 
 switch_audio() {
 	if [ $currentDefault == $logitechHeadphones ]; then
 	  pactl set-default-sink $kantoSPDIF
-	  dunstify " Audio Switched to Kanto"
+	  notify-send -i $kantoIcon "Audio Switched to Kanto"
 	else
 	  pactl set-default-sink $logitechHeadphones
-	  dunstify " Audio Switched to Logitech"
+	  notify-send -i $headPhoneIcon "Audio Switched to Logitech"
 	fi
 }
 
