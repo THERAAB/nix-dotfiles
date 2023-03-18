@@ -2,7 +2,10 @@
 {
   systemd.services.autostart = {
     script = ''
-      /home/raab/.config/scripts/autostart.sh
+      ${pkgs.maestral}/bin/maestral start &
+      /home/raab/.config/scripts/headphone_lights.sh &
+      /home/raab/.config/scripts/restart_openrazer_loop.sh &
+      ${pkgs.steam}/bin/steam -silent &
     '';
     wantedBy = [ "multi-user.target" ];
   };
