@@ -12,6 +12,5 @@
     ./hardware-configuration.nix
     ./sops.nix
     ./gnome.nix
-    ./autostart.nix
   ];
 }
