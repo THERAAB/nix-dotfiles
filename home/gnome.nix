@@ -30,6 +30,12 @@
       name = "Launch Kitty";
       binding = "<Alt>Return";
     };
+    "org/gnome/mutter" = {
+      dynamic-workspaces = false;
+    };
+    "org/gnome/desktop/wm/preferences" = {
+      num-workspaces = 4;
+    };
     "org/gnome/desktop/wm/keybindings" = {
       switch-to-workspace-left = ["<Alt>Left"];
       switch-to-workspace-right = ["<Alt>Right"];

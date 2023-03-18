@@ -3,3 +3,5 @@ scripts for:
 - autostart
 - audio switch
 - mouse
+replace kitty
+hotkeys
