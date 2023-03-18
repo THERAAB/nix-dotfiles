@@ -7,6 +7,7 @@ Some apps can't be managed declaratively, so additional setup needed for them is
 ```console
 maestral stop
 maestral start
+maestral autostart -Y # Does it work?
 ```
 ### Firefox
 - Sign in
@@ -25,9 +26,5 @@ sudo updatedb
 ### Proton
 ```console
 protonup
-```
-### Zsh Cache
-```console
-mv ~/.zcompdump* /nix/persist/home/raab (will speed up zsh/kitty startup time)
 ```
 ### Set monitor refresh rate to 100Hz
