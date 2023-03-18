@@ -3,4 +3,3 @@ scripts for:
 - autostart
 - mouse
 replace kitty
-hotkeys
