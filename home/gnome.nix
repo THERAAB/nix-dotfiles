@@ -60,6 +60,10 @@
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
       enable-hot-corners = false;
+      clock-format = "12h";
+    };
+    "org/gtk/settings/file-chooser" = {
+      clock-format = "12h";
     };
     "org/gnome/desktop/background" = {
       picture-uri-dark = "file:///nix/persist/nix-dotfiles/assets/wall.jpg";

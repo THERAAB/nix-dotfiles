@@ -12,10 +12,6 @@ maestral start
 - Sign in
 ### VMWare
 - desktop.citi.com
-### Pavucontrol 
-- disable unused sources
-- both to digital audio IEC958
-- add output for headphones
 ### Razergenie 
 - 2100 Hz and 1000 poll rate
 ### Discord 
