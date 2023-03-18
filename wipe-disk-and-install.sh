@@ -35,14 +35,14 @@ sudo parted /dev/nvme3n1 -- mklabel gpt
 sudo parted /dev/nvme3n1 -- mkpart primary btrfs 512MB 100%
 
 # Format /dev/sda fs
-sudo mkfs.btrfs -L nixos /dev/nvme1n1p1 -f
-sudo mkfs.btrfs -L nixos /dev/nvme2n1p1 -f
-sudo mkfs.btrfs -L nixos /dev/nvme3n1p1 -f
+sudo mkfs.btrfs -L nixos2 /dev/nvme1n1p1 -f
+sudo mkfs.btrfs -L nixos3 /dev/nvme2n1p1 -f
+sudo mkfs.btrfs -L nixos4 /dev/nvme3n1p1 -f
 # ----------------------------------------------------------------------------------------------------------------------
 
 # create btrfs logical volume spanning disks
 # Doesn't work ?
-mkfs.btrfs -f -m raid1 -d raid10 -L nixos /dev/disk/by-label/nixos1 /dev/disk/by-label/nixos2 /dev/disk/by-label/nixos3 /dev/disk/by-label/nixos4
+sudo mkfs.btrfs -f -m raid1 -d raid10 -L nixos /dev/disk/by-label/nixos1 /dev/disk/by-label/nixos2 /dev/disk/by-label/nixos3 /dev/disk/by-label/nixos4
 
 # ----------------------------------------------------------------------------------------------------------------------
 # NixOs Setup and Install
