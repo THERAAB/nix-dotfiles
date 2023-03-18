@@ -7,6 +7,6 @@
       /home/raab/.config/scripts/restart_openrazer_loop.sh &
       ${pkgs.steam}/bin/steam -silent &
     '';
-    wantedBy = [ "multi-user.target" ];
+    # wantedBy = [ "multi-user.target" ];
   };
 }
