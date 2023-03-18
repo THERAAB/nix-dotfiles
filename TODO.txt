@@ -1,7 +1,6 @@
 scripts for:
 - headphones
 - autostart
-- audio switch
 - mouse
 replace kitty
 hotkeys
