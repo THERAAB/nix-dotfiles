@@ -22,7 +22,6 @@
     ncdu_2
     tree
     strace
-    maestral
     snapper-gui
     ventoy-bin-full
     lm_sensors
