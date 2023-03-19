@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 {
   imports = [
+    ./ulauncher
     ./persist.nix
     ./boot.nix
     ./hardware.nix
