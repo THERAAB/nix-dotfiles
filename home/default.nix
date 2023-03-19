@@ -2,7 +2,7 @@
 {
   imports = [
     ./zsh
-    ./razer
+#    ./razer
     ./persist.nix
     ./pkgs.nix
     ./git.nix
