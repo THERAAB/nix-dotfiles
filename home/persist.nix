@@ -11,7 +11,6 @@
       ".mozilla"
       ".config/sops/age"
       ".config/nvim"
-      ".config/kitty"
       ".config/openrazer"
       ".config/dconf"
       ".config/maestral"

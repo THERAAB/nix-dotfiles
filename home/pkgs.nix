@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 {
-  home.packages = with pkgs; [ 
-    kitty
+  home.packages = with pkgs; [
     jetbrains.idea-community
     heroic
     gimp
