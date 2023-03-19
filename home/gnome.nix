@@ -38,11 +38,17 @@
       sleep-inactive-ac-type = "nothing";
       power-button-action = "interactive";
     };
+    "org/gnome/TextEditor" = {
+      highlight-current-line = true;
+      show-line-numbers = true;
+      style-scheme = "peninsula-dark";
+    };
     "org/gnome/settings-daemon/plugins/media-keys" = {
       custom-keybindings = [
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/"
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/"
       ];
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
@@ -59,6 +65,11 @@
       command = "ulauncher-toggle";
       name = "Toggle ulauncher";
       binding = "<Alt>r";
+    };
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
+      command = "/home/raab/.config/scripts/headphone_battery.sh";
+      name = "Headphone battery notification";
+      binding = "<Shift><Alt>slash";
     };
     "org/gnome/mutter" = {
       dynamic-workspaces = false;
