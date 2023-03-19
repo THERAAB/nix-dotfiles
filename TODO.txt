@@ -1,4 +1,5 @@
 scripts for:
 - autostart
 - headphone battery
+- ulauncher
 Btrfs raid
