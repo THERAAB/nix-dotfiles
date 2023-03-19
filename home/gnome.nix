@@ -39,6 +39,7 @@
       custom-keybindings = [
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/"
       ];
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
@@ -51,8 +52,14 @@
       name = "Switch Audio";
       binding = "<Alt>slash";
     };
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
+      command = "ulauncher-toggle";
+      name = "Toggle ulauncher";
+      binding = "<Alt>r";
+    };
     "org/gnome/mutter" = {
       dynamic-workspaces = false;
+      center-new-windows = true;
     };
     "org/gnome/desktop/wm/preferences" = {
       num-workspaces = 4;
@@ -74,6 +81,7 @@
       color-scheme = "prefer-dark";
       enable-hot-corners = false;
       clock-format = "12h";
+      monospace-font-name = "JetBrainsMono Nerd Font 10";
     };
     "org/gtk/settings/file-chooser" = {
       clock-format = "12h";
@@ -91,6 +99,7 @@
     gnomeExtensions.blur-my-shell
     gnomeExtensions.just-perfection
     gnomeExtensions.auto-move-windows
+    gnome.gnome-tweaks
     nordic
   ];
 }
