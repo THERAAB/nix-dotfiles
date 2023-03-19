@@ -8,7 +8,7 @@ kantoIcon="/run/current-system/sw/share/icons/Adwaita/96x96/devices/audio-speake
 currentDefault="$(pactl get-default-sink)"
 
 switch_audio() {
-	if [ $currentDefault == $logitechHeadphones ]; then
+	if [ "$currentDefault" = $logitechHeadphones ]; then
 	  pactl set-default-sink $kantoSPDIF
 	  notify-send -i $kantoIcon "Audio Switched to Kanto"
 	else
@@ -18,7 +18,7 @@ switch_audio() {
 }
 
 get_icon() {
-	if [ $currentDefault == $logitechHeadphones ]; then
+	if [ "$currentDefault" = $logitechHeadphones ]; then
 		echo ""
 	else
 		echo "蓼"	
