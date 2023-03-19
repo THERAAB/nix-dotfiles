@@ -1,7 +1,4 @@
 scripts for:
 - autostart
-- mouse/headphone battery
+- headphone battery
 Btrfs raid
-gnome extensions
-nixvim
-color scheme

@@ -7,6 +7,7 @@
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "blur-my-shell@aunetx"
         "just-perfection-desktop@just-perfection"
+        "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
       ];
       favorite-apps = [
         "firefox.desktop"
@@ -16,6 +17,9 @@
         "idea-community.desktop"
         "org.gnome.TextEditor.desktop"
       ];
+    };
+    "org/gnome/shell/extensions/auto-move-windows" = {
+      application-list = ["vmware-view.desktop:2"];
     };
     "org/gnome/shell/extensions/just-perfection" = {
       theme = true;
@@ -85,6 +89,7 @@
     gnomeExtensions.user-themes
     gnomeExtensions.blur-my-shell
     gnomeExtensions.just-perfection
+    gnomeExtensions.auto-move-windows
     nordic
   ];
 }
