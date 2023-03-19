@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 {
-  home.file.".config/ulauncher/user-themes/Nord-Dark-ULauncher" = {
-    source = ./Nord-Dark-ULauncher;
+  home.file.".config/ulauncher/NordDark" = {
+    source = ./NordDark;
     recursive = true;
   };
 }
