@@ -3,3 +3,5 @@ scripts for:
 - mouse/headphone battery
 Btrfs raid
 gnome extensions
+nixvim
+color scheme
