@@ -12,6 +12,7 @@
     ./home.nix
     ./gtk.nix
     ./gnome.nix
+    ./wezterm.nix
   ];
   home.file.".config/scripts" = {
     source = ./scripts;

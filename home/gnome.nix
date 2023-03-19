@@ -8,11 +8,11 @@
       ];
       favorite-apps = [
         "firefox.desktop"
-        "org.gnome.Nautilus.desktop"
-        "kitty.desktop"
+        "org.wezfurlong.wezterm.desktop"
         "vmware-view.desktop"
         "steam.desktop"
         "idea-community.desktop"
+        "org.gnome.TextEditor.desktop"
       ];
     };
     "org/gnome/shell/extensions/user-theme" = {
@@ -29,8 +29,8 @@
       ];
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
-      command = "kitty";
-      name = "Launch Kitty";
+      command = "wezterm";
+      name = "Launch wezterm";
       binding = "<Alt>Return";
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {

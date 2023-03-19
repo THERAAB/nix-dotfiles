@@ -26,8 +26,4 @@
   home.file.".oh-my-zsh/themes/bubble-custom.zsh-theme" = {
     source = ./bubble-custom.zsh-theme;
   };
-  
-  home.file.".config/kitty/kitty.conf" = {
-    source = ./kitty.conf;
-  };
 }
