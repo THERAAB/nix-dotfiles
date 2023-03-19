@@ -3,6 +3,7 @@
   imports = [
     ./zsh
     ./razer
+    ./ulauncher
     ./persist.nix
     ./pkgs.nix
     ./git.nix
