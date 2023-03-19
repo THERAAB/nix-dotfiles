@@ -31,6 +31,9 @@
       window-menu-take-screenshot-button = false;
       animation = 3;
     };
+    "org/gnome/shell/extensions/blur-my-shell/overview" = {
+      style-components = 3;
+    };
     "org/gnome/settings-daemon/plugins/power" = {
       sleep-inactive-ac-type = "nothing";
       power-button-action = "interactive";

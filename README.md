@@ -37,6 +37,9 @@ systemctl list-units
 # Check unit failures
 journalctl -u ${unit-name}
 
+# Monitor GNOME settings to be stored in gnome.nix
+dconf watch /
+
 # Snapper compare x & y
 snapper -c persist list
 snapper -c persist status x..y
