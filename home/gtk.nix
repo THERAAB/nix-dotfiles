@@ -3,8 +3,8 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Juno";
-      package = pkgs.juno-theme;
+      name = "Nordic";
+      package = pkgs.nordic;
     };
     iconTheme = {
       name = "Papirus-Dark";

@@ -5,18 +5,27 @@
       disable-user-extensions = false;
       enabled-extensions = [
         "user-theme@gnome-shell-extensions.gcampax.github.com"
+        "blur-my-shell@aunetx"
+        "just-perfection-desktop@just-perfection"
       ];
       favorite-apps = [
         "firefox.desktop"
-        "org.wezfurlong.wezterm.desktop"
         "vmware-view.desktop"
+        "org.wezfurlong.wezterm.desktop"
         "steam.desktop"
         "idea-community.desktop"
         "org.gnome.TextEditor.desktop"
       ];
     };
-    "org/gnome/shell/extensions/user-theme" = {
-#      name = "Juno";
+    "org/gnome/shell/extensions/just-perfection" = {
+      theme = true;
+      workspace-wrap-around = true;
+      startup-status = 0;
+      world-clock = false;
+      events-button = false;
+      show-apps-button = false;
+      window-menu-take-screenshot-button = false;
+      animation = 3;
     };
     "org/gnome/settings-daemon/plugins/power" = {
       sleep-inactive-ac-type = "nothing";
@@ -68,9 +77,14 @@
     "org/gnome/desktop/background" = {
       picture-uri-dark = "file:///nix/persist/nix-dotfiles/assets/wall.jpg";
     };
+    "org/gnome/shell/extensions/user-theme" = {
+       name = "Nordic";
+    };
   };
-
   home.packages = with pkgs; [
     gnomeExtensions.user-themes
+    gnomeExtensions.blur-my-shell
+    gnomeExtensions.just-perfection
+    nordic
   ];
 }
