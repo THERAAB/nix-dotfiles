@@ -24,5 +24,6 @@
     snapper-gui
     ventoy-bin-full
     lm_sensors
+    ulauncher
   ];
 }

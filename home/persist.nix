@@ -19,7 +19,6 @@
       ".config/libreoffice"
       ".config/cef_user_data" # Steam
       ".config/JetBrains"
-      ".config/ulauncher"
       ".cache/nvim"
       ".cache/mozilla"
       ".cache/matplotlib" # Fonts

@@ -22,7 +22,6 @@
     ssh-to-age
     libnotify
     maestral
-    ulauncher
     wmctrl
   ];
 }
