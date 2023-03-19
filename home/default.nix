@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 {
   imports = [
-    ./nvim
     ./zsh
     ./razer
     ./persist.nix
@@ -13,6 +12,7 @@
     ./gtk.nix
     ./gnome.nix
     ./wezterm.nix
+    ./nvim.nix
   ];
   home.file.".config/scripts" = {
     source = ./scripts;
