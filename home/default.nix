@@ -3,6 +3,7 @@
   imports = [
     ./zsh
     ./ulauncher
+    ./nix-scripts
     ./persist.nix
     ./pkgs.nix
     ./git.nix

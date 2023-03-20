@@ -5,16 +5,15 @@ let
 in
 {
   systemd.user.services.ulauncher = {
-    Install = { WantedBy = [ "graphical-session.target" ]; };
-    Unit = {
-      After = [ "graphical-session.target" ];
-    };
-      Service = {
-        ExecStart = toString (pkgs.writeShellScript "ulauncher-start" ''
-          mkdir -p ${user-themes-dir}
-          cp -r ${local-theme} ${user-themes-dir}
-          ${pkgs.ulauncher}/bin/ulauncher  --hide-window
-        '');
-      };
+    Install.WantedBy = [ "graphical-session.target" ];
+    Unit.After = [ "graphical-session.target" ];
+    Service.ExecStart = toString (pkgs.writeShellScript "ulauncher-start" ''
+      mkdir -p ${user-themes-dir}
+      cp -r ${local-theme} ${user-themes-dir}
+      ${pkgs.ulauncher}/bin/ulauncher  --hide-window
+    '');
   };
+  home.packages = with pkgs; [
+    ulauncher
+  ];
 }

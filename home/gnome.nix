@@ -57,7 +57,7 @@
       binding = "<Alt>Return";
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
-      command = "/home/raab/.config/scripts/switch_audio.sh switch";
+      command = "/home/raab/.config/scripts/switch_audio.sh";
       name = "Switch Audio";
       binding = "<Alt>slash";
     };

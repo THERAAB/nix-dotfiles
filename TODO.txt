@@ -1,4 +1,2 @@
-scripts for:
-- autostart
-- ulauncher
+maestral start?
 Btrfs raid
