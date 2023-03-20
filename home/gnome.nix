@@ -52,7 +52,7 @@
       ];
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
-      command = "wezterm";
+      command = "wezterm start --always-new-process";
       name = "Launch wezterm";
       binding = "<Alt>Return";
     };
