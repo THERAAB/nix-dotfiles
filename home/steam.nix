@@ -1,7 +1,10 @@
 { config, pkgs, ... }:
 {
   systemd.user.services.steam = {
-    Install = { WantedBy = [ "default.target" ]; };
+    Install = { WantedBy = [ "graphical-session.target" ]; };
+    Unit = {
+      After = [ "graphical-session.target" ];
+    };
       Service = {
         ExecStart = ''
           ${pkgs.steam}/bin/steam -silent
