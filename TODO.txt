@@ -1,4 +1,4 @@
 maestral start?
-ulauncher cache
 tiling wm
+known_hosts
 Btrfs raid
