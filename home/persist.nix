@@ -26,6 +26,8 @@
       ".cache/fontconfig"
       ".cache/libreoffice"
       ".cache/libgweather"
+      ".cache/ulauncher_cache"
+      ".cache/ulauncher"
       ".dropbox-dist"
       ".dropbox-hm"
       ".oh-my-zsh/themes/"
@@ -40,6 +42,7 @@
       ".local/share/vulkan"
       ".local/share/icons"
       ".local/share/applications"
+      ".local/share/ulauncher"
       ".java" # IntelliJ
       ".compose-cache" # Steam
     ];
