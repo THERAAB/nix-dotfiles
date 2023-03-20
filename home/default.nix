@@ -2,7 +2,6 @@
 {
   imports = [
     ./zsh
-#    ./razer
     ./persist.nix
     ./pkgs.nix
     ./git.nix
@@ -13,6 +12,9 @@
     ./gnome.nix
     ./wezterm.nix
     ./nvim.nix
+    ./maestral.nix
+    ./steam.nix
+    ./ulauncher.nix
   ];
   home.file.".config/scripts" = {
     source = ./scripts;

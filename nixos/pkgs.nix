@@ -21,7 +21,6 @@
     sops
     ssh-to-age
     libnotify
-    maestral
     wmctrl
   ];
 }
