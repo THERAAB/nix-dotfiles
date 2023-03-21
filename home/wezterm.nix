@@ -10,6 +10,7 @@
         font = wezterm.font 'JetBrainsMono Nerd Font',
         window_background_opacity = 0.9,
         text_background_opacity = 0.9,
+        window_close_confirmation = "NeverPrompt",
         colors = {
         },
         enable_tab_bar = false,
