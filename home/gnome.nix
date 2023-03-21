@@ -95,6 +95,7 @@
       color-scheme = "prefer-dark";
       enable-hot-corners = false;
       clock-format = "12h";
+      clock-show-weekday = true;
       monospace-font-name = "JetBrainsMono Nerd Font 10";
     };
     "org/gtk/settings/file-chooser" = {
