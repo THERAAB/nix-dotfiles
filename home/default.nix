@@ -4,10 +4,10 @@
     ./zsh
     ./ulauncher
     ./nix-scripts
+    ./mangohud.nix
     ./persist.nix
     ./pkgs.nix
     ./git.nix
-    ./games.nix
     ./firefox.nix
     ./home.nix
     ./gtk.nix
