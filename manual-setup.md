@@ -7,7 +7,6 @@ Some apps can't be managed declaratively, so additional setup needed for them is
 ```console
 maestral stop
 maestral start
-maestral autostart -Y # Does it work?
 ```
 ### Firefox
 - Sign in
