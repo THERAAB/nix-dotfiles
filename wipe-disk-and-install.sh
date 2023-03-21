@@ -35,8 +35,7 @@ sudo parted /dev/nvme3n1 -- mkpart primary btrfs 512MB 100%
 
 # ----------------------------------------------------------------------------------------------------------------------
 
-# create btrfs logical volume spanning disks
-# Doesn't work ?
+# Create btrfs logical volume spanning disks
 sudo mkfs.btrfs -f -m raid1 -d raid10 -L nixos /dev/nvme0n1p2 /dev/nvme1n1p1 /dev/nvme2n1p1 /dev/nvme3n1p1
 
 # ----------------------------------------------------------------------------------------------------------------------
