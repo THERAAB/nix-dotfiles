@@ -44,6 +44,7 @@
       style-scheme = "peninsula-dark";
     };
     "org/gnome/settings-daemon/plugins/media-keys" = {
+      logout = ["<Control><Alt>Page_Up"]; # Change Alt+Ctrl+Del hotkey so it doesn't get intercepted prior to VM
       custom-keybindings = [
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
