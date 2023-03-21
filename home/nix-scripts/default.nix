@@ -3,6 +3,5 @@
   imports = [
     ./headset-lights.nix
     ./restart-openrazer.nix
-    ./static-workspaces.nix
   ];
 }
