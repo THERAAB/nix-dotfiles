@@ -17,8 +17,4 @@
     ./maestral.nix
     ./steam.nix
   ];
-  home.file.".config/scripts" = {
-    source = ./scripts;
-    recursive = true;
-  };
 }

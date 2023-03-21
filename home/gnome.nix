@@ -58,7 +58,22 @@
       binding = "<Alt>Return";
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
-      command = "/home/raab/.config/scripts/switch_audio.sh";
+      command = toString (pkgs.writeShellScript "switch-audio" ''
+        kantoSPDIF="alsa_output.pci-0000_1b_00.6.iec958-stereo"
+        logitechHeadphones="alsa_output.usb-Logitech_G733_Gaming_Headset-00.iec958-stereo"
+        headPhoneIcon="/run/current-system/sw/share/icons/Adwaita/96x96/devices/audio-headset-symbolic.symbolic.png"
+        kantoIcon="/run/current-system/sw/share/icons/Adwaita/96x96/devices/audio-speakers-symbolic.symbolic.png"
+
+        currentDefault="$(${pkgs.pulseaudio}/bin/pactl get-default-sink)"
+
+        if [ "$currentDefault" = $logitechHeadphones ]; then
+          ${pkgs.pulseaudio}/bin/pactl set-default-sink $kantoSPDIF
+          ${pkgs.libnotify}/bin/notify-send -i $kantoIcon "Audio Switched to Kanto"
+        else
+          ${pkgs.pulseaudio}/bin/pactl set-default-sink $logitechHeadphones
+          ${pkgs.libnotify}/bin/notify-send -i $headPhoneIcon "Audio Switched to Logitech"
+        fi
+      '');
       name = "Switch Audio";
       binding = "<Alt>slash";
     };
@@ -68,7 +83,12 @@
       binding = "<Alt>r";
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
-      command = "/home/raab/.config/scripts/headphone_battery.sh";
+      command = toString (pkgs.writeShellScript "headphone-battery" ''
+        percentage=$(${pkgs.headsetcontrol}/bin/headsetcontrol -b -c)
+        headPhoneIcon="/run/current-system/sw/share/icons/Adwaita/96x96/devices/audio-headset-symbolic.symbolic.png"
+
+        ${pkgs.libnotify}/bin/notify-send -i "$headPhoneIcon" "$percentage% battery remaining"
+      '');
       name = "Headphone battery notification";
       binding = "<Shift><Alt>slash";
     };
