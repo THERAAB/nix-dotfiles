@@ -29,5 +29,3 @@ protonup
 ```
 ### Gnome Settings
 - Set monitor refresh rate to 100Hz
-- Disable screen blank
-- Add weather
