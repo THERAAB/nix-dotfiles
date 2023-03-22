@@ -28,3 +28,8 @@ protonup
 ```
 ### Gnome Settings
 - Set monitor refresh rate to 100Hz
+### Impermanence
+Move any files which cause fuse to fail to their persistence dir:
+```console
+mv /home/raab/.zcompdump /nix/persist/home/raab/
+```
