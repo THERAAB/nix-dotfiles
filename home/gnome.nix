@@ -8,6 +8,7 @@
         "blur-my-shell@aunetx"
         "just-perfection-desktop@just-perfection"
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
+        "pop-shell@system76.com"
       ];
       favorite-apps = [
         "firefox.desktop"
@@ -17,6 +18,9 @@
         "idea-community.desktop"
         "org.gnome.TextEditor.desktop"
       ];
+    };
+    "org/gnome/shell/extensions/pop-shell" = {
+      tile-by-default = false;
     };
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = ["vmware-view.desktop:2"];
@@ -147,6 +151,7 @@
     gnomeExtensions.blur-my-shell
     gnomeExtensions.just-perfection
     gnomeExtensions.auto-move-windows
+    gnomeExtensions.pop-shell
     gnome.gnome-tweaks
     nordic
   ];
