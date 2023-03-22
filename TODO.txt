@@ -1,0 +1,2 @@
+fix/replace ulauncher
+configure pop-shell fullscreen, hints
