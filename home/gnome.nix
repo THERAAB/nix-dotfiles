@@ -23,6 +23,7 @@
       tile-by-default = true;
       active-hint = true;
       smart-gaps = true;
+      hint-color-rgba = "#b48ead";
     };
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = ["vmware-view.desktop:2"];
