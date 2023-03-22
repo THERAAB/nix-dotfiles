@@ -22,6 +22,7 @@
     "org/gnome/shell/extensions/pop-shell" = {
       tile-by-default = true;
       active-hint = true;
+      smart-gaps = true;
     };
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = ["vmware-view.desktop:2"];
