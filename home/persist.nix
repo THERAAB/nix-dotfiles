@@ -27,8 +27,6 @@
       ".cache/fontconfig"
       ".cache/libreoffice"
       ".cache/libgweather"
-      ".cache/ulauncher_cache"
-      ".cache/ulauncher"
       ".dropbox-dist"
       ".dropbox-hm"
       ".oh-my-zsh/themes/"

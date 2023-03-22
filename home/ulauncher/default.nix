@@ -10,7 +10,7 @@ in
     Service.ExecStart = toString (pkgs.writeShellScript "ulauncher-start" ''
       mkdir -p ${user-themes-dir}
       cp -r ${local-theme} ${user-themes-dir}
-      ${pkgs.ulauncher}/bin/ulauncher  --hide-window
+      ${pkgs.ulauncher}/bin/ulauncher --hide-window
     '');
   };
   home.packages = with pkgs; [
