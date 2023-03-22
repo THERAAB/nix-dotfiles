@@ -9,15 +9,13 @@ maestral stop
 maestral start
 ```
 ### Firefox
-- Sign in
-### VMWare
-- desktop.citi.com
+Sign in
 ### Razergenie 
-- 2100 Hz and 1000 poll rate
+2100 Hz and 1000 poll rate
 ### Discord 
-- Disable minimize to tray
+Disable minimize to tray
 ### Printing
-- http://localhost:631/ > Administration > Add printer
+http://localhost:631/ > Administration > Add printer
 ### Plocate
 ```console
 sudo updatedb
@@ -27,7 +25,7 @@ sudo updatedb
 protonup
 ```
 ### Gnome Settings
-- Set monitor refresh rate to 100Hz
+Set monitor refresh rate to 100Hz
 ### Impermanence
 Move any files which cause fuse to fail to their persistence dir:
 ```console
