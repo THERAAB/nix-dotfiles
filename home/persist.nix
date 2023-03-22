@@ -20,6 +20,7 @@
       ".config/cef_user_data" # Steam
       ".config/JetBrains"
       ".config/ulauncher"
+      ".config/pop-shell"
       ".cache/nvim"
       ".cache/mozilla"
       ".cache/matplotlib" # Fonts
