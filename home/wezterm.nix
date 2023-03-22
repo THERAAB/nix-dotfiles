@@ -14,13 +14,6 @@
         enable_tab_bar = false,
         window_decorations = "RESIZE",
         enable_wayland = true,
-        window_frame = {
-          active_titlebar_bg = '#2e3440',
-          inactive_titlebar_bg = '#2e3440',
-          inactive_titlebar_border_bottom = '#2e3440',
-          active_titlebar_border_bottom = '#2e3440',
-          button_bg = '#2e3440',
-        },
         window_padding = {
           left = '20px',
           right = '20px',
