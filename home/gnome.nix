@@ -73,10 +73,10 @@
 
         if [ "$currentDefault" = $logitechHeadphones ]; then
           ${pkgs.pulseaudio}/bin/pactl set-default-sink $kantoSPDIF
-          ${pkgs.libnotify}/bin/notify-send -i $kantoIcon "Audio Switched to Kanto"
+          ${pkgs.libnotify}/bin/notify-send -i $kantoIcon -u critical "Audio Switched to Kanto"
         else
           ${pkgs.pulseaudio}/bin/pactl set-default-sink $logitechHeadphones
-          ${pkgs.libnotify}/bin/notify-send -i $headPhoneIcon "Audio Switched to Logitech"
+          ${pkgs.libnotify}/bin/notify-send -i $headPhoneIcon -u critical "Audio Switched to Logitech"
         fi
       '');
       name = "Switch Audio";
@@ -92,7 +92,7 @@
         percentage=$(${pkgs.headsetcontrol}/bin/headsetcontrol -b -c)
         headPhoneIcon="/run/current-system/sw/share/icons/Adwaita/96x96/devices/audio-headset-symbolic.symbolic.png"
 
-        ${pkgs.libnotify}/bin/notify-send -i "$headPhoneIcon" "$percentage% battery remaining"
+        ${pkgs.libnotify}/bin/notify-send -i "$headPhoneIcon" -u critical "$percentage% battery remaining"
       '');
       name = "Headphone battery notification";
       binding = "<Shift><Alt>slash";
