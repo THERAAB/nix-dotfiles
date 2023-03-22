@@ -14,6 +14,7 @@
         colors = {
         },
         enable_tab_bar = false,
+        window_decorations = "RESIZE",
         enable_wayland = true,
         window_frame = {
           active_titlebar_bg = '#2e3440',
