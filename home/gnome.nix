@@ -125,6 +125,7 @@
       clock-format = "12h";
       clock-show-weekday = true;
       monospace-font-name = "JetBrainsMono Nerd Font 10";
+      gtk-theme="Nordic";
     };
     "org/gtk/settings/file-chooser" = {
       clock-format = "12h";
