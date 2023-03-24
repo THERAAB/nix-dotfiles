@@ -13,9 +13,7 @@
     unzip
     protonup
     razergenie
-    unigine-heaven
     zoom-us
-    neovide
     glibc
     file
     ncdu_2

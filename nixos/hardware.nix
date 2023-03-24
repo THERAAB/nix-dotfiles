@@ -63,10 +63,8 @@
       };
     };
   };
-  
+
   hardware.bluetooth.enable = true;
-  services.blueman.enable = true;
-  
   hardware.openrazer = {
     enable = true;
     users = [ "raab" ];

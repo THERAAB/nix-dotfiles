@@ -15,7 +15,6 @@
       ".config/dconf"
       ".config/maestral"
       ".config/discord"
-      ".config/scripts"
       ".config/libreoffice"
       ".config/cef_user_data" # Steam
       ".config/JetBrains"
