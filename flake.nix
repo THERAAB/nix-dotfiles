@@ -11,6 +11,7 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixvim.url = "github:pta2002/nixvim";
   };
   
   outputs = { self, nixpkgs, home-manager, impermanence, sops-nix, ... }@inputs:
@@ -53,6 +54,7 @@
               home-manager.users.raab = { pkgs, ... }: {
                 imports = [ impermanence.nixosModules.home-manager.impermanence
                             ./home
+                            inputs.nixvim.homeManagerModules.nixvim
                 ];
               };
             }

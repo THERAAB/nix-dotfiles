@@ -13,8 +13,8 @@
     ./gtk.nix
     ./gnome.nix
     ./wezterm.nix
-    ./nvim.nix
     ./maestral.nix
     ./steam.nix
+    ./nixvim.nix
   ];
 }

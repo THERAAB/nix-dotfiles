@@ -17,5 +17,6 @@
     ssh-to-age
     libnotify
     wmctrl
+    neovim
   ];
 }
