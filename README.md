@@ -54,7 +54,7 @@ This repo contains some customizations for my specific setup, and you likely won
 if you're not me for 3 reasons:
 - You probably don't have my hardware (Ryzen 7700X, Radeon 7900XTX, ASRock X670E Pro RS, 4 nvme)
 - You probably don't have my sops keys (shoutout to my FBI agent!)
-- You likely won't have same IPs and network, firewall (See nix-router), and tailscale setup
+- You likely won't have same IPs and network, firewall (pfSense), and tailscale setup
 
 ### Download NixOS
 - Grab the GNOME installer from the [NixOS Downloads Page](https://nixos.org/download.html#nix-install-linux)
