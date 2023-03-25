@@ -31,3 +31,7 @@ Move any files which cause fuse to fail to their persistence dir:
 ```console
 mv /home/raab/.zcompdump /nix/persist/home/raab/
 ```
+### nix-homelab
+```console
+git clone git@github.com:THERAAB/nix-homelab.git /nix/persist/nix-homelab
+```
