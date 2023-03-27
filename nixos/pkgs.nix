@@ -18,5 +18,7 @@
     libnotify
     wmctrl
     neovim
+    gnome-text-editor
+    gnome.nautilus
   ];
 }

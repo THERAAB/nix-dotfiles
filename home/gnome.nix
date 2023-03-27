@@ -17,6 +17,7 @@
         "steam.desktop"
         "idea-community.desktop"
         "org.gnome.TextEditor.desktop"
+        "org.gnome.Nautilus.desktop"
       ];
     };
     "org/gnome/shell/extensions/pop-shell" = {
