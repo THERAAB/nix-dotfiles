@@ -2,10 +2,7 @@
 { 
   security.auditd.enable = true;
   nix.settings.allowed-users = [ "@wheel" ];
-  
-  # Zsh
-  # environment.pathsToLink = [ "share/zsh" ];
-  
+
   # Neovim
   environment.variables.EDITOR = "nvim";
   

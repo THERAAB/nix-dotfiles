@@ -19,7 +19,7 @@
       ".config/cef_user_data" # Steam
       ".config/JetBrains"
       ".config/ulauncher"
-      ".config/pop-shell"
+      ".config/fish"
       ".cache/nvim"
       ".cache/mozilla"
       ".cache/matplotlib" # Fonts
@@ -28,7 +28,6 @@
       ".cache/libgweather"
       ".dropbox-dist"
       ".dropbox-hm"
-      ".oh-my-zsh/themes/"
       ".pki" # Discord
       ".vmware"
       ".local/share/org.gnome.TextEditor"
@@ -41,6 +40,7 @@
       ".local/share/icons"
       ".local/share/applications"
       ".local/share/ulauncher"
+      ".local/share/fish"
       ".java" # IntelliJ
       ".compose-cache" # Steam
     ];
@@ -48,10 +48,6 @@
       ".ssh/known_hosts"
       ".ssh/id_rsa"
       ".config/monitors.xml"
-      ".zcompdump"
-      ".zcompdump-nix-desktop-5.9"
-      ".zcompdump-nix-desktop-5.9.zwc"
-      ".zsh_history"
     ];
   };
 }

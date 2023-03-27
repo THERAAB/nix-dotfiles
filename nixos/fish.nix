@@ -10,7 +10,20 @@
       update-full-with-git = "/nix/persist/nix-dotfiles/nixos-update-manager.sh update_full";
       update-git-dotfiles = "/nix/persist/nix-dotfiles/nixos-update-manager.sh update_dotfiles_git";
       garbage-collect-all = "/nix/persist/nix-dotfiles/nixos-update-manager.sh gc";
+      ls = "exa";
+      la = "exa -lah";
     };
   };
-  programs.starship.enable = true;
+  programs.starship = {
+    enable = true;
+    settings = {
+      character = {
+        success_symbol = "[➜](bold green)";
+        error_symbol = "[☓](bold red)";
+      };
+    };
+  };
+  environment.systemPackages = with pkgs; [
+    exa
+  ];
 }
