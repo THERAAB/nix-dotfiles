@@ -57,11 +57,6 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
-    config.pipewire = { 
-      context.properties = { 
-        default.clock.allowed-rates = [ 44100 48000 88200 96000 ];
-      };
-    };
   };
 
   hardware.bluetooth.enable = true;
