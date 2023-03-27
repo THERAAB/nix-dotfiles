@@ -39,6 +39,9 @@
         success_symbol = "[➜](bold green)";
         error_symbol = "[☓](bold red)";
       };
+      cmd_duration = {
+        min_time = 0;
+      };
     };
   };
   environment.systemPackages = with pkgs; [
