@@ -42,7 +42,7 @@
       };
       cmd_duration = {
         min_time = 100;
-        format = "took [$duration](bold light red)";
+        format = "took [$duration](bold dimmed red)";
       };
     };
   };
