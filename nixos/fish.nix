@@ -4,6 +4,9 @@
   users.defaultUserShell = pkgs.fish;
   programs.fish = {
     enable = true;
+    interactiveShellInit = ''
+      set fish_greeting # Disable greeting
+    '';
     shellAliases = {
       update-channels = "/nix/persist/nix-dotfiles/nixos-update-manager.sh update_channel";
       update-flake = "/nix/persist/nix-dotfiles/nixos-update-manager.sh update_flake";
