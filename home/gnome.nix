@@ -12,12 +12,12 @@
       ];
       favorite-apps = [
         "firefox.desktop"
+        "org.gnome.Nautilus.desktop"
         "vmware-view.desktop"
         "org.wezfurlong.wezterm.desktop"
         "steam.desktop"
         "idea-community.desktop"
         "org.gnome.TextEditor.desktop"
-        "org.gnome.Nautilus.desktop"
       ];
     };
     "org/gnome/shell/extensions/pop-shell" = {
