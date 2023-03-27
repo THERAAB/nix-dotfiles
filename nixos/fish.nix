@@ -15,6 +15,7 @@
       garbage-collect-all = "/nix/persist/nix-dotfiles/nixos-update-manager.sh gc";
       ls = "exa";
       la = "exa -lah";
+      vi = "nvim";
     };
   };
   programs.starship = {
@@ -37,10 +38,7 @@
       };
       character = {
         success_symbol = "[➜](bold green)";
-        error_symbol = "[☓](bold red)";
-      };
-      cmd_duration = {
-        min_time = 0;
+        error_symbol = "[➜](bold red)";
       };
     };
   };
