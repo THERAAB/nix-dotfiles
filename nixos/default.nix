@@ -12,5 +12,6 @@
     ./hardware-configuration.nix
     ./sops.nix
     ./gnome.nix
+    ./fish.nix
   ];
 }

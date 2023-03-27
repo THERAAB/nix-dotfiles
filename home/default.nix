@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 {
   imports = [
-    ./zsh
     ./ulauncher
     ./nix-scripts
     ./mangohud.nix

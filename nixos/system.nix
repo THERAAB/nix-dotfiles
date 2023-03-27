@@ -4,10 +4,7 @@
   nix.settings.allowed-users = [ "@wheel" ];
   
   # Zsh
-  environment.pathsToLink = [ "share/zsh" ];
-  environment.shells = with pkgs; [ zsh ];
-  programs.zsh.enable = true;
-  users.defaultUserShell = pkgs.zsh;
+  # environment.pathsToLink = [ "share/zsh" ];
   
   # Neovim
   environment.variables.EDITOR = "nvim";
