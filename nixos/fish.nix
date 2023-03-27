@@ -34,11 +34,15 @@
       };
       directory = {
         format = "at [$path]($style)[$read_only]($read_only_style) ";
-        read_only = " 🔒";
+        read_only = " ";
       };
       character = {
         success_symbol = "[➜](bold green)";
         error_symbol = "[➜](bold red)";
+      };
+      cmd_duration = {
+        min_time = 100;
+        format = "took [$duration](bold orange)";
       };
     };
   };
