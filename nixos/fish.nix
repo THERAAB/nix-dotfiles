@@ -16,6 +16,12 @@
       ls = "exa";
       la = "exa -lah";
       vi = "nvim";
+      cat = "bat";
+      grep = "rg";
+      ps = "procs";
+      du = "dust";
+      find = "fd";
+      htop = "btm";
     };
   };
   programs.starship = {
@@ -48,7 +54,8 @@
       };
     };
   };
-  environment.systemPackages = with pkgs; [
-    exa
+  environment.systemPackages = with pkgs.fishPlugins; [
+    fzf-fish
+    grc
   ];
 }

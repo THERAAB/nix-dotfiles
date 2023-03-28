@@ -27,6 +27,7 @@
       ".cache/fontconfig"
       ".cache/libreoffice"
       ".cache/libgweather"
+      ".cache/tealdeer"
       ".dropbox-dist"
       ".dropbox-hm"
       ".pki" # Discord

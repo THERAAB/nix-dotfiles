@@ -5,7 +5,6 @@
     killall
     microcodeAmd
     pulseaudio # needed to use pactl on pipewire
-    htop
     dmidecode
     parted
     pciutils # for lspci
@@ -20,5 +19,15 @@
     neovim
     gnome-text-editor
     gnome.nautilus
+    exa
+    fzf
+    grc
+    bat
+    ripgrep
+    tealdeer
+    procs
+    du-dust
+    fd
+    bottom
   ];
 }
