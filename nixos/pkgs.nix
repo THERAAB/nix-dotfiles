@@ -20,15 +20,12 @@
     gnome-text-editor
     gnome.nautilus
     exa
-    grc
     bat
     ripgrep
     tealdeer
     procs
     du-dust
-    fd
     bottom
-    fzf
     zoxide
   ];
 }
