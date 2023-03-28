@@ -26,6 +26,10 @@ protonup
 ```
 ### Gnome Settings
 Set monitor refresh rate to 100Hz
+### IntelliJ
+- Set to new UI
+- Use Nord Theme
+- Settings -> Tools -> Terminal -> Disable Shell Integration
 ### Impermanence
 Move any files which cause fuse to fail to their persistence dir:
 ```console
