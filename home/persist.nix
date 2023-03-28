@@ -10,7 +10,6 @@
       "Videos"
       ".mozilla"
       ".config/sops/age"
-      ".config/nvim"
       ".config/openrazer"
       ".config/dconf"
       ".config/maestral"
