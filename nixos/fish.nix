@@ -23,7 +23,7 @@
     settings = {
       hostname = {
         ssh_only = false;
-        format = "on exi[$hostname](bold yellow) ";
+        format = "on [$hostname](bold yellow) ";
       };
       username = {
         style_user = "blue bold";
