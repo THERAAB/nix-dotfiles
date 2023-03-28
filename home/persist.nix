@@ -42,6 +42,7 @@
       ".local/share/applications"
       ".local/share/ulauncher"
       ".local/share/fish"
+      ".local/share/zoxide"
       ".java" # IntelliJ
       ".compose-cache" # Steam
     ];
