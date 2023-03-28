@@ -13,5 +13,6 @@
     ./sops.nix
     ./gnome.nix
     ./fish.nix
+    ./starship.nix
   ];
 }
