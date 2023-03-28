@@ -7,6 +7,7 @@
     interactiveShellInit = ''
       set fish_greeting # Disable greeting
       zoxide init fish | source
+      alias cd=z
     '';
     shellAliases = {
       update-channels = "/nix/persist/nix-dotfiles/nixos-update-manager.sh update_channel";
