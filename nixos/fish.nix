@@ -55,7 +55,6 @@
     };
   };
   environment.systemPackages = with pkgs.fishPlugins; [
-    fzf-fish
     grc
   ];
 }

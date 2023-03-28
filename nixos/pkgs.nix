@@ -20,7 +20,6 @@
     gnome-text-editor
     gnome.nautilus
     exa
-    fzf
     grc
     bat
     ripgrep
