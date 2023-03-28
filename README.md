@@ -15,8 +15,8 @@ My NixOS Desktop, with:
 - Dependency pinning with [Nix Flakes](https://nixos.wiki/wiki/Flakes)
 - Local user declarative setup with [Home Manager](https://github.com/nix-community/home-manager)
 - [BTRFS](https://btrfs.wiki.kernel.org/index.php/Main_Page) file system (Copy on Write, Compression)
-- [Nord Theme] for theming (https://www.nordtheme.com/)
-- [Pop Shell] for tiling window management (https://github.com/pop-os/shell)
+- [Nord Theme](https://www.nordtheme.com/) for theming 
+- [Pop Shell](https://github.com/pop-os/shell) for tiling window management
 
 ## Maintenance
 These commands might help with some common maintenance tasks
