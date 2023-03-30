@@ -2,7 +2,6 @@
 {
   environment.shells = with pkgs; [ fish ];
   users.defaultUserShell = pkgs.fish;
-  home.sessionVariables.BAT_THEME = "Nord";
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
@@ -18,6 +17,7 @@
       ls = "exa";
       la = "exa -lah";
       vi = "nvim";
+      cat = "bat --theme=Nord";
       grep = "rg";
       ps = "procs";
       du = "dust";
