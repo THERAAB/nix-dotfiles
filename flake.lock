@@ -275,11 +275,11 @@
         "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
-        "lastModified": 1680026453,
-        "narHash": "sha256-EQOh1NWZKCU7+N4vdVMnSycI7BJ6UJqLDUOC1r/Tj6Y=",
+        "lastModified": 1680170094,
+        "narHash": "sha256-W73zOqOnnwGeN09Zw7Tg5IDNFfKato1tmh9y0C9Mluw=",
         "owner": "pta2002",
         "repo": "nixvim",
-        "rev": "2b85290c1282e527ce0d09825118a7efe6056edf",
+        "rev": "ac2d771f558982ab68da75c8c59cc302e4a8cdd5",
         "type": "github"
       },
       "original": {
