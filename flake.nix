@@ -19,6 +19,10 @@
       url = github:base16-project/base16-schemes;
       flake = false;
     };
+    base16-vim = {
+      url = github:base16-project/base16-vim;
+      flake = false;
+    };
     nixvim.url = "github:pta2002/nixvim";
   };
   
@@ -32,6 +36,7 @@
         "aarch64-darwin"
         "x86_64-darwin"
       ];
+      theme = "everforest";
     in
     rec {
       # Your custom packages
@@ -53,7 +58,7 @@
           specialArgs = { inherit inputs outputs; };
           modules = [
             base16.nixosModule
-            { scheme = "${inputs.base16-schemes}/everforest.yaml"; }
+            { scheme = "${inputs.base16-schemes}/${theme}.yaml"; }
             impermanence.nixosModules.impermanence
             ./nixos
             sops-nix.nixosModules.sops
@@ -61,10 +66,16 @@
             home-manager.nixosModules.home-manager {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
+              home-manager.extraSpecialArgs = {
+                inherit inputs self;
+              };
               home-manager.users.raab = { pkgs, ... }: {
-                imports = [ impermanence.nixosModules.home-manager.impermanence
-                            ./home
-                            inputs.nixvim.homeManagerModules.nixvim
+                imports = [
+                  base16.homeManagerModule
+                  { scheme = "${inputs.base16-schemes}/${theme}.yaml"; }
+                  impermanence.nixosModules.home-manager.impermanence
+                  ./home
+                  inputs.nixvim.homeManagerModules.nixvim
                 ];
               };
             }

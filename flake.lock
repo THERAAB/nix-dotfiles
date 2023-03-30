@@ -36,6 +36,22 @@
         "type": "github"
       }
     },
+    "base16-vim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1679793421,
+        "narHash": "sha256-dffuYqxdbgumb/ow8QgbbEbqTmcenLppih9qNh+wE5c=",
+        "owner": "base16-project",
+        "repo": "base16-vim",
+        "rev": "79d4fb4575b6e9fab785c44557529240c0b7093a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "base16-project",
+        "repo": "base16-vim",
+        "type": "github"
+      }
+    },
     "beautysh": {
       "inputs": {
         "nixpkgs": [
@@ -305,6 +321,7 @@
       "inputs": {
         "base16": "base16",
         "base16-schemes": "base16-schemes",
+        "base16-vim": "base16-vim",
         "home-manager": "home-manager",
         "impermanence": "impermanence",
         "nixpkgs": "nixpkgs",
