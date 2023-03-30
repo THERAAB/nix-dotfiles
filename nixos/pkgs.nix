@@ -20,7 +20,6 @@
     gnome-text-editor
     gnome.nautilus
     exa
-    bat
     ripgrep
     tealdeer
     procs
