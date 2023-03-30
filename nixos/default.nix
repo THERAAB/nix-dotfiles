@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 {
   imports = [
+    ./plymouth
     ./persist.nix
     ./boot.nix
     ./hardware.nix

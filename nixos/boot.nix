@@ -3,7 +3,6 @@
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
     initrd.verbose = false;
-    plymouth.enable = true;
     loader.efi.canTouchEfiVariables = true;
     loader.grub = {
       enable = true;
