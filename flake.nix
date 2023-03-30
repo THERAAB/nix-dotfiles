@@ -11,10 +11,18 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    base16 = {
+      url = "github:SenchoPens/base16.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    base16-schemes = {
+      url = github:base16-project/base16-schemes;
+      flake = false;
+    };
     nixvim.url = "github:pta2002/nixvim";
   };
   
-  outputs = { self, nixpkgs, home-manager, impermanence, sops-nix, stylix, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, impermanence, sops-nix, base16, ... }@inputs:
    let
       inherit (self) outputs;
       forAllSystems = nixpkgs.lib.genAttrs [
@@ -44,6 +52,8 @@
         nix-desktop = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs outputs; };
           modules = [
+            base16.nixosModule
+            { scheme = "${inputs.base16-schemes}/everforest.yaml"; }
             impermanence.nixosModules.impermanence
             ./nixos
             sops-nix.nixosModules.sops
