@@ -17,6 +17,7 @@
       ls = "exa";
       la = "exa -lah";
       vi = "nvim";
+      cat = "bat --theme=Nord";
       grep = "rg";
       ps = "procs";
       du = "dust";

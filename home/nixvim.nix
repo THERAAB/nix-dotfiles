@@ -2,8 +2,12 @@
 {
   programs.nixvim = {
     enable = true;
-    colorscheme = "base16-scheme";
+    colorschemes.nord = {
+      enable = true;
+      disable_background = true;
+    };
     plugins = {
+      lightline.enable = true;
       bufferline.enable = true;
       nvim-tree.enable = true;
       nvim-cmp.enable = true;
@@ -18,12 +22,6 @@
     extraPlugins = with pkgs.vimPlugins; [
       vim-nix
       nvim-web-devicons
-      (
-        base16-vim.overrideAttrs (old:
-          let schemeFile = config.scheme base16-vim;
-          in { patchPhase = ''cp ${schemeFile} colors/base16-scheme.vim''; }
-        )
-      )
     ];
   };
 }
