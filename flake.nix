@@ -12,7 +12,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixvim.url = "github:pta2002/nixvim";
-    stylix.url = "github:danth/stylix";
   };
   
   outputs = { self, nixpkgs, home-manager, impermanence, sops-nix, stylix, ... }@inputs:
@@ -46,7 +45,6 @@
           specialArgs = { inherit inputs outputs; };
           modules = [
             impermanence.nixosModules.impermanence
-            stylix.nixosModules.stylix
             ./nixos
             sops-nix.nixosModules.sops
 
