@@ -1,18 +1,18 @@
 {
   description = "nix-dotfiles flake";
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = github:NixOS/nixpkgs/nixos-unstable;
     home-manager = {
-      url = "github:nix-community/home-manager/master";
+      url = github:nix-community/home-manager/master;
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    impermanence.url = "github:nix-community/impermanence";
+    impermanence.url = github:nix-community/impermanence;
     sops-nix = {
-      url = "github:Mic92/sops-nix";
+      url = github:Mic92/sops-nix;
       inputs.nixpkgs.follows = "nixpkgs";
     };
     base16 = {
-      url = "github:SenchoPens/base16.nix";
+      url = github:SenchoPens/base16.nix;
       inputs.nixpkgs.follows = "nixpkgs";
     };
     base16-schemes = {
@@ -23,7 +23,11 @@
       url = github:base16-project/base16-vim;
       flake = false;
     };
-    nixvim.url = "github:pta2002/nixvim";
+    vim-base16-lightline = {
+      url = github:daviesjamie/vim-base16-lightline;
+      flake = false;
+    };
+    nixvim.url = github:pta2002/nixvim;
   };
   
   outputs = { self, nixpkgs, home-manager, impermanence, sops-nix, base16, ... }@inputs:

@@ -326,7 +326,8 @@
         "impermanence": "impermanence",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
-        "sops-nix": "sops-nix"
+        "sops-nix": "sops-nix",
+        "vim-base16-lightline": "vim-base16-lightline"
       }
     },
     "sops-nix": {
@@ -377,6 +378,22 @@
       "original": {
         "owner": "numtide",
         "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "vim-base16-lightline": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603894810,
+        "narHash": "sha256-F7IsybSosSvWy22rbgty+Uxie+mc8aVd9RgeHYFPLPg=",
+        "owner": "daviesjamie",
+        "repo": "vim-base16-lightline",
+        "rev": "989916f4367d3f4c6c7d3be0cebdd9158a5cb731",
+        "type": "github"
+      },
+      "original": {
+        "owner": "daviesjamie",
+        "repo": "vim-base16-lightline",
         "type": "github"
       }
     }
