@@ -20,7 +20,7 @@
       nvim-web-devicons
       (
         base16-vim.overrideAttrs (old:
-          let schemeFile = config.scheme inputs.base16-vim;
+          let schemeFile = config.scheme base16-vim;
           in { patchPhase = ''cp ${schemeFile} colors/base16-scheme.vim''; }
         )
       )

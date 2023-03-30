@@ -19,14 +19,6 @@
       url = github:base16-project/base16-schemes;
       flake = false;
     };
-    base16-vim = {
-      url = github:base16-project/base16-vim;
-      flake = false;
-    };
-    vim-base16-lightline = {
-      url = github:daviesjamie/vim-base16-lightline;
-      flake = false;
-    };
     nixvim.url = github:pta2002/nixvim;
   };
   
