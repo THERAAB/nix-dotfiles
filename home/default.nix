@@ -15,5 +15,6 @@
     ./maestral.nix
     ./steam.nix
     ./nixvim.nix
+    ./fish.nix
   ];
 }
