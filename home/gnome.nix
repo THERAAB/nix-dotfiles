@@ -42,6 +42,9 @@
     "org/gnome/shell/extensions/blur-my-shell/overview" = {
       style-components = 3;
     };
+    "org/gnome/shell/extensions/blur-my-shell/panel" = {
+      blur = false;
+    };
     "org/gnome/settings-daemon/plugins/power" = {
       sleep-inactive-ac-type = "nothing";
       power-button-action = "interactive";
