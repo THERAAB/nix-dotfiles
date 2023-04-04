@@ -16,5 +16,6 @@
     ./steam.nix
     ./nixvim.nix
     ./fish.nix
+    ./helix.nix
   ];
 }

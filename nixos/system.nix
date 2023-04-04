@@ -4,7 +4,7 @@
   nix.settings.allowed-users = [ "@wheel" ];
 
   # Neovim
-  environment.variables.EDITOR = "nvim";
+  environment.variables.EDITOR = "hx";
   
   fonts.fonts = with pkgs; [
     (nerdfonts.override { fonts = [ "JetBrainsMono" "Noto" ]; })

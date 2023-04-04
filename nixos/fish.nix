@@ -16,7 +16,7 @@
       garbage-collect-all = "/nix/persist/nix-dotfiles/nixos-update-manager.sh gc";
       ls = "exa";
       la = "exa -lah";
-      vi = "nvim";
+      vi = "hx";
       cat = "bat --theme=Nord";
       grep = "rg";
       ps = "procs";
