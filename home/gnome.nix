@@ -14,7 +14,7 @@
         "firefox.desktop"
         "org.gnome.Nautilus.desktop"
         "vmware-view.desktop"
-        "org.wezfurlong.wezterm.desktop"
+        "foot.desktop"
         "steam.desktop"
         "idea-community.desktop"
         "org.gnome.TextEditor.desktop"
@@ -64,8 +64,8 @@
       ];
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
-      command = "wezterm start --always-new-process";
-      name = "Launch wezterm";
+      command = "foot";
+      name = "Launch foot";
       binding = "<Alt>Return";
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
