@@ -17,7 +17,7 @@
       ls = "exa";
       la = "exa -lah";
       vi = "hx";
-      cat = "bat --theme=Nord";
+      cat = "bat --theme=base16-256";
       grep = "rg";
       ps = "procs";
       du = "dust";

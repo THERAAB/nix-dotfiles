@@ -24,7 +24,7 @@
       tile-by-default = true;
       active-hint = true;
       smart-gaps = true;
-      hint-color-rgba = "#b48ead";
+      hint-color-rgba = "#f4b8e4";
     };
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = ["vmware-view.desktop:2"];
@@ -126,7 +126,7 @@
       clock-format = "12h";
       clock-show-weekday = true;
       monospace-font-name = "JetBrainsMono Nerd Font 10";
-      gtk-theme="Nordic";
+      gtk-theme="Catppuccin-Frappe-Standard-Blue-Dark";
     };
     "org/gtk/settings/file-chooser" = {
       clock-format = "12h";
@@ -136,7 +136,8 @@
       picture-uri-dark = "file:///nix/persist/nix-dotfiles/assets/wall.jpg";
     };
     "org/gnome/shell/extensions/user-theme" = {
-       name = "Nordic";
+       name = "Catppuccin-Frappe-Standard-Blue-Dark";
+       # package = pkgs.catppuccin-gtk;
     };
   };
 
@@ -158,6 +159,6 @@
     gnomeExtensions.auto-move-windows
     gnomeExtensions.pop-shell
     gnome.gnome-tweaks
-    nordic
+    catppuccin-gtk
   ];
 }

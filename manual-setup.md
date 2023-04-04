@@ -28,7 +28,7 @@ protonup
 Set monitor refresh rate to 100Hz
 ### IntelliJ
 - Set to new UI
-- Use Nord Theme
+- Use Catppuccin Frappe Theme
 - Settings -> Tools -> Terminal -> Disable Shell Integration
 ### Impermanence
 Move any files which cause fuse to fail to their persistence dir:

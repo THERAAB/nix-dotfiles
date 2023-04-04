@@ -6,7 +6,7 @@
       return {
         xcursor_theme = 'phinger-cursors-light',
         xcursor_size = 40,
-        color_scheme = 'Nord (base16)',
+        color_scheme = 'Catppuccin Frappe',
         font = wezterm.font 'JetBrainsMono Nerd Font',
         window_background_opacity = 0.9,
         text_background_opacity = 0.9,

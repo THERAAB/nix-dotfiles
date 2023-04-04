@@ -3,8 +3,8 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Nordic";
-      package = pkgs.nordic;
+      name = "Catppuccin-Frappe-Standard-Blue-Dark";
+       package = pkgs.catppuccin-gtk;
     };
     iconTheme = {
       name = "Papirus-Dark";
@@ -21,5 +21,5 @@
     gtk3.extraConfig.gtk-application-prefer-dark-theme=1;
     gtk4.extraConfig.gtk-application-prefer-dark-theme=1;
   };
-  home.sessionVariables.GTK_THEME = "Nordic";
+  home.sessionVariables.GTK_THEME = "Catppuccin-Frappe-Standard-Blue-Dark";
 }
