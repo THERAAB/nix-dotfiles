@@ -46,6 +46,7 @@
     "org/gnome/shell/extensions/blur-my-shell/panel" = {
       blur = true;
       sigma = 0;
+      static-blur = false;
     };
     "org/gnome/settings-daemon/plugins/power" = {
       sleep-inactive-ac-type = "nothing";
