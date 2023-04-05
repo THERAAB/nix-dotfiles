@@ -9,6 +9,7 @@
         "just-perfection-desktop@just-perfection"
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
         "pop-shell@system76.com"
+        "rounded-window-corners@yilozt"
       ];
       favorite-apps = [
         "firefox.desktop"
@@ -162,6 +163,7 @@
     gnomeExtensions.just-perfection
     gnomeExtensions.auto-move-windows
     gnomeExtensions.pop-shell
+    gnomeExtensions.rounded-window-corners
     gnome.gnome-tweaks
     catppuccin-gtk
   ];
