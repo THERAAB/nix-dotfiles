@@ -48,6 +48,9 @@
       sigma = 0;
       static-blur = false;
     };
+    "org/gnome/shell/extensions/rounded-window-corners" = {
+      black-list = [ "ulauncher" ];
+    };
     "org/gnome/settings-daemon/plugins/power" = {
       sleep-inactive-ac-type = "nothing";
       power-button-action = "interactive";
