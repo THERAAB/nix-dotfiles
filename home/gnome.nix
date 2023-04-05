@@ -43,7 +43,8 @@
       style-components = 3;
     };
     "org/gnome/shell/extensions/blur-my-shell/panel" = {
-      blur = false;
+      blur = true;
+      sigma = 0;
     };
     "org/gnome/settings-daemon/plugins/power" = {
       sleep-inactive-ac-type = "nothing";
