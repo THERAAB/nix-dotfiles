@@ -10,6 +10,7 @@
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
         "pop-shell@system76.com"
         "rounded-window-corners@yilozt"
+        "activitiesworkspacename@ahmafi.ir"
       ];
       favorite-apps = [
         "firefox.desktop"
@@ -115,6 +116,7 @@
     };
     "org/gnome/desktop/wm/preferences" = {
       num-workspaces = 4;
+      workspace-names = [ "   Browse" "󰍹   Work" "   Games" "  Other" ];
     };
     "org/gnome/desktop/wm/keybindings" = {
       switch-to-workspace-left = ["<Alt>Left"];
@@ -170,6 +172,7 @@
     gnomeExtensions.auto-move-windows
     gnomeExtensions.pop-shell
     gnomeExtensions.rounded-window-corners
+    gnomeExtensions.activities-workspace-name
     gnome.gnome-tweaks
     catppuccin-gtk
   ];
