@@ -11,6 +11,7 @@
         "pop-shell@system76.com"
         "rounded-window-corners@yilozt"
         "activitiesworkspacename@ahmafi.ir"
+        "unite@hardpixel.eu"
       ];
       favorite-apps = [
         "firefox.desktop"
@@ -21,6 +22,19 @@
         "idea-community.desktop"
         "org.gnome.TextEditor.desktop"
       ];
+    };
+    "org/gnome/shell/extensions/unite" = {
+      extend-left-box = false;
+      autofocus-windows = false;
+      show-legacy-tray = false;
+      show-desktop-name = false;
+      enable-titlebar-actions = false;
+      restrict-to-primary-screen = false;
+      hide-activities-button = "never";
+      hide-window-titlebars = "always";
+      show-window-title = "never";
+      show-window-buttons = "never";
+      notifications-position = "center";
     };
     "org/gnome/shell/extensions/pop-shell" = {
       tile-by-default = true;
@@ -177,6 +191,7 @@
     gnomeExtensions.pop-shell
     gnomeExtensions.rounded-window-corners
     gnomeExtensions.activities-workspace-name
+    gnomeExtensions.unite
     gnome.gnome-tweaks
     catppuccin-gtk
   ];
