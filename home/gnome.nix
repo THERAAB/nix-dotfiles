@@ -146,6 +146,10 @@
       picture-uri = "file:///nix/persist/nix-dotfiles/assets/wall.jpg";
       picture-uri-dark = "file:///nix/persist/nix-dotfiles/assets/wall.jpg";
     };
+    "org/gnome/gnome-session" = {
+      logout-prompt = false;
+      reboot-prompt = false;
+    };
     "org/gnome/shell/extensions/user-theme" = {
        name = "Catppuccin-Frappe-Standard-Blue-Dark";
        # package = pkgs.catppuccin-gtk;
