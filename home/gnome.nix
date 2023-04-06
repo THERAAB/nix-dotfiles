@@ -158,6 +158,8 @@
       ${pkgs.dconf}/bin/dconf write /org/gnome/shell/weather/locations "[<(uint32 2, <('New York City, Central Park', 'KNYC', false, [(0.71180344078725644, -1.2909618758762367)], @a(dd) [])>)>]"
       ${pkgs.dconf}/bin/dconf write /org/gnome/mutter/dynamic-workspaces "false"
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/session/idle-delay "uint32 0"
+      ${pkgs.dconf}/bin/dconf write /org/gnome/shell/extensions/pop-shell/gap-outer "uint32 3"
+      ${pkgs.dconf}/bin/dconf write /org/gnome/shell/extensions/pop-shell/gap-inner "uint32 3"
     '');
   };
 
