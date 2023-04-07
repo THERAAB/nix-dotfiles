@@ -160,10 +160,6 @@
       picture-uri = "file:///nix/persist/nix-dotfiles/assets/wall.jpg";
       picture-uri-dark = "file:///nix/persist/nix-dotfiles/assets/wall.jpg";
     };
-    "org/gnome/gnome-session" = {
-      logout-prompt = false;
-      reboot-prompt = false;
-    };
     "org/gnome/shell/extensions/user-theme" = {
        name = "Catppuccin-Frappe-Standard-Blue-Dark";
        # package = pkgs.catppuccin-gtk;
@@ -180,6 +176,8 @@
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/session/idle-delay "uint32 0"
       ${pkgs.dconf}/bin/dconf write /org/gnome/shell/extensions/pop-shell/gap-outer "uint32 3"
       ${pkgs.dconf}/bin/dconf write /org/gnome/shell/extensions/pop-shell/gap-inner "uint32 3"
+      ${pkgs.dconf}/bin/dconf write /org/gnome/gnome-session/logout-prompt "false"
+      ${pkgs.dconf}/bin/dconf write /org/gnome/gnome-session/reboot-prompt "false"
     '');
   };
 
