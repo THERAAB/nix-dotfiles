@@ -43,7 +43,11 @@
       hint-color-rgba = "#f4b8e4";
     };
     "org/gnome/shell/extensions/auto-move-windows" = {
-      application-list = ["vmware-view.desktop:2"];
+      application-list = [
+        "firefox.desktop:1"
+        "vmware-view.desktop:2"
+        "steam.desktop:3"
+      ];
     };
     "org/gnome/shell/extensions/just-perfection" = {
       theme = true;
