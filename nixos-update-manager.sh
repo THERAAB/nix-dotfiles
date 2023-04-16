@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# Controls the app launcher (Plank) used in tablet mode
 update_channel() {
     pushd /nix/persist/nix-dotfiles
     sudo nix flake update --extra-experimental-features nix-command --extra-experimental-features flakes
