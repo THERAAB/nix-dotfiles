@@ -135,6 +135,7 @@
     "org/gnome/desktop/wm/preferences" = {
       num-workspaces = 4;
       workspace-names = [ "   Browse" "󰍹   Work" "   Games" "  Other" ];
+      button-layout = ""; # Hide close button on titlebar for apps like firefox
     };
     "org/gnome/desktop/wm/keybindings" = {
       switch-to-workspace-left = ["<Alt>Left"];
