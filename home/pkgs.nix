@@ -20,7 +20,7 @@
     tree
     strace
     snapper-gui
-    ventoy-bin-full
+    ventoy-full
     lm_sensors
   ];
 }
