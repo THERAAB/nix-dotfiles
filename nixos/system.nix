@@ -3,6 +3,9 @@
   security.auditd.enable = true;
   nix.settings.allowed-users = [ "@wheel" ];
 
+  # For GNOME based apps
+  programs.dconf.enable = true;
+
   # Neovim
   environment.variables.EDITOR = "hx";
   

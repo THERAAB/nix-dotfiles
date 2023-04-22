@@ -5,7 +5,6 @@
     server.enable = true;
     settings = {
       main = {
-        # term = "xterm-256color";
         font = "JetBrainsMono Nerd Font:size=11";
         dpi-aware = "yes";
         pad = "20x20";

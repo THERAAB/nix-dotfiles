@@ -49,7 +49,7 @@
     files = [
       ".ssh/known_hosts"
       ".ssh/id_rsa"
-      ".config/monitors.xml"
+      ".config/monitors.xml" # Gnome
     ];
   };
 }

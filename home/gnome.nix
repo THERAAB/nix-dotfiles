@@ -167,7 +167,6 @@
     };
     "org/gnome/shell/extensions/user-theme" = {
        name = "Catppuccin-Frappe-Standard-Blue-Dark";
-       # package = pkgs.catppuccin-gtk;
     };
   };
 
@@ -194,6 +193,5 @@
     gnomeExtensions.activities-workspace-name
     gnomeExtensions.unite
     gnome.gnome-tweaks
-    catppuccin-gtk
   ];
 }

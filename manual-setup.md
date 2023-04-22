@@ -30,11 +30,6 @@ Set monitor refresh rate to 100Hz
 - Set to new UI
 - Use Catppuccin Frappe Theme
 - Settings -> Tools -> Terminal -> Disable Shell Integration
-### Impermanence
-Move any files which cause fuse to fail to their persistence dir:
-```console
-mv /home/raab/.zcompdump /nix/persist/home/raab/
-```
 ### nix-homelab
 ```console
 git clone git@github.com:THERAAB/nix-homelab.git /nix/persist/nix-homelab

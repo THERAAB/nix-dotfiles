@@ -31,5 +31,4 @@
     gnome-keyring # keyring
   ]);
   services.gnome.gnome-keyring.enable = lib.mkForce false;
-  programs.dconf.enable = true;
 }

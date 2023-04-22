@@ -22,4 +22,8 @@
     gtk4.extraConfig.gtk-application-prefer-dark-theme=1;
   };
   home.sessionVariables.GTK_THEME = "Catppuccin-Frappe-Standard-Blue-Dark";
+
+  home.packages = with pkgs; [
+    catppuccin-gtk
+  ];
 }
