@@ -17,6 +17,6 @@
     ./fish.nix
     ./helix.nix
     ./foot.nix
-#    ./hyprland.nix
+    ./hyprland.nix
   ];
 }
