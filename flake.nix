@@ -12,6 +12,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixvim.url = github:pta2002/nixvim;
+    # TODO: remove once wlroots updated: https://github.com/hyprwm/Hyprland/issues/2120
     hyprland.url = "github:hyprwm/Hyprland/2df0d034bc4a18fafb3524401eeeceaa6b23e753";
   };
   

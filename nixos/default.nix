@@ -12,9 +12,9 @@
     ./configuration.nix
     ./hardware-configuration.nix
     ./sops.nix
-    ./gnome.nix
+    # ./gnome.nix
     ./fish.nix
     ./starship.nix
-    # ./hyprland.nix
+    ./hyprland.nix
   ];
 }
