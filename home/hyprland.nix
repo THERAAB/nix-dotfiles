@@ -3,7 +3,7 @@
   wayland.windowManager.hyprland = {
     enable = true;
     extraConfig = ''
-      bind = SUPER, Return, exec, foot
+      bind = ALT, Return, exec, foot
     '';
   };
 }
