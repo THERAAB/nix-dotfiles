@@ -17,7 +17,7 @@
         "firefox.desktop"
         "org.gnome.Nautilus.desktop"
         "vmware-view.desktop"
-        "foot.desktop"
+        "org.codeberg.dnkl.foot.desktop"
         "steam.desktop"
         "idea-community.desktop"
         "org.gnome.TextEditor.desktop"
