@@ -12,11 +12,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixvim.url = github:pta2002/nixvim;
-    # TODO: remove once wlroots updated: https://github.com/hyprwm/Hyprland/issues/2120
-    hyprland.url = "github:hyprwm/Hyprland/2df0d034bc4a18fafb3524401eeeceaa6b23e753";
   };
   
-  outputs = { self, nixpkgs, home-manager, impermanence, sops-nix, hyprland, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, impermanence, sops-nix, ... }@inputs:
    let
       inherit (self) outputs;
       forAllSystems = nixpkgs.lib.genAttrs [
@@ -59,7 +57,6 @@
               home-manager.users.raab = { pkgs, ... }: {
                 imports = [
                   impermanence.nixosModules.home-manager.impermanence
-                  hyprland.homeManagerModules.default
                   ./home
                   inputs.nixvim.homeManagerModules.nixvim
                 ];
