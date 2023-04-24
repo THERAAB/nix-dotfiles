@@ -6,13 +6,6 @@
       # Add overlays your own flake exports (from overlays and pkgs dir):
       outputs.overlays.modifications
       outputs.overlays.additions
-
-      # TODO: remove once vmware fixed: https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/virtualization/vmware-workstation/default.nix
-      (final: prev: {
-        vmware-horizon-client =
-          prev.vmware-horizon-client.override
-            { buildFHSEnv = prev.buildFHSEnvChroot; };
-      })
     ];
     # Configure your nixpkgs instance
     config = {
