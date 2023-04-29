@@ -29,5 +29,6 @@
     zoxide
     helix
     foot
+    gnome.ghex
   ];
 }
