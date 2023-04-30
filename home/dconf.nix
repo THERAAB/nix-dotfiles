@@ -9,7 +9,8 @@
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
       monospace-font-name = "JetBrainsMono Nerd Font 10";
-      gtk-theme="Catppuccin-Frappe-Standard-Blue-Dark";
+      gtk-theme = "Catppuccin-Frappe-Standard-Blue-Dark";
+      cursor-theme = "phinger-cursors-light";
     };
     "org/gnome/desktop/wm/preferences" = {
       button-layout = ""; # Hide close button on titlebar for apps like firefox

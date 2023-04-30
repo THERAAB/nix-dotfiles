@@ -12,9 +12,14 @@
     };
   };
   programs.hyprland.enable = true;
-  security.polkit.enable = true;
+
+  environment.variables.XDG_CURRENT_DESKTOP = "Hyprland";
+  environment.variables.XDG_SESSION_TYPE = "wayland";
+  environment.variables.XDG_SESSION_DESKTOP = "Hyprland";
+  environment.variables.GDK_BACKEND = "wayland,x11";
 
   environment.systemPackages = with pkgs; [
     dunst
+    swaybg
   ];
 }

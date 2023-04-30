@@ -4,6 +4,7 @@
     enable = true;
     extraConfig = ''
       monitor = DP-3,3440x1440@100,0x0,1
+      exec-once = hyprctl setcursor phinger-cursors-light 40
 
       bind = ALT, Return, exec, foot
       bind = ALT, r, exec, ulauncher-toggle
