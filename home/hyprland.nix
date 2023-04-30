@@ -3,6 +3,8 @@
   wayland.windowManager.hyprland = {
     enable = true;
     extraConfig = ''
+      monitor = DP-3,3440x1440@100,0x0,1
+
       bind = ALT, Return, exec, foot
       bind = ALT, r, exec, ulauncher-toggle
       bind = ALT SHIFT, Q, killactive
