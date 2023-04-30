@@ -13,6 +13,9 @@
   };
   programs.hyprland.enable = true;
 
+  programs.gamescope.enable = true;
+  programs.steam.gamescopeSession.enable = true;
+
   environment.variables.XDG_CURRENT_DESKTOP = "Hyprland";
   environment.variables.XDG_SESSION_TYPE = "wayland";
   environment.variables.XDG_SESSION_DESKTOP = "Hyprland";
