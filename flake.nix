@@ -12,9 +12,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixvim.url = github:pta2002/nixvim;
+    hyprland.url = "github:hyprwm/Hyprland";
   };
   
-  outputs = { self, nixpkgs, home-manager, impermanence, sops-nix, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, impermanence, sops-nix, hyprland, ... }@inputs:
    let
       inherit (self) outputs;
       forAllSystems = nixpkgs.lib.genAttrs [
@@ -57,6 +58,7 @@
               home-manager.users.raab = { pkgs, ... }: {
                 imports = [
                   impermanence.nixosModules.home-manager.impermanence
+                  hyprland.homeManagerModules.default
                   ./home
                   inputs.nixvim.homeManagerModules.nixvim
                 ];

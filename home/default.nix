@@ -10,7 +10,9 @@
     ./firefox.nix
     ./home.nix
     ./gtk.nix
-    ./gnome.nix
+    # ./gnome.nix
+    ./dconf.nix
+    ./hyprland.nix
     ./maestral.nix
     ./steam.nix
     ./nixvim.nix
