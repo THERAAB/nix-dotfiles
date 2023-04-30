@@ -19,7 +19,7 @@
     neovim
     gnome-text-editor
     gnome.nautilus
-    exa
+    exaq
     bat
     ripgrep
     tealdeer
