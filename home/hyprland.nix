@@ -57,4 +57,24 @@
 
     '';
   };
+  programs.waybar = {
+    enable = true;
+    package = pkgs.waybar.overrideAttrs (oldAttrs: {
+       mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
+    });
+    systemd.enable = true;
+    settings = {
+      mainBar = {
+        layer = "top";
+        position = "top";
+        height = 30;
+        output = [
+          "DP-3"
+        ];
+        modules-left = [ "wlr/workspaces" ];
+        modules-center = [ "clock" ];
+        modules-right = [ "temperature" "network" "battery" ];
+      };
+    };
+  };
 }

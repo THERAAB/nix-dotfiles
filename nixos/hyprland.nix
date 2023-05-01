@@ -24,5 +24,6 @@
   environment.systemPackages = with pkgs; [
     dunst
     swaybg
+    mpd
   ];
 }
