@@ -30,5 +30,6 @@
     helix
     foot
     gnome.ghex
+    pavucontrol
   ];
 }
