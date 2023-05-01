@@ -31,5 +31,6 @@
     foot
     gnome.ghex
     pavucontrol
+    rofi-wayland
   ];
 }

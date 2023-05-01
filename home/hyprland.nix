@@ -36,7 +36,8 @@
       exec-once = wl-paste -p --watch wl-copy -pc
 
       bind = ALT, Return, exec, foot
-      bind = ALT, r, exec, ulauncher-toggle
+      bind = ALT, r, exec, rofi -show run
+      bind = ALT, u, exec, ulauncher-toggle
       bind = ALT SHIFT, Q, killactive
 
       bind = ALT, 1, workspace, 1
@@ -67,13 +68,13 @@
       mainBar = {
         layer = "top";
         position = "top";
-        height = 30;
+        height = 25;
         output = [
           "DP-3"
         ];
         modules-left = [ "wlr/workspaces" ];
         modules-center = [ "clock" ];
-        modules-right = [ "temperature" "network" "battery" ];
+        modules-right = [ "temperature" "cpu" "memory" "tray" "pulseaudio" ];
       };
     };
   };
