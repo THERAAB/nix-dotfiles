@@ -33,7 +33,7 @@
       monitor = DP-3,3440x1440@100,0x0,1
       exec-once = hyprctl setcursor phinger-cursors-light 40
       exec-once = swaybg -i /nix/persist/nix-dotfiles/assets/wall.jpg -m fill
-      exec-once = systemctl --user start ulauncher.service
+      exec-once = wl-paste -p --watch wl-copy -pc
 
       bind = ALT, Return, exec, foot
       bind = ALT, r, exec, ulauncher-toggle
@@ -53,7 +53,7 @@
 
       # Move/resize windows with ALT + LMB/RMB and dragging
       bindm = ALT, mouse:272, movewindow
-      bindm = ALT, mouse:273, resizewindow
+      bindm = ALT, mouse:274, resizewindow
 
     '';
   };
