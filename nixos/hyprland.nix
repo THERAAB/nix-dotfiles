@@ -25,5 +25,6 @@
     dunst
     swaybg
     mpd
+    wl-clipboard
   ];
 }
