@@ -8,7 +8,8 @@
         border_size = 2
         gaps_in = 5
         gaps_out = 10
-        col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
+        col.active_border = rgba(eebebeee) rgba(ca9ee6ee) 45deg
+        col.inactive_border = rgba(303446ee)
         no_border_on_floating = true
         cursor_inactive_timeout = 15
         resize_on_border = true
@@ -17,6 +18,16 @@
       decoration {
         rounding = 3
         blur = false
+      }
+
+      input {
+        numlock_by_default = true
+        follow_mouse = 2
+      }
+
+      misc {
+        disable_hyprland_logo = true
+        disable_splash_rendering = true
       }
 
       monitor = DP-3,3440x1440@100,0x0,1
