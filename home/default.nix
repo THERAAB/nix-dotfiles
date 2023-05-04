@@ -12,7 +12,6 @@
     ./gtk.nix
     ./gnome.nix
     ./dconf.nix
-    # ./hyprland.nix
     ./maestral.nix
     ./steam.nix
     ./nixvim.nix

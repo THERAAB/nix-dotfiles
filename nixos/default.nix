@@ -13,7 +13,6 @@
     ./hardware-configuration.nix
     ./sops.nix
     ./gnome.nix
-    # ./hyprland.nix
     ./fish.nix
     ./starship.nix
   ];
