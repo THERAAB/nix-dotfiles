@@ -73,7 +73,7 @@
     "org/gnome/settings-daemon/plugins/power" = {
       sleep-inactive-ac-type = "nothing";
       power-button-action = "interactive";
-    }
+    };
     "org/gnome/settings-daemon/plugins/media-keys" = {
       logout = ["<Control><Alt>Page_Up"]; # Change Alt+Ctrl+Del hotkey so it doesn't get intercepted prior to VM
       custom-keybindings = [
