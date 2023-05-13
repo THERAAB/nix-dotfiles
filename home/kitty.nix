@@ -13,6 +13,7 @@
       window_padding_width = 20;
       linux_display_server = "wayland";
       background_opacity = "0.93";
+      enable_audio_bell = false;
     };
   };
 }
