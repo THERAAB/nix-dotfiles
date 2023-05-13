@@ -8,10 +8,10 @@
         "blur-my-shell@aunetx"
         "just-perfection-desktop@just-perfection"
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
-        "pop-shell@system76.com"
         "rounded-window-corners@yilozt"
         "activitiesworkspacename@ahmafi.ir"
         "unite@hardpixel.eu"
+        "forge@jmmaranan.com"
       ];
       favorite-apps = [
         "firefox.desktop"
@@ -22,6 +22,11 @@
         "idea-community.desktop"
         "org.gnome.TextEditor.desktop"
       ];
+    };
+    "org/gnome/shell/extensions/forge" = {
+      tiling-mode-enabled = true;
+      window-gap-hidden-on-single = true;
+      focus-border-toggle = true;
     };
     "org/gnome/shell/extensions/unite" = {
       extend-left-box = false;
@@ -35,12 +40,6 @@
       show-window-title = "never";
       show-window-buttons = "never";
       notifications-position = "center";
-    };
-    "org/gnome/shell/extensions/pop-shell" = {
-      tile-by-default = true;
-      active-hint = true;
-      smart-gaps = true;
-      hint-color-rgba = "#f4b8e4";
     };
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = [
@@ -168,8 +167,6 @@
     Service.ExecStart = toString (pkgs.writeShellScript "extra-dconf-gnome" ''
       ${pkgs.dconf}/bin/dconf write /org/gnome/mutter/dynamic-workspaces "false"
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/session/idle-delay "uint32 0"
-      ${pkgs.dconf}/bin/dconf write /org/gnome/shell/extensions/pop-shell/gap-outer "uint32 3"
-      ${pkgs.dconf}/bin/dconf write /org/gnome/shell/extensions/pop-shell/gap-inner "uint32 3"
     '');
   };
 
@@ -178,10 +175,10 @@
     gnomeExtensions.blur-my-shell
     gnomeExtensions.just-perfection
     gnomeExtensions.auto-move-windows
-    gnomeExtensions.pop-shell
     gnomeExtensions.rounded-window-corners
     gnomeExtensions.activities-workspace-name
     gnomeExtensions.unite
+    gnomeExtensions.forge
     gnome.gnome-tweaks
   ];
 }
