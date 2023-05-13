@@ -17,6 +17,6 @@
     ./nixvim.nix
     ./fish.nix
     ./helix.nix
-    ./foot.nix
+    ./kitty.nix
   ];
 }

@@ -28,7 +28,7 @@
     bottom
     zoxide
     helix
-    foot
+    kitty
     gnome.ghex
     pavucontrol
     rofi-wayland

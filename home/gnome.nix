@@ -17,7 +17,7 @@
         "firefox.desktop"
         "org.gnome.Nautilus.desktop"
         "vmware-view.desktop"
-        "org.codeberg.dnkl.foot.desktop"
+        "kitty.desktop"
         "steam.desktop"
         "idea-community.desktop"
         "org.gnome.TextEditor.desktop"
@@ -83,8 +83,8 @@
       ];
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
-      command = "foot";
-      name = "Launch foot";
+      command = "kitty";
+      name = "Launch kitty";
       binding = "<Alt>Return";
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
