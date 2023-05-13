@@ -16,7 +16,7 @@ My NixOS Desktop, with:
 - Local user declarative setup with [Home Manager](https://github.com/nix-community/home-manager)
 - [BTRFS](https://btrfs.wiki.kernel.org/index.php/Main_Page) file system (Copy on Write, Compression)
 - [Catppuccin](https://github.com/catppuccin/catppuccin) for theming 
-- [Pop Shell](https://github.com/pop-os/shell) for tiling window management
+- [Forge](https://github.com/forge-ext/forge) for tiling window management
 
 ## Maintenance
 These commands might help with some common maintenance tasks
