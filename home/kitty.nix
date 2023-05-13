@@ -14,6 +14,7 @@
       linux_display_server = "wayland";
       background_opacity = "0.93";
       enable_audio_bell = false;
+      confirm_os_window_close = 0;
     };
   };
 }

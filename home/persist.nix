@@ -18,7 +18,7 @@
       ".config/cef_user_data" # Steam
       ".config/JetBrains"
       ".config/ulauncher"
-      ".config/pop-shell"
+      ".config/forge"
       ".config/fish"
       ".cache/nvim"
       ".cache/mozilla"
