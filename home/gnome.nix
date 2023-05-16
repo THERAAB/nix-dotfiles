@@ -57,7 +57,6 @@
       show-apps-button = false;
       window-menu-take-screenshot-button = false;
       animation = 3;
-      activities-button = false;
     };
     "org/gnome/shell/extensions/blur-my-shell/overview" = {
       style-components = 3;

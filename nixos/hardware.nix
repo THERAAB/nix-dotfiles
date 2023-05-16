@@ -10,16 +10,18 @@
     cleanupInterval = "2h";
     configs = {
       "persist" = {
-        SUBVOLUME = "/nix/persist";
-        ALLOW_USERS = [ "raab" ];
-        TIMELINE_CREATE = true;
-        TIMELINE_CLEANUP = true;
-        TIMELINE_MIN_AGE = 7200; # 2 hours
-        TIMELINE_LIMIT_HOURLY = 10;
-        TIMELINE_LIMIT_DAILY = 10;
-        TIMELINE_LIMIT_WEEKLY = 4;
-        TIMELINE_LIMIT_MONTHLY = 0;
-        TIMELINE_LIMIT_YEARLY = 0;
+        subvolume = "/nix/persist";
+        extraConfig = ''
+          ALLOW_USERS="raab"
+          TIMELINE_CREATE=yes
+          TIMELINE_CLEANUP=yes
+          TIMELINE_MIN_AGE="7200" # 2 hours
+          TIMELINE_LIMIT_HOURLY="10"
+          TIMELINE_LIMIT_DAILY="10"
+          TIMELINE_LIMIT_WEEKLY="4"
+          TIMELINE_LIMIT_MONTHLY="0"
+          TIMELINE_LIMIT_YEARLY="0"
+        '';
       };
     };
   };
