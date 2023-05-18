@@ -31,6 +31,5 @@
     kitty
     gnome.ghex
     pavucontrol
-    rofi-wayland
   ];
 }
