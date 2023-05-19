@@ -129,7 +129,7 @@
     };
     "org/gnome/desktop/wm/preferences" = {
       num-workspaces = 4;
-      workspace-names = [ "   Browse" "󰍹   Work" "   Games" "  Other" ];
+      workspace-names = [ "   Browse" "󰍹   Work" "   Games" "  Code" ];
     };
     "org/gnome/desktop/wm/keybindings" = {
       switch-to-workspace-left = ["<Alt>Left"];
