@@ -14,6 +14,7 @@
       "files.autoSave" = "afterDelay";
       "telemetry.telemetryLevel" = "off";
       "editor.fontFamily" = "JetBrainsMono Nerd Font";
+      "editor.minimap.enabled" = false;
     };
     extensions = with pkgs.vscode-extensions; [
       catppuccin.catppuccin-vsc

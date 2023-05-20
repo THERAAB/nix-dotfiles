@@ -9,6 +9,7 @@
       "Documents"
       "Videos"
       ".mozilla"
+      ".config/Code"
       ".config/sops/age"
       ".config/openrazer"
       ".config/dconf"
