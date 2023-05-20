@@ -16,6 +16,7 @@
       "editor.fontFamily" = "JetBrainsMono Nerd Font";
       "editor.minimap.enabled" = false;
       "workbench.startupEditor" = "none";
+      "editor.fontLigatures" = true;
     };
     extensions = with pkgs.vscode-extensions; [
       catppuccin.catppuccin-vsc
