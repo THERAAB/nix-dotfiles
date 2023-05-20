@@ -15,6 +15,7 @@
       "telemetry.telemetryLevel" = "off";
       "editor.fontFamily" = "JetBrainsMono Nerd Font";
       "editor.minimap.enabled" = false;
+      "workbench.startupEditor" = "none";
     };
     extensions = with pkgs.vscode-extensions; [
       catppuccin.catppuccin-vsc
