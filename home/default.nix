@@ -18,6 +18,6 @@
     ./fish.nix
     ./helix.nix
     ./kitty.nix
-    ./vscode.nix
+    ./vscodium.nix
   ];
 }

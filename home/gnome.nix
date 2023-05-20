@@ -19,7 +19,7 @@
         "vmware-view.desktop"
         "kitty.desktop"
         "steam.desktop"
-        "code.desktop"
+        "codium.desktop"
         "org.gnome.TextEditor.desktop"
       ];
     };

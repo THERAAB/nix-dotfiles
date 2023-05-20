@@ -2,6 +2,7 @@
 {
   programs.vscode = {
     enable = true;
+    package = pkgs.vscodium;
     mutableExtensionsDir = false;
     userSettings = {
       "[nix]"."editor.tabSize" = 2;
@@ -18,6 +19,7 @@
       "workbench.startupEditor" = "none";
       "editor.fontLigatures" = true;
       "editor.cursorBlinking" = "smooth";
+      "explorer.confirmDelete" = false;
     };
     extensions = with pkgs.vscode-extensions; [
       catppuccin.catppuccin-vsc

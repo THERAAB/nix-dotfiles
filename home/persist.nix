@@ -9,7 +9,7 @@
       "Documents"
       "Videos"
       ".mozilla"
-      ".config/Code"
+      ".config/VSCodium"
       ".config/sops/age"
       ".config/openrazer"
       ".config/dconf"
