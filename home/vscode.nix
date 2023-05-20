@@ -17,6 +17,7 @@
       "editor.minimap.enabled" = false;
       "workbench.startupEditor" = "none";
       "editor.fontLigatures" = true;
+      "editor.cursorBlinking" = "smooth";
     };
     extensions = with pkgs.vscode-extensions; [
       catppuccin.catppuccin-vsc
