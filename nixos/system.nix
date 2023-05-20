@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 { 
   security.auditd.enable = true;
   nix.settings.allowed-users = [ "@wheel" ];

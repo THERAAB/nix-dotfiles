@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
   environment.shells = with pkgs; [ fish ];
   users.defaultUserShell = pkgs.fish;

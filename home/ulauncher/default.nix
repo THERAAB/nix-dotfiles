@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 let
   user-themes-dir = "/home/raab/.config/ulauncher/user-themes/";
   local-theme = "/nix/persist/nix-dotfiles/home/ulauncher/custom";

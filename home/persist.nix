@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ ... }:
 {
   home.persistence."/nix/persist/home/raab" = {
     allowOther = true;

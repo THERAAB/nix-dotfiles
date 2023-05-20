@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ ... }:
 {
   systemd.tmpfiles.rules = [
     "d  /nix/persist/home/raab                      -   raab    -   -   -"

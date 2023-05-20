@@ -1,17 +1,17 @@
 {
   description = "nix-dotfiles flake";
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs/nixos-unstable;
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager = {
-      url = github:nix-community/home-manager/master;
+      url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    impermanence.url = github:nix-community/impermanence;
+    impermanence.url = "github:nix-community/impermanence";
     sops-nix = {
-      url = github:Mic92/sops-nix;
+      url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixvim.url = github:pta2002/nixvim;
+    nixvim.url = "github:pta2002/nixvim";
   };
   
   outputs = { self, nixpkgs, home-manager, impermanence, sops-nix, ... }@inputs:
@@ -25,7 +25,7 @@
         "x86_64-darwin"
       ];
     in
-    rec {
+    {
       # Your custom packages
       # Acessible through 'nix build', 'nix shell', etc
       packages = forAllSystems (system:

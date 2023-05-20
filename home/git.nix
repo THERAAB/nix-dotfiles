@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ ... }:
 let
   local-config-dir = "/nix/persist/home/raab/.config";
 in

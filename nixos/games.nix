@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ ... }:
 { 
   hardware.opengl.enable = true;
   programs.steam.enable = true;

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
@@ -31,5 +31,8 @@
     kitty
     gnome.ghex
     pavucontrol
+    xorg.xlsclients
+    nil
+    neovim
   ];
 }

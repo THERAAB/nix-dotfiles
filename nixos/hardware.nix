@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {    
   services.fstrim.enable = true;
   services.irqbalance.enable = true;

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
   systemd.user.services.steam = {
     Install.WantedBy = [ "graphical-session.target" ];

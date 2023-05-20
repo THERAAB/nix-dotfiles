@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
   systemd.user = {
     services.headset-lights.Service.ExecStart = "${pkgs.headsetcontrol}/bin/headsetcontrol -l 0";

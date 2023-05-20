@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ ... }:
 {
   imports = [
     ./ulauncher
@@ -18,5 +18,6 @@
     ./fish.nix
     ./helix.nix
     ./kitty.nix
+    ./vscode.nix
   ];
 }

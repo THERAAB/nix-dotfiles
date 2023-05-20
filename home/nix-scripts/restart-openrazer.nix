@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ ... }:
 {
   systemd.user = {
     services.restart-openrazer.Service.ExecStart = "systemctl --user restart openrazer-daemon.service";
