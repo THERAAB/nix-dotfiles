@@ -11,7 +11,9 @@
       "nix.serverPath" = "nil";
       "extensions.experimental.affinity"."asvetliakov.vscode-neovim" = 1;
       "window.menuBarVisibility" = "compact";
-      "files.autoSave" = "on";
+      "files.autoSave" = "afterDelay";
+      "telemetry.telemetryLevel" = "off";
+      "editor.fontFamily" = "JetBrainsMono Nerd Font";
     };
     extensions = with pkgs.vscode-extensions; [
       catppuccin.catppuccin-vsc
