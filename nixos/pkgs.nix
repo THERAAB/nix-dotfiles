@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     killall
@@ -34,5 +33,6 @@
     xorg.xlsclients
     nil
     neovim
+    alejandra
   ];
 }

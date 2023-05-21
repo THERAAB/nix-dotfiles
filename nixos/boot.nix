@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{  
+{pkgs, ...}: {
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
     initrd.verbose = false;
@@ -19,7 +18,7 @@
         fi
       '';
     };
-    kernelParams = [ "quiet" "splash" "rd.systemd.show_status=false" "udev.log_priority=3" "boot.shell_on_fail" ];
+    kernelParams = ["quiet" "splash" "rd.systemd.show_status=false" "udev.log_priority=3" "boot.shell_on_fail"];
     consoleLogLevel = 0;
   };
 }

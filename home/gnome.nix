@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   dconf.settings = {
     "org/gnome/shell" = {
       disable-user-extensions = false;
@@ -68,7 +67,7 @@
       static-blur = false;
     };
     "org/gnome/shell/extensions/rounded-window-corners" = {
-      black-list = [ "ulauncher" ];
+      black-list = ["ulauncher"];
     };
     "org/gnome/settings-daemon/plugins/power" = {
       sleep-inactive-ac-type = "nothing";
@@ -129,7 +128,7 @@
     };
     "org/gnome/desktop/wm/preferences" = {
       num-workspaces = 4;
-      workspace-names = [ "   Browse" "󰍹   Work" "   Games" "  Code" ];
+      workspace-names = ["   Browse" "󰍹   Work" "   Games" "  Code"];
     };
     "org/gnome/desktop/wm/keybindings" = {
       switch-to-workspace-left = ["<Alt>Left"];
@@ -157,14 +156,14 @@
       picture-uri-dark = "file:///nix/persist/nix-dotfiles/assets/wall.jpg";
     };
     "org/gnome/shell/extensions/user-theme" = {
-       name = "Catppuccin-Frappe-Standard-Blue-Dark";
+      name = "Catppuccin-Frappe-Standard-Blue-Dark";
     };
   };
 
   # Extra dconf settings which can't be covered by dconf module due to timing or syntax issues
   systemd.user.services.extra-dconf-gnome = {
-    Install.WantedBy = [ "graphical-session.target" ];
-    Unit.After = [ "graphical-session.target" ];
+    Install.WantedBy = ["graphical-session.target"];
+    Unit.After = ["graphical-session.target"];
     Service.ExecStart = toString (pkgs.writeShellScript "extra-dconf-gnome" ''
       ${pkgs.dconf}/bin/dconf write /org/gnome/mutter/dynamic-workspaces "false"
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/session/idle-delay "uint32 0"

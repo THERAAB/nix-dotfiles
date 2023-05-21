@@ -1,5 +1,4 @@
-{ ... }:
-{
+{...}: {
   imports = [
     ./plymouth
     ./persist.nix

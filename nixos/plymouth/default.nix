@@ -1,6 +1,9 @@
-{ config, pkgs, ... }:
-let
-  theme = pkgs.runCommand "plymouth-theme" { } ''
+{
+  config,
+  pkgs,
+  ...
+}: let
+  theme = pkgs.runCommand "plymouth-theme" {} ''
     themeDir="$out/share/plymouth/themes/custom"
     mkdir -p $themeDir
     # Convert in case the input image is not PNG
@@ -21,9 +24,7 @@ let
     ScriptFile=$themeDir/custom.script
     " > $themeDir/custom.plymouth
   '';
-
-in
-{
+in {
   boot.plymouth = {
     enable = true;
     logo = pkgs.fetchurl {
@@ -37,6 +38,6 @@ in
       sha256 = "4+MWdqESKo9omd3q0WfRmnrd3Wpe2feiayMnQlA4izU=";
     };
     theme = "custom";
-    themePackages = [ theme ];
+    themePackages = [theme];
   };
 }

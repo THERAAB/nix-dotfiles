@@ -1,17 +1,16 @@
-{ pkgs, ... }:
-{    
+{pkgs, ...}: {
   services.fstrim.enable = true;
   services.irqbalance.enable = true;
   services.fwupd.enable = true;
   services.smartd.enable = true;
-  
+
   services.snapper = {
     snapshotInterval = "*:0/20";
     cleanupInterval = "2h";
     configs = {
       "persist" = {
         SUBVOLUME = "/nix/persist";
-        ALLOW_USERS = [ "raab" ];
+        ALLOW_USERS = ["raab"];
         TIMELINE_CREATE = true;
         TIMELINE_CLEANUP = true;
         TIMELINE_MIN_AGE = 7200; # 2 hours
@@ -30,7 +29,7 @@
   services.tailscale.enable = true;
   networking.firewall = {
     enable = true;
-    trustedInterfaces = [ "tailscale0" ];
+    trustedInterfaces = ["tailscale0"];
   };
 
   time.timeZone = "America/New_York";
@@ -42,7 +41,7 @@
   };
   services.printing = {
     enable = true;
-    drivers = [ pkgs.hplip ];
+    drivers = [pkgs.hplip];
   };
 
   # Enable sound with pipewire.
@@ -60,9 +59,9 @@
   hardware.bluetooth.enable = true;
   hardware.openrazer = {
     enable = true;
-    users = [ "raab" ];
+    users = ["raab"];
   };
-  
+
   # headsetcontrol udev rules
   services.udev.extraRules = "ACTION!=\"add|change\", GOTO=\"headset_end\"\n KERNEL==\"hidraw*\", SUBSYSTEM==\"hidraw\", ATTRS{idVendor}==\"046d\", ATTRS{idProduct}==\"0a5c\", TAG+=\"uaccess\"\n KERNEL==\"hidraw*\", SUBSYSTEM==\"hidraw\", ATTRS{idVendor}==\"046d\", ATTRS{idProduct}==\"0a89\", TAG+=\"uaccess\"\n KERNEL==\"hidraw*\", SUBSYSTEM==\"hidraw\", ATTRS{idVendor}==\"046d\", ATTRS{idProduct}==\"0a5b\", TAG+=\"uaccess\"\n KERNEL==\"hidraw*\", SUBSYSTEM==\"hidraw\", ATTRS{idVendor}==\"046d\", ATTRS{idProduct}==\"0a87\", TAG+=\"uaccess\"\n KERNEL==\"hidraw*\", SUBSYSTEM==\"hidraw\", ATTRS{idVendor}==\"046d\", ATTRS{idProduct}==\"0ab5\", TAG+=\"uaccess\"\n LABEL=\"headset_end\"";
 }

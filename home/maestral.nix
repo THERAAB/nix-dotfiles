@@ -1,7 +1,6 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   systemd.user.services.maestral = {
-    Install.WantedBy = [ "default.target" ];
+    Install.WantedBy = ["default.target"];
     Service = {
       Type = "notify";
       ExecStart = "${pkgs.maestral}/bin/maestral start -f";

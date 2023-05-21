@@ -1,10 +1,9 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   gtk = {
     enable = true;
     theme = {
       name = "Catppuccin-Frappe-Standard-Blue-Dark";
-       package = pkgs.catppuccin-gtk;
+      package = pkgs.catppuccin-gtk;
     };
     iconTheme = {
       name = "Papirus-Dark";
@@ -18,8 +17,8 @@
       package = pkgs.phinger-cursors;
       size = 40;
     };
-    gtk3.extraConfig.gtk-application-prefer-dark-theme=1;
-    gtk4.extraConfig.gtk-application-prefer-dark-theme=1;
+    gtk3.extraConfig.gtk-application-prefer-dark-theme = 1;
+    gtk4.extraConfig.gtk-application-prefer-dark-theme = 1;
   };
   home.sessionVariables.GTK_THEME = "Catppuccin-Frappe-Standard-Blue-Dark";
   home.sessionVariables.XCURSOR_THEME = "phinger-cursors-light";

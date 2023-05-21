@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   systemd.user = {
     services.headset-lights.Service.ExecStart = "${pkgs.headsetcontrol}/bin/headsetcontrol -l 0";
     timers.headset-lights = {
@@ -7,7 +6,7 @@
         Unit = "headset-lights.service";
         OnCalendar = "*:0/1"; # minutely
       };
-      Install.WantedBy = [ "timers.target" ];
+      Install.WantedBy = ["timers.target"];
     };
   };
 }

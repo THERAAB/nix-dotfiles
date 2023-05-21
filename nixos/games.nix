@@ -1,8 +1,7 @@
-{ ... }:
-{ 
+{...}: {
   hardware.opengl.enable = true;
   programs.steam.enable = true;
-  programs.gamemode = { 
+  programs.gamemode = {
     enable = true;
     settings = {
       general = {

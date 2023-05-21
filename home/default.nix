@@ -1,5 +1,4 @@
-{ ... }:
-{
+{...}: {
   imports = [
     ./ulauncher
     ./nix-scripts
