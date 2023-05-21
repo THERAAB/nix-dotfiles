@@ -27,6 +27,7 @@
       "editor.cursorBlinking" = "smooth";
       "explorer.confirmDelete" = false;
       "editor.defaultFormatter" = "esbenp.prettier-vscode";
+      "workbench.iconTheme" = "vscode-icons";
     };
     extensions = with pkgs.vscode-extensions; [
       catppuccin.catppuccin-vsc
@@ -34,6 +35,7 @@
       asvetliakov.vscode-neovim
       kamadorueda.alejandra
       esbenp.prettier-vscode
+      vscode-icons-team.vscode-icons
     ];
   };
 }
