@@ -13,7 +13,6 @@
     ./dconf.nix
     ./maestral.nix
     ./steam.nix
-    ./nixvim.nix
     ./fish.nix
     ./helix.nix
     ./kitty.nix
