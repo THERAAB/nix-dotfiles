@@ -30,6 +30,8 @@
       "workbench.iconTheme" = "vscode-icons";
       "files.trimFinalNewlines" = true;
       "vsicons.dontShowNewVersionMessage" = true;
+      "window.openFoldersInNewWindow" = "on";
+      "search.defaultViewMode" = "tree";
     };
     extensions = with pkgs.vscode-extensions; [
       catppuccin.catppuccin-vsc
