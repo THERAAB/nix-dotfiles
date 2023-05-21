@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
+    # extraModulePackages = with pkgs.linuxPackages_latest; [zenpower];
     initrd.verbose = false;
     loader.efi.canTouchEfiVariables = true;
     loader.grub = {

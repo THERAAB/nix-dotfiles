@@ -23,8 +23,10 @@
     };
   };
 
-  networking.hostName = "nix-desktop"; # Define your hostname.
-  networking.networkmanager.enable = true;
+  networking = {
+    hostName = "nix-desktop"; # Define your hostname.
+    networkmanager.enable = true;
+  };
 
   services.tailscale.enable = true;
   networking.firewall = {
@@ -46,9 +48,10 @@
 
   # Enable sound with pipewire.
   sound.enable = true;
-  hardware.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  security.polkit.enable = true;
+  security = {
+    rtkit.enable = true;
+    polkit.enable = true;
+  };
   services.pipewire = {
     enable = true;
     alsa.enable = true;
@@ -56,10 +59,14 @@
     pulse.enable = true;
   };
 
-  hardware.bluetooth.enable = true;
-  hardware.openrazer = {
-    enable = true;
-    users = ["raab"];
+  hardware = {
+    enableAllFirmware = true;
+    pulseaudio.enable = false;
+    bluetooth.enable = true;
+    openrazer = {
+      enable = true;
+      users = ["raab"];
+    };
   };
 
   # headsetcontrol udev rules
