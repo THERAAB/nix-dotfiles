@@ -28,6 +28,7 @@
       "explorer.confirmDelete" = false;
       "editor.defaultFormatter" = "esbenp.prettier-vscode";
       "workbench.iconTheme" = "vscode-icons";
+      "files.trimFinalNewlines" = true;
     };
     extensions = with pkgs.vscode-extensions; [
       catppuccin.catppuccin-vsc
