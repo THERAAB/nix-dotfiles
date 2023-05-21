@@ -29,6 +29,7 @@
       "editor.defaultFormatter" = "esbenp.prettier-vscode";
       "workbench.iconTheme" = "vscode-icons";
       "files.trimFinalNewlines" = true;
+      "vsicons.dontShowNewVersionMessage" = true;
     };
     extensions = with pkgs.vscode-extensions; [
       catppuccin.catppuccin-vsc
@@ -37,6 +38,7 @@
       kamadorueda.alejandra
       esbenp.prettier-vscode
       vscode-icons-team.vscode-icons
+      christian-kohler.path-intellisense
     ];
   };
 }
