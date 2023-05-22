@@ -11,7 +11,6 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixvim.url = "github:pta2002/nixvim";
   };
 
   outputs = {
@@ -68,7 +67,6 @@
               imports = [
                 impermanence.nixosModules.home-manager.impermanence
                 ./home
-                inputs.nixvim.homeManagerModules.nixvim
               ];
             };
           }
