@@ -25,7 +25,6 @@
     procs
     du-dust
     bottom
-    zoxide
     helix
     kitty
     gnome.ghex
