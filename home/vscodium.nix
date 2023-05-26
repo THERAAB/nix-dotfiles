@@ -32,6 +32,7 @@
       "vsicons.dontShowNewVersionMessage" = true;
       "search.defaultViewMode" = "tree";
       "alejandra.program" = "alejandra";
+      "editor.lineNumbers" = "relative";
     };
     extensions = with pkgs.vscode-extensions; [
       catppuccin.catppuccin-vsc

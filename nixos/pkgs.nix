@@ -31,5 +31,6 @@
     nil
     neovim
     alejandra
+    wl-clipboard
   ];
 }

@@ -17,5 +17,6 @@
     ./helix.nix
     ./kitty.nix
     ./vscodium.nix
+    ./nvim.nix
   ];
 }
