@@ -5,7 +5,6 @@
   # For GNOME based apps
   programs.dconf.enable = true;
 
-  # Neovim
   environment.variables.EDITOR = "hx";
 
   fonts.fonts = with pkgs; [

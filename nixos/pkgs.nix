@@ -15,7 +15,6 @@
     ssh-to-age
     libnotify
     wmctrl
-    neovim
     gnome-text-editor
     gnome.nautilus
     bat
