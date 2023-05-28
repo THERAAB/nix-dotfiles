@@ -33,7 +33,7 @@
       ".vmware"
       ".local/share/org.gnome.TextEditor"
       ".local/share/maestral"
-      ".local/share/atiun"
+      ".local/share/atuin"
       ".local/share/python_keyring" # Maestral
       ".local/state/wireplumber"
       ".local/share/Steam"
