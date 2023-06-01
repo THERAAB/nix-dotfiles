@@ -26,6 +26,10 @@
         force = true;
       };
       settings = {
+        "browser.toolbars.bookmarks.visibility" = "never";
+        "browser.aboutConfig.showWarning" = "false";
+        "browser.urlbar.maxRichResults" = 30;
+        "layout.spellcheckDefault" = 2;
       };
     };
   };
