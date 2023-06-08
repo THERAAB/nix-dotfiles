@@ -32,5 +32,6 @@
     neovim
     alejandra
     wl-clipboard
+    jellyfin-media-player
   ];
 }
