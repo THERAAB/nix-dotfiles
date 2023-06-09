@@ -42,6 +42,8 @@
       ".local/share/icons"
       ".local/share/applications"
       ".local/share/ulauncher"
+      ".local/share/Jellyfin Media Player"
+      ".local/share/jellyfinmediaplayer"
       ".local/share/fish"
       ".local/share/zoxide"
       ".java" # IntelliJ
