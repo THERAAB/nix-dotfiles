@@ -33,6 +33,7 @@
       "search.defaultViewMode" = "tree";
       "alejandra.program" = "alejandra";
       "editor.lineNumbers" = "relative";
+      "explorer.confirmDragAndDrop" = false;
     };
     extensions = with pkgs.vscode-extensions; [
       catppuccin.catppuccin-vsc
