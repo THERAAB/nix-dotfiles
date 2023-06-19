@@ -23,7 +23,7 @@ if you're not me for 3 reasons:
 ```console
 nix-shell -p git
 sudo git clone https://github.com/THERAAB/nix-dotfiles instructions
-gnome-text-editor instructions/wipe-disk-and-install.sh &
+gnome-text-editor instructions/hosts/nix-desktop/wipe-disk-and-install.sh &
 ```
 
 I recommend copy-pasting what commands you need because this script is dangerous (will wipe entire system). It also
@@ -35,7 +35,7 @@ expects you to have 4 nvme devices to be run in RAID 0 on btrfs
 sudo tailscale up
 ```
 
-- Update tailscale IP in share/network.properties.nix
+- Update tailscale IP in nix-homelab share/network.properties.nix
 
 ### Setup GitHub with SSH
 

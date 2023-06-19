@@ -9,7 +9,7 @@ TODO: Update this section for Zenbook
 This repo contains some customizations for my specific setup, and you likely won't be able to follow these instructions exactly
 if you're not me for 3 reasons:
 
-- You probably don't have my hardware (Ryzen 7700X, Radeon 7900XTX, ASRock X670E Pro RS, 4 nvme)
+- You probably don't have my hardware (An Asus Zenbook 14 Q409ZA)
 - You probably don't have my sops keys (shoutout to my FBI agent!)
 - You likely won't have same IPs and network, firewall (pfSense), and tailscale setup
 
@@ -25,11 +25,11 @@ if you're not me for 3 reasons:
 ```console
 nix-shell -p git
 sudo git clone https://github.com/THERAAB/nix-dotfiles instructions
-gnome-text-editor instructions/wipe-disk-and-install.sh &
+gnome-text-editor instructions/hosts/nix-zenbook/wipe-disk-and-install.sh &
 ```
 
 I recommend copy-pasting what commands you need because this script is dangerous (will wipe entire system). It also
-expects you to have 4 nvme devices to be run in RAID 0 on btrfs
+expects you to have one 1TB NVME drive
 
 ### Reboot, activate tailscale
 
@@ -37,7 +37,7 @@ expects you to have 4 nvme devices to be run in RAID 0 on btrfs
 sudo tailscale up
 ```
 
-- Update tailscale IP in share/network.properties.nix
+- Update tailscale IP in nix-homelab share/network.properties.nix
 
 ### Setup GitHub with SSH
 
