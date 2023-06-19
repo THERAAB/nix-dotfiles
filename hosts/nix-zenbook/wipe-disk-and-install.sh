@@ -76,6 +76,8 @@ sudo btrfs subvolume create .snapshots
 sudo git clone https://github.com/THERAAB/nix-dotfiles /mnt/nix/persist/nix-dotfiles
 cd /mnt/nix/persist/nix-dotfiles
 
+# !! TODO: Before nix-install we need to fix audio driver
+
 # Install NixOs
 sudo nixos-install --flake .#nix-desktop
 
