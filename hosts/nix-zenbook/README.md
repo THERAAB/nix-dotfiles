@@ -1,8 +1,10 @@
-# Nix-Desktop
+# Nix-Zenbook
 
-A [NixOS](https://nixos.org/) configuration repository for my desktop dotfiles.
+A [NixOS](https://nixos.org/) configuration repository for my zenbook.
 
 ## Installation
+
+TODO: Update this section for Zenbook
 
 This repo contains some customizations for my specific setup, and you likely won't be able to follow these instructions exactly
 if you're not me for 3 reasons:
@@ -61,4 +63,4 @@ nix-store --optimise
 sudo reboot
 ```
 
-Check [manual-setup.md](https://github.com/THERAAB/nix-dotfiles/blob/main/hosts/nix-desktop/manual-setup.md) for specific manual app setups
+Check [manual-setup.md](https://github.com/THERAAB/nix-dotfiles/blob/main/hosts/nix-zenbook/manual-setup.md) for specific manual app setups
