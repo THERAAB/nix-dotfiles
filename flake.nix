@@ -36,7 +36,7 @@
       system: let
         pkgs = nixpkgs.legacyPackages.${system};
       in
-        import ./lib/pkgs {inherit pkgs;}
+        import ./share/lib/pkgs {inherit pkgs;}
     );
     # Devshell for bootstrapping
     # Acessible through 'nix develop' or 'nix-shell' (legacy)
@@ -44,18 +44,18 @@
       system: let
         pkgs = nixpkgs.legacyPackages.${system};
       in
-        import ./shell.nix {inherit pkgs;}
+        import ./share/shell.nix {inherit pkgs;}
     );
     # Your custom packages and modifications, exported as overlays
-    overlays = import ./lib/overlays;
+    overlays = import ./share/lib/overlays;
     nixosConfigurations = {
       nix-desktop = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [
           impermanence.nixosModules.impermanence
-          ./nixos
+          ./share/nixos
+          ./hosts/nix-desktop/nixos
           sops-nix.nixosModules.sops
-
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
@@ -66,7 +66,32 @@
             home-manager.users.raab = {pkgs, ...}: {
               imports = [
                 impermanence.nixosModules.home-manager.impermanence
-                ./home
+                ./share/home
+                ./hosts/nix-desktop/home
+              ];
+            };
+          }
+        ];
+      };
+      nix-zenbook = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs outputs;};
+        modules = [
+          impermanence.nixosModules.impermanence
+          ./share/nixos
+          ./hosts/nix-zenbook/nixos
+          sops-nix.nixosModules.sops
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.extraSpecialArgs = {
+              inherit inputs self;
+            };
+            home-manager.users.raab = {pkgs, ...}: {
+              imports = [
+                impermanence.nixosModules.home-manager.impermanence
+                ./share/home
+                ./hosts/nix-zenbook/home
               ];
             };
           }

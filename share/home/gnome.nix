@@ -152,8 +152,8 @@
       clock-format = "12h";
     };
     "org/gnome/desktop/background" = {
-      picture-uri = "file:///nix/persist/nix-dotfiles/assets/wall.jpg";
-      picture-uri-dark = "file:///nix/persist/nix-dotfiles/assets/wall.jpg";
+      picture-uri = "file:///nix/persist/nix-dotfiles/share/assets/wall.jpg";
+      picture-uri-dark = "file:///nix/persist/nix-dotfiles/share/assets/wall.jpg";
     };
     "org/gnome/shell/extensions/user-theme" = {
       name = "Catppuccin-Frappe-Standard-Blue-Dark";
