@@ -20,6 +20,12 @@ My NixOS Machines, with:
 - [Catppuccin](https://github.com/catppuccin/catppuccin) for theming
 - [Forge](https://github.com/forge-ext/forge) for tiling window management
 
+## Machine Specific documentation
+
+[Nix-Desktop] (https://github.com/THERAAB/nix-dotfiles/blob/main/hosts/nix-desktop/README.md)
+
+[Nix-Zenbook] (https://github.com/THERAAB/nix-dotfiles/blob/main/hosts/nix-zenbook/README.md)
+
 ## Maintenance
 
 These commands might help with some common maintenance tasks
