@@ -9,7 +9,7 @@ TODO: Update this section for Zenbook
 This repo contains some customizations for my specific setup, and you likely won't be able to follow these instructions exactly
 if you're not me for 3 reasons:
 
-- You probably don't have my hardware (An Asus Zenbook 14 Q409ZA)
+- You probably don't have my hardware (An [Asus Zenbook 14 Q409ZA](https://www.bestbuy.com/site/asus-zenbook-14-2-8k-oled-laptop-intel-evo-platform-12th-gen-core-i5-processor-8gb-memory-256gb-ssd-ponder-blue/6494331.p?skuId=6494331))
 - You probably don't have my sops keys (shoutout to my FBI agent!)
 - You likely won't have same IPs and network, firewall (pfSense), and tailscale setup
 
