@@ -12,5 +12,7 @@
     ./kitty.nix
     ./vscodium.nix
     ./nvim.nix
+    ./persist.nix
+    ./pkgs.nix
   ];
 }

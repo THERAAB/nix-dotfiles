@@ -9,5 +9,7 @@
     ./gnome.nix
     ./fish.nix
     ./starship.nix
+    ./persist.nix
+    ./pkgs.nix
   ];
 }
