@@ -11,5 +11,6 @@
     ./starship.nix
     ./persist.nix
     ./pkgs.nix
+    ./boot.nix
   ];
 }
