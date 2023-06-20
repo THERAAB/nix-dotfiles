@@ -35,8 +35,6 @@ expects you to have 4 nvme devices to be run in RAID 0 on btrfs
 sudo tailscale up
 ```
 
-- Update tailscale IP in nix-homelab share/network.properties.nix
-
 ### Setup GitHub with SSH
 
 Place sops keys from [Bitwarden](https://vault.bitwarden.com/#/login)

@@ -35,8 +35,6 @@ expects you to have one 1TB NVME drive
 sudo tailscale up
 ```
 
-- Update tailscale IP in nix-homelab share/network.properties.nix
-
 ### Setup GitHub with SSH
 
 Place sops keys from [Bitwarden](https://vault.bitwarden.com/#/login)

@@ -8,7 +8,6 @@
     "Z  /nix/persist/nix-homelab                    700 raab    -   -   -"
     "Z  /nix/persist/home/raab                      740 raab    -   -   -"
     "Z  /nix/persist/home/raab/.ssh                 700 raab    -   -   -"
-    "Z  /games                                      700 raab    -   -   -"
     "Z  /dropbox                                    700 raab    -   -   -"
   ];
   programs.fuse.userAllowOther = true;
