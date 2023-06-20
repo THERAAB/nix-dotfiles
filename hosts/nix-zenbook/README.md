@@ -4,8 +4,6 @@ A [NixOS](https://nixos.org/) configuration repository for my zenbook.
 
 ## Installation
 
-TODO: Update this section for Zenbook
-
 This repo contains some customizations for my specific setup, and you likely won't be able to follow these instructions exactly
 if you're not me for 3 reasons:
 
