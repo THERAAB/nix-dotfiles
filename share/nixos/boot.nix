@@ -9,13 +9,6 @@
       configurationLimit = 10;
       gfxmodeEfi = "text";
       splashImage = null;
-      extraConfig = ''
-        if keystatus --shift ; then
-          set timeout=-1
-        else
-          set timeout=0
-        fi
-      '';
     };
   };
 }
