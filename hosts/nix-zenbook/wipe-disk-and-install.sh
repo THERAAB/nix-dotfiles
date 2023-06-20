@@ -17,8 +17,6 @@ sudo parted /dev/nvme0n1 -- mkpart ESP fat32 1MB 512MB
 sudo parted /dev/nvme0n1 -- set 1 esp on
 sudo parted /dev/nvme0n1 -- mkpart primary btrfs 512MB 100%
 
-# TODO: make swap with label "swap"
-
 # Format /dev/nvme0n1 boot fs
 sudo mkfs.fat -F 32 -n BOOT /dev/nvme0n1p1
 # Create btrfs volume on /dev/nvme0n1

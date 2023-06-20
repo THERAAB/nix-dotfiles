@@ -53,7 +53,10 @@
   };
 
   swapDevices = [
-    {device = "/dev/disk/by-label/swap";}
+    {
+      device = "/var/lib/swapfile";
+      size = 8 * 1024;
+    }
   ];
 
   networking.useDHCP = lib.mkDefault true;
