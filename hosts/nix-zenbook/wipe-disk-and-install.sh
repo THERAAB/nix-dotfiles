@@ -57,7 +57,8 @@ cd /mnt/nix/persist
 sudo git clone https://github.com/THERAAB/nix-dotfiles /mnt/nix/persist/nix-dotfiles
 cd /mnt/nix/persist/nix-dotfiles
 
-# TODO: Before nix-install we need to place ssdt-csc3551 in /boot or /?
+# Before nix-install we need to place ssdt-csc3551 in /boot to fix audio
+sudo cp /mnt/nix/persist/nix-dotfiles/hosts/nix-zenbook/nixos/ssdt-csc3551.aml /mnt/boot
 
 # Install NixOs
 sudo nixos-install --flake .#nix-zenbook
