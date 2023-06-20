@@ -1,4 +1,4 @@
 update wipe-disk-and-install.sh
-deal with .aml file
+deal with ssdt file
 power management
 address errors in journalctl
