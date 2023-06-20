@@ -35,5 +35,6 @@
     acpica-tools
     gparted
     acpi
+    vim
   ];
 }
