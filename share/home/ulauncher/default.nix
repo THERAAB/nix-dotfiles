@@ -1,6 +1,6 @@
 {pkgs, ...}: let
   user-themes-dir = "/home/raab/.config/ulauncher/user-themes/";
-  local-theme = "/nix/persist/nix-dotfiles/home/ulauncher/custom";
+  local-theme = "/nix/persist/nix-dotfiles/share/home/ulauncher/custom";
 in {
   systemd.user.services.ulauncher = {
     Install.WantedBy = ["graphical-session.target"];
