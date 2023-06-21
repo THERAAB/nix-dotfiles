@@ -9,5 +9,9 @@
     "org/gnome/desktop/interface" = {
       show-battery-percentage = true;
     };
+    "org/gnome/desktop/background" = {
+      picture-uri = "file:///nix/persist/nix-dotfiles/hosts/nix-zenbook/assets/wall.jpg";
+      picture-uri-dark = "file:///nix/persist/nix-dotfiles/hosts/nix-zenbook/assets/wall.jpg";
+    };
   };
 }

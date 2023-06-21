@@ -5,5 +5,6 @@
     ./pkgs.nix
     ./maestral.nix
     ./steam.nix
+    ./gnome.nix
   ];
 }
