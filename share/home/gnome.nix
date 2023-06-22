@@ -143,7 +143,6 @@
       close = ["<Shift><Alt>q"];
     };
     "org/gnome/desktop/interface" = {
-      enable-hot-corners = false;
       clock-format = "12h";
       clock-show-weekday = true;
     };
