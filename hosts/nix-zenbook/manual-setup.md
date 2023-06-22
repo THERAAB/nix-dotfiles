@@ -19,11 +19,6 @@ http://localhost:631/ > Administration > Add printer
 ```console
 sudo updatedb
 ```
-
-### Gnome Settings
-
-Set monitor refresh rate to 90Hz?
-
 ### IntelliJ
 
 - Set to new UI
