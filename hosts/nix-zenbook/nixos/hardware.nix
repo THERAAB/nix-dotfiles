@@ -1,5 +1,12 @@
 {...}: {
-  hardware.cpu.intel.updateMicrocode = true;
+  hardware = {
+    cpu.intel.updateMicrocode = true;
+    bluetooth.settings = {
+      General = {
+        Experimental = true;
+      };
+    };
+  };
   networking.hostName = "nix-zenbook";
   powerManagement = {
     enable = true;
