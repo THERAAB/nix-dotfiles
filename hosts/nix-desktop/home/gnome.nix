@@ -8,7 +8,7 @@
       enable-hot-corners = false;
     };
     "org/gnome/shell/extensions/blur-my-shell/panel" = {
-      static-blur = true;
+      static-blur = false;
     };
   };
 }
