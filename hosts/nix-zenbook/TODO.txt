@@ -1,4 +1,1 @@
-update wipe-disk-and-install.sh to deal with ssdt file
-power management
-address errors in journalctl
 touchpad defaults & gestures
