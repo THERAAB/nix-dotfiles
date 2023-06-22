@@ -1,3 +1,2 @@
 touchpad gestures
 power
-fractional scaling
