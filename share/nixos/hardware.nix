@@ -4,7 +4,10 @@
   services.fwupd.enable = true;
   services.smartd.enable = true;
 
-  networking.networkmanager.enable = true;
+  networking.networkmanager = {
+    enable = true;
+    wifi.powersave = true;
+  };
   services.tailscale.enable = true;
   networking.firewall = {
     enable = true;
