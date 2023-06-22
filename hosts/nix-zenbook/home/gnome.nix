@@ -12,6 +12,9 @@
     "org/gnome/desktop/interface" = {
       enable-hot-corners = true;
     };
+    "org/gnome/shell/extensions/blur-my-shell/panel" = {
+      static-blur = true;
+    };
     "org/gnome/shell/extensions/gestureImprovements" = {
       enable-window-manipulation-gesture = false;
       enable-alttab-gesture = false;

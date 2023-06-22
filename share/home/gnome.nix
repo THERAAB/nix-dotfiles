@@ -63,7 +63,6 @@
     "org/gnome/shell/extensions/blur-my-shell/panel" = {
       blur = true;
       sigma = 0;
-      static-blur = false;
     };
     "org/gnome/shell/extensions/rounded-window-corners" = {
       black-list = ["ulauncher"];
