@@ -28,7 +28,7 @@
       settings = {
         "browser.toolbars.bookmarks.visibility" = "never";
         "browser.aboutConfig.showWarning" = "false";
-        "browser.urlbar.maxRichResults" = 30;
+        "browser.urlbar.maxRichResults" = 20;
         "layout.spellcheckDefault" = 2;
       };
     };
