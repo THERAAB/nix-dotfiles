@@ -1,1 +1,3 @@
 touchpad defaults & gestures
+fonts
+gnome keyring
