@@ -6,6 +6,5 @@
     ./maestral.nix
     ./steam.nix
     ./gnome.nix
-    ./kitty.nix
   ];
 }

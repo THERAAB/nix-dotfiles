@@ -3,6 +3,7 @@
     enable = true;
     font = {
       name = "JetBrainsMono Nerd Font";
+      size = 11;
     };
     shellIntegration.enableFishIntegration = true;
     theme = "Catppuccin-Frappe";
