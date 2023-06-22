@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    jetbrains.idea-community
     gimp
     vmware-horizon-client
     discord

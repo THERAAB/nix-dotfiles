@@ -5,5 +5,6 @@
     protonup
     razergenie
     snapper-gui
+    jetbrains.idea-community
   ];
 }

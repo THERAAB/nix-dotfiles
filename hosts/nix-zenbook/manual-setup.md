@@ -19,12 +19,6 @@ http://localhost:631/ > Administration > Add printer
 ```console
 sudo updatedb
 ```
-### IntelliJ
-
-- Set to new UI
-- Use Catppuccin Frappe Theme
-- Settings -> Tools -> Terminal -> Disable Shell Integration
-
 ### nix-homelab
 
 ```console
