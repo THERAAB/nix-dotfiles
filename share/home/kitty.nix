@@ -1,9 +1,9 @@
-{...}: {
+{lib, ...}: {
   programs.kitty = {
     enable = true;
     font = {
       name = "JetBrainsMono Nerd Font";
-      size = 11;
+      size = lib.mkDefault 12;
     };
     shellIntegration.enableFishIntegration = true;
     theme = "Catppuccin-Frappe";
