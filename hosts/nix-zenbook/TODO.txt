@@ -1,3 +1,4 @@
 touchpad gestures
 microphone
 power
+fractional scaling
