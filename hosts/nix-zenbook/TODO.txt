@@ -1,2 +1,2 @@
-touchpad defaults & gestures
+touchpad gestures
 microphone
