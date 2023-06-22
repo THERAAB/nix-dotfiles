@@ -26,6 +26,7 @@
     Unit.After = ["graphical-session.target"];
     Service.ExecStart = toString (pkgs.writeShellScript "extra-dconf" ''
       ${pkgs.dconf}/bin/dconf write /org/gnome/shell/weather/locations "[<(uint32 2, <('New York City, Central Park', 'KNYC', false, [(0.71180344078725644, -1.2909618758762367)], @a(dd) [])>)>]"
+      ${pkgs.dconf}/bin/dconf write /org/gnome/mutter/experimental-features "['scale-monitor-framebuffer']"
     '');
   };
 }
