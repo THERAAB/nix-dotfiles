@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   dconf.settings = {
     "org/gnome/TextEditor" = {
       highlight-current-line = true;
@@ -7,7 +11,7 @@
     };
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
-      monospace-font-name = "JetBrainsMono Nerd Font 10";
+      monospace-font-name = lib.mkDefault "JetBrainsMono Nerd Font 10";
       gtk-theme = "Catppuccin-Frappe-Standard-Blue-Dark";
       cursor-theme = "phinger-cursors-light";
     };
