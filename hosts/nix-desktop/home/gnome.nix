@@ -4,5 +4,8 @@
       picture-uri = "file:///nix/persist/nix-dotfiles/hosts/nix-desktop/assets/wall.jpg";
       picture-uri-dark = "file:///nix/persist/nix-dotfiles/hosts/nix-desktop/assets/wall.jpg";
     };
+    "org/gnome/desktop/interface" = {
+      enable-hot-corners = false;
+    };
   };
 }
