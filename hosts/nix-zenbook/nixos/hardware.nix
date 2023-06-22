@@ -8,9 +8,9 @@
     };
   };
   networking.hostName = "nix-zenbook";
-  #powerManagement = {
-  #  enable = true;
-  #  powertop.enable = true;
-  #};
+  powerManagement = {
+    enable = true;
+    scsiLinkPolicy = "med_power_with_dipm";
+  };
   services.thermald.enable = true;
 }
