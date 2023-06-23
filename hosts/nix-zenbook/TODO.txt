@@ -1,3 +1,2 @@
-touchpad gestures
 power & thermals
 ulauncher favorites
