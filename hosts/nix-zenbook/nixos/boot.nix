@@ -18,6 +18,7 @@
     ];
     extraModprobeConfig = ''
       options iwlwifi power_save=1
+      options iwlwifi uapsd_disable=0
     '';
   };
 }
