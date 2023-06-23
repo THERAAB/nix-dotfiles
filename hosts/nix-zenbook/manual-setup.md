@@ -19,6 +19,16 @@ http://localhost:631/ > Administration > Add printer
 ```console
 sudo updatedb
 ```
+
+### Forge
+
+Disable Split Direction Hint
+Change Colors
+
+### Ulauncher
+
+Set theme & number of favorites
+
 ### nix-homelab
 
 ```console
