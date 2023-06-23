@@ -23,7 +23,6 @@
       enable-alttab-gesture = false;
       pinch-4-finger-gesture = "NONE";
       pinch-3-finger-gesture = "CLOSE_WINDOW";
-      enable-forward-back-gesture = true;
     };
     "org/gnome/desktop/interface" = {
       show-battery-percentage = true;
