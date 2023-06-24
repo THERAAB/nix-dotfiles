@@ -36,5 +36,6 @@
     gparted
     acpi
     vim
+    hw-probe
   ];
 }
