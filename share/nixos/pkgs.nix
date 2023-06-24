@@ -39,5 +39,6 @@
     hw-probe
     google-chrome
     nvme-cli
+    s0ix-selftest-tool
   ];
 }
