@@ -37,5 +37,6 @@
     acpi
     vim
     hw-probe
+    google-chrome
   ];
 }
