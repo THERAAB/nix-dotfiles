@@ -11,6 +11,8 @@
     };
     kernelParams = [
       "kernel.nmi_watchdog=0"
+      "nvme.noacpi=1"
+      "acpi.no_ec_wakeup=1"
     ];
     extraModprobeConfig = ''
       options iwlwifi power_save=1
