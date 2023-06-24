@@ -20,6 +20,7 @@
       options iwlwifi power_save=1
       options iwlwifi uapsd_disable=0
       options iwlmvm power_scheme=3
+      options snd_hda_intel power_save=1
     '';
   };
 }

@@ -38,5 +38,6 @@
     vim
     hw-probe
     google-chrome
+    nvme-cli
   ];
 }
