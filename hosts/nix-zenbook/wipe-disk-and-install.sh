@@ -51,9 +51,16 @@ sudo mkdir -p /mnt/nix/persist/system/etc/nixos
 sudo mkdir -p /mnt/nix/persist/home/raab
 sudo mount -o bind /mnt/nix/persist/system/etc/nixos /mnt/etc/nixos
 sudo mount /dev/disk/by-label/BOOT /mnt/boot
-cd /mnt/nix/persist
+
+# Make Swapfile
+sudo truncate -s 0 /mnt/nix/swapfile
+sudo chattr +C /mnt/nix/swapfile
+sudo dd if=/dev/zero of=/mnt/nix/swapfile bs=1M count=8192
+sudo chmod 0600 /mnt/nix/swapfile
+sudo mkswap /mnt/nix/swapfile
 
 # Place git repo in the right spot
+cd /mnt/nix/persist
 sudo git clone https://github.com/THERAAB/nix-dotfiles /mnt/nix/persist/nix-dotfiles
 cd /mnt/nix/persist/nix-dotfiles
 

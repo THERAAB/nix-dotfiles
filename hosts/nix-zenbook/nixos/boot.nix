@@ -13,6 +13,7 @@
       "kernel.nmi_watchdog=0"
       "nvme.noacpi=1"
       "acpi.no_ec_wakeup=1"
+      "resume_offset=6776306"
     ];
     extraModprobeConfig = ''
       options iwlwifi power_save=1
@@ -20,5 +21,6 @@
       options iwlmvm power_scheme=3
       options snd_hda_intel power_save=1
     '';
+    resumeDevice = "/dev/nvme0n1p2";
   };
 }
