@@ -21,6 +21,6 @@
       options iwlmvm power_scheme=3
       options snd_hda_intel power_save=1
     '';
-    resumeDevice = "/dev/nvme0n1p2";
+    resumeDevice = "/dev/disk/by-label/nixos";
   };
 }
