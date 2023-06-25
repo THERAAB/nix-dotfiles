@@ -2,6 +2,7 @@
   dconf.settings = {
     "org/gnome/desktop/peripherals/touchpad" = {
       tap-to-click = true;
+      speed = 0.19298245614035081;
     };
     "org/gnome/shell" = {
       last-selected-power-profile = "power-saver";
