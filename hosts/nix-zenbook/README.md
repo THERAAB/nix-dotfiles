@@ -56,6 +56,8 @@ Update resume_offset in nixos/boot.nix from below command (btrfs only):
 btrfs inspect-internal map-swapfile -r /nix/swapfile
 ```
 
+Maybe update boot.resumeDevice too if your swapfile location changed?
+
 Finally, update, optimize store, and reboot
 
 ```console
