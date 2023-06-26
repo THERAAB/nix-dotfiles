@@ -30,6 +30,7 @@
         "browser.aboutConfig.showWarning" = "false";
         "browser.urlbar.maxRichResults" = 20;
         "layout.spellcheckDefault" = 2;
+        "media.ffmpeg.vaapi.enabled" = true;
       };
     };
   };

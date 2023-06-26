@@ -20,6 +20,7 @@
       options iwlwifi uapsd_disable=0
       options iwlmvm power_scheme=3
       options snd_hda_intel power_save=1
+      options i915 enable_guc=3
     '';
     resumeDevice = "/dev/disk/by-label/nixos";
   };
