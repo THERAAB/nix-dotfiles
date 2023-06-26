@@ -31,8 +31,4 @@
   };
   systemd.sleep.extraConfig = "HibernateDelaySec=8h";
 
-  # Hardware acceleration for intel
-  nixpkgs.config.packageOverrides = pkgs: {
-    vaapiIntel = pkgs.vaapiIntel.override {enableHybridCodec = true;};
-  };
 }
