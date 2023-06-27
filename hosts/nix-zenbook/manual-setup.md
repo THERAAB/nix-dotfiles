@@ -41,5 +41,4 @@ git clone git@github.com:THERAAB/nix-homelab.git /nix/persist/nix-homelab
 - Disable eMMC Card reader and Webcam (optional?) to achieve s0ix sleep S3 (C10)
 - Don't try to force pcie_aspm=powersave as it will actually hurt s0ix performance
 - There's a fingerprint reader under the power button, but it can't be disabled through Bios. I used a udev rule instead
-- Disable virtualization and Vt-d for resume from hibernate after suspend to work
-- Don't disable USB Hub (causes issues with s0ix) or VMD Controller (issues with Hibernate)
+- Don't disable USB Hub (causes issues with s0ix)

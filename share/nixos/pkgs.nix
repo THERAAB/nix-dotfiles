@@ -42,5 +42,6 @@
     s0ix-selftest-tool
     stress
     libva-utils
+    sysfsutils
   ];
 }
