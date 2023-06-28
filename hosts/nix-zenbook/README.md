@@ -53,7 +53,7 @@ git remote set-url origin git@github.com:THERAAB/nix-dotfiles.git
 
 Update resume_offset in nixos/boot.nix from below command (btrfs only):
 ```
-btrfs inspect-internal map-swapfile -r /swap/swapfile
+sudo btrfs inspect-internal map-swapfile -r /swap/swapfile
 ```
 
 Finally, update, optimize store, and reboot

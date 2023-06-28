@@ -54,10 +54,9 @@ sudo mount -o bind /mnt/nix/persist/system/etc/nixos /mnt/etc/nixos
 sudo mount /dev/disk/by-label/BOOT /mnt/boot
 
 # Make Swapfile
-sudo mount -o noatime,subvol=swap /dev/disk/by-label/nixos /mnt/swap
+sudo mount -o compress=no,noatime,subvol=swap /dev/disk/by-label/nixos /mnt/swap
 sudo truncate -s 0 /mnt/swap/swapfile
 sudo chattr +C /mnt/swap/swapfile
-sudo btrfs property set /swap/swapfile compression none
 sudo dd if=/dev/zero of=/mnt/swap/swapfile bs=1M count=8192
 sudo chmod 0600 /mnt/swap/swapfile
 sudo mkswap /mnt/swap/swapfile
