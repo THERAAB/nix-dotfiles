@@ -7,7 +7,7 @@ A [NixOS](https://nixos.org/) configuration repository for my zenbook.
 This repo contains some customizations for my specific setup, and you likely won't be able to follow these instructions exactly
 if you're not me for 3 reasons:
 
-- You probably don't have my hardware (An [Asus Zenbook 14 Q409ZA](https://www.asus.com/us/laptops/for-home/zenbook/zenbook-14-oled-q409-12th-gen-intel/helpdesk_download/?model2Name=Zenbook-14-OLED-Q409-12th-Gen-Intel) with a 1TB NVME drive & Intel 12th Gen 1240P and Xe graphics)
+- You probably don't have my hardware (An [Asus Zenbook 14 Q409ZA](https://www.asus.com/us/laptops/for-home/zenbook/zenbook-14-oled-q409-12th-gen-intel/helpdesk_download/?model2Name=Zenbook-14-OLED-Q409-12th-Gen-Intel) with a 1TB WD Blue SN570 NVME drive & Intel 12th Gen 1240P Xe graphics)
 - You probably don't have my sops keys (shoutout to my FBI agent!)
 - You likely won't have same IPs and network, firewall (pfSense), and tailscale setup
 

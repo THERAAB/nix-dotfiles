@@ -37,7 +37,7 @@ git clone git@github.com:THERAAB/nix-homelab.git /nix/persist/nix-homelab
 
 ### Some notes on the Asus Zenbook 14 Q409ZA Bios
 
-- Use Bios 310 for ssdt patch to work properly for audio, otherwise RIP sound
+- Use Bios 310 for ssdt patch to work properly for audio, Don't update Bios!
 - Disable eMMC Card reader and Webcam (optional?) to achieve s0ix sleep S3 (C10)
 - Don't try to force pcie_aspm=powersave as it will actually hurt s0ix performance
 - There's a fingerprint reader under the power button, but it can't be disabled through Bios. I used a udev rule instead
