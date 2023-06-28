@@ -47,6 +47,12 @@
     options = ["subvol=dropbox" "compress=zstd" "noatime"];
   };
 
+  fileSystems."/swap" = {
+    device = "/dev/disk/by-label/nixos";
+    fsType = "btrfs";
+    options = ["subvol=swap" "noatime"];
+  };
+
   fileSystems."/boot" = {
     device = "/dev/disk/by-label/BOOT";
     fsType = "vfat";
@@ -54,7 +60,7 @@
 
   swapDevices = [
     {
-      device = "/nix/swapfile";
+      device = "/swap/swapfile";
       size = 8 * 1024;
     }
   ];

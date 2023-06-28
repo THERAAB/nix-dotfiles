@@ -36,12 +36,13 @@ cd /mnt
 sudo btrfs subvolume create nix
 sudo btrfs subvolume create persist
 sudo btrfs subvolume create dropbox
+sudo btrfs subvolume create swap
 cd ..
 sudo umount /mnt
 
 # Create dirs, Mount tmpfs & subvolumes
 sudo mount -t tmpfs none /mnt
-sudo mkdir -p /mnt/{home/raab,nix,boot,dropbox,etc/nixos}
+sudo mkdir -p /mnt/{home/raab,nix,boot,dropbox,etc/nixos,swap}
 sudo mount -t tmpfs none /mnt/home/raab
 sudo mount -o compress=zstd,noatime,subvol=nix /dev/disk/by-label/nixos /mnt/nix
 sudo mkdir -p /mnt/nix/persist
@@ -53,11 +54,13 @@ sudo mount -o bind /mnt/nix/persist/system/etc/nixos /mnt/etc/nixos
 sudo mount /dev/disk/by-label/BOOT /mnt/boot
 
 # Make Swapfile
-sudo truncate -s 0 /mnt/nix/swapfile
-sudo chattr +C /mnt/nix/swapfile
-sudo dd if=/dev/zero of=/mnt/nix/swapfile bs=1M count=8192
-sudo chmod 0600 /mnt/nix/swapfile
-sudo mkswap /mnt/nix/swapfile
+sudo mount -o noatime,subvol=swap /dev/disk/by-label/nixos /mnt/swap
+sudo truncate -s 0 /mnt/swap/swapfile
+sudo chattr +C /mnt/swap/swapfile
+sudo btrfs property set /swap/swapfile compression none
+sudo dd if=/dev/zero of=/mnt/swap/swapfile bs=1M count=8192
+sudo chmod 0600 /mnt/swap/swapfile
+sudo mkswap /mnt/swap/swapfile
 
 # Place git repo in the right spot
 cd /mnt/nix/persist
