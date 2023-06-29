@@ -21,6 +21,9 @@
     enable = true;
     scsiLinkPolicy = "med_power_with_dipm";
     powertop.enable = true;
+    powerUpCommands = ''
+      echo 80 > /sys/class/power_supply/BAT?/charge_control_end_threshold
+    '';
   };
   services = {
     thermald.enable = true;
