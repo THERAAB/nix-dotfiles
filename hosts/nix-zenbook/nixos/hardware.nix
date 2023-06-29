@@ -32,4 +32,16 @@
     HibernateDelaySec=8h
     HibernateMode=shutdown
   '';
+  systemd.services.battery-charge-threshold = {
+    wantedBy = ["local-fs.target" "suspend.target"];
+    after = ["local-fs.target" "suspend.target"];
+    description = "Set the battery charge threshold%";
+    startLimitBurst = 5;
+    startLimitIntervalSec = 1;
+    serviceConfig = {
+      Type = "oneshot";
+      Restart = "on-failure";
+      ExecStart = "${pkgs.runtimeShell} -c 'echo 80 > /sys/class/power_supply/BAT?/charge_control_end_threshold'";
+    };
+  };
 }
