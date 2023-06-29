@@ -14,6 +14,7 @@
       "nvme.noacpi=1"
       "acpi.no_ec_wakeup=1"
       "resume_offset=11609344"
+      "acpi_sleep=s4_nohwsig"
     ];
     extraModprobeConfig = ''
       options iwlwifi power_save=1
