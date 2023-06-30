@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{pkgs, lib, ...}: {
   dconf.settings = {
     "org/gnome/shell" = {
       disable-user-extensions = false;
@@ -69,7 +69,7 @@
       black-list = ["ulauncher"];
     };
     "org/gnome/settings-daemon/plugins/power" = {
-      sleep-inactive-ac-type = "nothing";
+      sleep-inactive-ac-type = lib.mkDefault "nothing";
       power-button-action = "interactive";
     };
     "org/gnome/settings-daemon/plugins/media-keys" = {

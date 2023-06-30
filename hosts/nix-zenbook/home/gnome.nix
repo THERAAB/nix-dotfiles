@@ -13,6 +13,9 @@
     "org/gnome/desktop/interface" = {
       enable-hot-corners = true;
     };
+    "org/gnome/settings-daemon/plugins/power" = {
+      sleep-inactive-ac-type = "suspend";
+    };
     "org/gnome/shell/extensions/blur-my-shell/panel" = {
       static-blur = true;
     };
