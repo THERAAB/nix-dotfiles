@@ -56,4 +56,7 @@ dconf watch /
 snapper -c persist list
 snapper -c persist status x..y
 snapper -c persist diff x..y /nix/persist/filename
+
+# Reboot into UEFI
+systemctl reboot --firmware-setup
 ```
