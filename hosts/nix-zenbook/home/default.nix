@@ -1,7 +1,8 @@
 {...}: {
   imports = [
+    ./libinput-gestures
     ./pkgs.nix
     ./gnome.nix
-    ./libinput-gestures
+    ./wall.nix
   ];
 }
