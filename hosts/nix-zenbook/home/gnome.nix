@@ -32,6 +32,13 @@
       picture-uri = "file:///nix/persist/nix-dotfiles/hosts/nix-zenbook/assets/wall.jpg";
       picture-uri-dark = "file:///nix/persist/nix-dotfiles/hosts/nix-zenbook/assets/wall.jpg";
     };
+    "org/gnome/settings-daemon/plugins/color" = {
+      night-light-enabled = true;
+    };
+    "org/gnome/shell/extensions/just-perfection" = {
+      panel-in-overview = true;
+      panel = false;
+    };
   };
   home.packages = with pkgs; [
     gnomeExtensions.gesture-improvements
