@@ -31,7 +31,6 @@
     neovim
     alejandra
     wl-clipboard
-    jellyfin-media-player
     acpica-tools
     gparted
     acpi
