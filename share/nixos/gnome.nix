@@ -31,9 +31,7 @@
       yelp # Help view
       gnome-contacts
       gnome-initial-setup
-      # seahorse # keyring
-      # libgnome-keyring # keyring
-      # gnome-keyring # keyring
+      gnome-maps
     ]);
   services.gnome.gnome-keyring.enable = lib.mkForce false;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
