@@ -34,6 +34,8 @@
       "alejandra.program" = "alejandra";
       "editor.lineNumbers" = "relative";
       "explorer.confirmDragAndDrop" = false;
+      "security.workspace.trust.untrustedFiles" = "open";
+      "update.mode" = "none";
     };
     extensions = with pkgs.vscode-extensions; [
       catppuccin.catppuccin-vsc
