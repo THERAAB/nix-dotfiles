@@ -31,6 +31,11 @@
         "browser.urlbar.maxRichResults" = 20;
         "layout.spellcheckDefault" = 2;
         "media.ffmpeg.vaapi.enabled" = true;
+        "full-screen-api.warning.timeout" = 0;
+        "browser.tabs.tabmanager.enabled" = false;
+        "apz.overscroll.enabled" = true;
+        "browser.urlbar.suggest.quicksuggest.sponsored" = false;
+        "browser.urlbar.suggest.quicksuggest.nonsponsored" = false;
       };
     };
   };
