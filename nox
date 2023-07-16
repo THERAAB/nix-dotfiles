@@ -9,19 +9,19 @@ inputs() {
 }
 
 update() {
-    pushd $dir
-    git pull
+    git -C $dir pull
     sudo nixos-rebuild switch --flake $dir#
-    popd
 }
 
 commit() {
-    pushd $dir
-    git pull
-    git add .
-    git commit -m "automated commit"
-    git push
-    popd
+    git -C $dir pull
+    git -C $dir add .
+    git -C $dir commit -m "automated commit"
+    git -C $dir push
+}
+
+status() {
+    git -C $dir status
 }
 
 update_full() {
@@ -44,4 +44,6 @@ case "$1" in
         update_full;;
     gc)
         gc;;
+    status)
+        status;;
 esac
