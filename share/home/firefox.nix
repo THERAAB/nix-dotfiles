@@ -36,6 +36,8 @@
         "apz.overscroll.enabled" = true;
         "browser.urlbar.suggest.quicksuggest.sponsored" = false;
         "browser.urlbar.suggest.quicksuggest.nonsponsored" = false;
+        "geo.enabled" = false;
+        "browser.search.suggest.enabled" = false;
       };
     };
   };
