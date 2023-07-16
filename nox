@@ -1,0 +1,47 @@
+#!/bin/sh
+
+# nox: NixOs eXecute
+
+dir=/nix/persist/nix-dotfiles
+
+inputs() {
+    sudo nix flake update $dir
+}
+
+update() {
+    pushd $dir
+    git pull
+    sudo nixos-rebuild switch --flake $dir#
+    popd
+}
+
+commit() {
+    pushd $dir
+    git pull
+    git add .
+    git commit -m "automated commit"
+    git push
+    popd
+}
+
+update_full() {
+    inputs
+    update
+}
+
+gc() {
+    nix-collect-garbage -d
+}
+
+case "$1" in
+    inputs)
+        inputs;;
+    update)
+        update;;
+    commit)
+        commit;;
+    update-full)
+        update_full;;
+    gc)
+        gc;;
+esac
