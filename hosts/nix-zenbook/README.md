@@ -59,7 +59,7 @@ sudo btrfs inspect-internal map-swapfile -r /swap/swapfile
 Finally, update, optimize store, and reboot
 
 ```console
-update-full-with-git
+nox update-full
 nix-store --optimise
 sudo reboot
 ```
