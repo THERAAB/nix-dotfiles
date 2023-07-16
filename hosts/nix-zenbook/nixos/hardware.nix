@@ -49,29 +49,25 @@
           ExecStart = "${pkgs.runtimeShell} -c 'echo 80 > /sys/class/power_supply/BAT?/charge_control_end_threshold'";
         };
       };
-      keyboard-backlight = {
-        wantedBy = ["default.target"];
-        after = ["local-fs.target" "suspend.target"];
-        description = "Set the keyboard backlight";
-        startLimitBurst = 5;
-        startLimitIntervalSec = 1;
-        serviceConfig = {
-          Type = "oneshot";
-          Restart = "on-failure";
-          ExecStart = toString (pkgs.writeShellScript "keyboard-backlight" ''
-            H=$(date "+%k")
-            BACKLIGHT_ON=$((( 8 < H && H < 20 )) && echo 0 || echo 1)
-            echo $BACKLIGHT_ON > /sys/class/leds/asus::kbd_backlight/brightness
-          '');
-        };
-      };
-    };
-    timers.keyboard-backlight = {
-      timerConfig = {
-        Unit = "keyboard-backlight.service";
-        OnCalendar = "hourly";
-      };
-      wantedBy = ["timers.target"];
+      #keyboard-backlight = {
+      #  wantedBy = ["default.target"];
+      #  after = ["local-fs.target" "suspend.target"];
+      #  description = "Set the keyboard backlight";
+      #  serviceConfig = {
+      #    Restart = "on-failure";
+      #    ExecStart = toString (pkgs.writeShellScript "keyboard-backlight" ''
+      #      while true
+      #      do
+      #        sleep 1
+      #        BACKLIGHT_NEW=$(cat /tmp/backlight)
+      #        BACKLIGHT_OLD=$(cat /sys/class/leds/asus::kbd_backlight/brightness)
+      #        if [ $BACKLIGHT_NEW -ne $BACKLIGHT_OLD ]; then
+      #          echo $BACKLIGHT_NEW > /sys/class/leds/asus::kbd_backlight/brightness
+      #        fi
+      #      done
+      #    '');
+      #  };
+      #};
     };
   };
 }
