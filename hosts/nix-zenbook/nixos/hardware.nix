@@ -49,25 +49,6 @@
           ExecStart = "${pkgs.runtimeShell} -c 'echo 80 > /sys/class/power_supply/BAT?/charge_control_end_threshold'";
         };
       };
-      #keyboard-backlight = {
-      #  wantedBy = ["default.target"];
-      #  after = ["local-fs.target" "suspend.target"];
-      #  description = "Set the keyboard backlight";
-      #  serviceConfig = {
-      #    Restart = "on-failure";
-      #    ExecStart = toString (pkgs.writeShellScript "keyboard-backlight" ''
-      #      while true
-      #      do
-      #        sleep 1
-      #        BACKLIGHT_NEW=$(cat /tmp/backlight)
-      #        BACKLIGHT_OLD=$(cat /sys/class/leds/asus::kbd_backlight/brightness)
-      #        if [ $BACKLIGHT_NEW -ne $BACKLIGHT_OLD ]; then
-      #          echo $BACKLIGHT_NEW > /sys/class/leds/asus::kbd_backlight/brightness
-      #        fi
-      #      done
-      #    '');
-      #  };
-      #};
     };
   };
 }
