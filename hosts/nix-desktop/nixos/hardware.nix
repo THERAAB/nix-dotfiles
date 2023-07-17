@@ -26,6 +26,11 @@
       users = ["raab"];
     };
   };
-  # headsetcontrol udev rules
-  services.udev.extraRules = "ACTION!=\"add|change\", GOTO=\"headset_end\"\n KERNEL==\"hidraw*\", SUBSYSTEM==\"hidraw\", ATTRS{idVendor}==\"046d\", ATTRS{idProduct}==\"0a5c\", TAG+=\"uaccess\"\n KERNEL==\"hidraw*\", SUBSYSTEM==\"hidraw\", ATTRS{idVendor}==\"046d\", ATTRS{idProduct}==\"0a89\", TAG+=\"uaccess\"\n KERNEL==\"hidraw*\", SUBSYSTEM==\"hidraw\", ATTRS{idVendor}==\"046d\", ATTRS{idProduct}==\"0a5b\", TAG+=\"uaccess\"\n KERNEL==\"hidraw*\", SUBSYSTEM==\"hidraw\", ATTRS{idVendor}==\"046d\", ATTRS{idProduct}==\"0a87\", TAG+=\"uaccess\"\n KERNEL==\"hidraw*\", SUBSYSTEM==\"hidraw\", ATTRS{idVendor}==\"046d\", ATTRS{idProduct}==\"0ab5\", TAG+=\"uaccess\"\n LABEL=\"headset_end\"";
+  # headsetcontrol & via udev rules
+  services.udev.extraRules = ''
+    KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0666", TAG+="uaccess", TAG+="udev-acl"
+    ACTION!="add|change", GOTO="headset_end"
+    KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="0ab5", TAG+="uaccess"
+    LABEL="headset_end"
+  '';
 }
