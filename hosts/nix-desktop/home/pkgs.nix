@@ -3,7 +3,7 @@
     heroic
     headsetcontrol
     protonup
-    razergenie
+    polychromatic
     snapper-gui
     jetbrains.idea-community
   ];

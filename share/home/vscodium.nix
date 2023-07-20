@@ -36,6 +36,7 @@
       "explorer.confirmDragAndDrop" = false;
       "security.workspace.trust.untrustedFiles" = "open";
       "update.mode" = "none";
+      "files.enableTrash" = false;
     };
     extensions = with pkgs.vscode-extensions; [
       catppuccin.catppuccin-vsc

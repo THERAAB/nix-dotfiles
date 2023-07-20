@@ -18,7 +18,7 @@ maestral start
 
 Sign in
 
-### Razergenie
+### Polychromatic
 
 2100 Hz and 1000 poll rate
 

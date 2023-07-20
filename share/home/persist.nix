@@ -11,6 +11,7 @@
       ".config/VSCodium"
       ".config/sops/age"
       ".config/openrazer"
+      ".config/polychromatic"
       ".config/dconf"
       ".config/maestral"
       ".config/discord"
