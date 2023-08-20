@@ -20,10 +20,11 @@
   services.avahi = {
     enable = true;
     nssmdns = true;
+    openFirewall = true;
   };
   services.printing = {
     enable = true;
-    drivers = [pkgs.hplip];
+    drivers = [pkgs.epson-escpr];
   };
 
   # Enable sound with pipewire.
