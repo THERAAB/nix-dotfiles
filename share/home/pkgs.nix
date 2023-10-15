@@ -15,5 +15,8 @@
     strace
     ventoy-full
     lm_sensors
+    ffmpeg
+    audible-cli
+    aaxtomp3
   ];
 }
