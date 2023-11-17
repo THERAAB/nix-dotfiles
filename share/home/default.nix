@@ -8,7 +8,6 @@
     ./gnome.nix
     ./dconf.nix
     ./fish.nix
-    ./helix.nix
     ./kitty.nix
     ./vscodium.nix
     ./nvim.nix

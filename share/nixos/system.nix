@@ -5,7 +5,7 @@
   # For GNOME based apps
   programs.dconf.enable = true;
 
-  environment.variables.EDITOR = "hx";
+  environment.variables.EDITOR = "nvim";
 
   fonts.fonts = with pkgs; [
     (nerdfonts.override {fonts = ["JetBrainsMono" "Noto"];})
