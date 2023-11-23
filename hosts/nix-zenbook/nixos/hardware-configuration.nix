@@ -19,7 +19,7 @@
   fileSystems."/" = {
     device = "none";
     fsType = "tmpfs";
-    options = ["size=3G" "mode=755"];
+    options = ["size=6G" "mode=755"];
   };
 
   fileSystems."/home/raab" = {
