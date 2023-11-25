@@ -1,6 +1,10 @@
 {pkgs, ...}: {
   security.auditd.enable = true;
-  nix.settings.allowed-users = ["@wheel"];
+  nix.settings = {
+    allowed-users = ["@wheel"];
+    substituters = ["https://cache.pumpkin.rodeo"];
+    trusted-public-keys = ["cache.pumpkin.rodeo:IqbrtbXMzwCjSVZ/sWowaPXtjS+CtpCpStmabZI2TSo="];
+  };
 
   # For GNOME based apps
   programs.dconf.enable = true;
