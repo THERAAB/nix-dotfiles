@@ -38,7 +38,6 @@
         "browser.urlbar.suggest.quicksuggest.nonsponsored" = false;
         "geo.enabled" = false;
         "browser.search.suggest.enabled" = false;
-        "media.peerconnection.enabled" = true;
       };
     };
   };
