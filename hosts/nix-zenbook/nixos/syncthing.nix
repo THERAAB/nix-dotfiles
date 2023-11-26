@@ -14,7 +14,7 @@
       };
     };
     folders = {
-      Share = {
+      Dropbox = {
         path = "/dropbox";
         devices = ["nix-server"];
         versioning = {
