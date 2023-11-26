@@ -15,7 +15,7 @@
     };
     folders = {
       Share = {
-        path = "/home/raab/Documents";
+        path = "/dropbox";
         devices = ["nix-server"];
         versioning = {
           type = "staggered";
