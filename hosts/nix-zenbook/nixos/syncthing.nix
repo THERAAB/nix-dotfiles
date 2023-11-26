@@ -17,6 +17,13 @@
       Share2 = {
         path = "/home/raab/Documents";
         devices = ["nix-server"];
+        versioning = {
+          type = "staggered";
+          params = {
+            cleanInterval = "3600";
+            maxAge = "7884000";
+          };
+        };
       };
     };
   };
