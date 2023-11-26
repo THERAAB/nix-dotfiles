@@ -19,10 +19,7 @@
         devices = ["nix-server"];
         versioning = {
           type = "staggered";
-          params = {
-            cleanInterval = "600";
-            maxAge = "7776000"; # 90 days
-          };
+          params.maxAge = "7776000"; # 90 days
         };
       };
     };
