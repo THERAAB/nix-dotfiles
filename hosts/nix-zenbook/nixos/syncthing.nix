@@ -14,7 +14,7 @@
       };
     };
     folders = {
-      Share = {
+      Share2 = {
         path = "/home/raab/Documents";
         devices = ["nix-server"];
       };
