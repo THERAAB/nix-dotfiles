@@ -20,7 +20,7 @@
         versioning = {
           type = "staggered";
           params = {
-            cleanInterval = "604800"; # 7 days
+            cleanInterval = "600";
             maxAge = "7776000"; # 90 days
           };
         };
