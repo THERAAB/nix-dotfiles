@@ -7,7 +7,7 @@
     overrideDevices = true;
     overrideFolders = true;
     devices = {
-      nix-server.id = "W33BOU2-KH5UGR6-MLWF3FP-EO4D4MT-QJZHZ44-XGSW54C-JXWMZFB-W5DKMQU";
+      nix-server.id = "F2373FD-HW5QAKL-NEXKV73-QFMLFZF-47SKVYQ-HHDCO6S-XOYOGTS-6PSKIAP";
     };
     folders = {
       Share = {
