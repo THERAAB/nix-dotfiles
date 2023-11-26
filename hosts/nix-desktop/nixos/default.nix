@@ -5,5 +5,6 @@
     ./pkgs.nix
     ./hardware-configuration.nix
     ./hardware.nix
+    ./syncthing.nix
   ];
 }
