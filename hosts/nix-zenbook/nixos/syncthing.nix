@@ -19,7 +19,7 @@
     };
     folders = {
       Dropbox = {
-        path = "/dropbox";
+        path = "/dropbox/share";
         devices = ["nix-server" "nix-desktop"];
         versioning = {
           type = "staggered";
