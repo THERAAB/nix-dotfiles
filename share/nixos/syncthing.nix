@@ -17,7 +17,6 @@
       };
       "/dropbox" = {
         id = "default";
-        devices = ["nix-server"];
         versioning = {
           type = "staggered";
           params.maxAge = "7776000"; # 90 days
