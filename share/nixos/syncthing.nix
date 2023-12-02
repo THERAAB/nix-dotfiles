@@ -15,13 +15,7 @@
           autoAcceptFolders = true;
         };
       };
-      "/dropbox" = {
-        id = "default";
-        versioning = {
-          type = "staggered";
-          params.maxAge = "7776000"; # 90 days
-        };
-      };
+      "/dropbox".id = "default";
     };
   };
 }
