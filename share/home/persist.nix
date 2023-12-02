@@ -47,6 +47,9 @@
       ".local/share/jellyfinmediaplayer"
       ".local/share/fish"
       ".local/share/zoxide"
+      # TODO: remove once gesture-improvements works on GNOME 45
+      # https://github.com/harshadgavali/gnome-gesture-improvements/issues/206
+      ".local/share/gnome-shell/extensions"
       ".java" # IntelliJ
       ".compose-cache" # Steam
     ];
