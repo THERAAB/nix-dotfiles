@@ -12,5 +12,6 @@
     ./persist.nix
     ./pkgs.nix
     ./boot.nix
+    ./syncthing.nix
   ];
 }
