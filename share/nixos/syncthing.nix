@@ -8,7 +8,7 @@
     settings = {
       devices = {
         nix-server = {
-          id = "F2373FD-HW5QAKL-NEXKV73-QFMLFZF-47SKVYQ-HHDCO6S-XOYOGTS-6PSKIAP";
+          id = "W33BOU2-KH5UGR6-MLWF3FP-EO4D4MT-QJZHZ44-XGSW54C-JXWMZFB-W5DKMQU";
           addresses = ["tcp://192.168.3.2:22000" "tcp://100.121.108.123:22000"];
         };
       };
