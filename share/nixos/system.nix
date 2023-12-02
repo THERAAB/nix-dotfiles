@@ -11,13 +11,13 @@
 
   environment.variables.EDITOR = "nvim";
 
-  fonts.fonts = with pkgs; [
+  fonts.packages = with pkgs; [
     (nerdfonts.override {fonts = ["JetBrainsMono" "Noto"];})
   ];
 
   services.locate = {
     enable = true;
-    locate = pkgs.plocate;
+    package = pkgs.plocate;
     localuser = null;
   };
 }

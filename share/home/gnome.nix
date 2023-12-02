@@ -12,7 +12,6 @@
         "just-perfection-desktop@just-perfection"
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
         "rounded-window-corners@yilozt"
-        "activitiesworkspacename@ahmafi.ir"
         "unite@hardpixel.eu"
         "forge@jmmaranan.com"
       ];
@@ -58,8 +57,8 @@
       events-button = false;
       show-apps-button = false;
       window-menu-take-screenshot-button = false;
-      animation = 3;
-      activities-button = false;
+      animation = 4;
+      activities-button = true;
       window-demands-attention-focus = true;
     };
     "org/gnome/shell/extensions/blur-my-shell/overview" = {
@@ -115,7 +114,6 @@
     };
     "org/gnome/desktop/wm/preferences" = {
       num-workspaces = 4;
-      workspace-names = ["   Browse" "󰍹   Work" "   Games" "  Code"];
     };
     "org/gnome/desktop/wm/keybindings" = {
       switch-to-workspace-left = ["<Alt>Left"];
@@ -158,7 +156,6 @@
     gnomeExtensions.just-perfection
     gnomeExtensions.auto-move-windows
     gnomeExtensions.rounded-window-corners
-    gnomeExtensions.activities-workspace-name
     gnomeExtensions.unite
     gnomeExtensions.forge
     gnome.gnome-tweaks
