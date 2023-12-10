@@ -43,6 +43,7 @@
       show-window-title = "never";
       show-window-buttons = "never";
       notifications-position = "center";
+      use-activities-text = false;
     };
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = [
