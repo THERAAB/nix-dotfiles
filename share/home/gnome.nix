@@ -14,6 +14,7 @@
         "rounded-window-corners@yilozt"
         "unite@hardpixel.eu"
         "forge@jmmaranan.com"
+        "gsconnect@andyholmes.github.io"
       ];
       favorite-apps = [
         "firefox.desktop"
@@ -91,7 +92,7 @@
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
       command = toString (pkgs.writeShellScript "switch-audio" ''
-          ${pkgs.pulseaudio}/bin/pactl set-default-sink alsa_output.usb-Logitech_G733_Gaming_Headset-00.iec958-stereo
+        ${pkgs.pulseaudio}/bin/pactl set-default-sink alsa_output.usb-Logitech_G733_Gaming_Headset-00.iec958-stereo
       '');
       name = "Switch to Headphones";
       binding = "<Shift><Alt>h";
@@ -158,6 +159,7 @@
     gnomeExtensions.rounded-window-corners
     gnomeExtensions.unite
     gnomeExtensions.forge
+    gnomeExtensions.gsconnect
     gnome.gnome-tweaks
   ];
 }
