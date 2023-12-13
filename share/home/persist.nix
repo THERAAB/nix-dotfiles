@@ -58,6 +58,7 @@
     files = [
       ".ssh/known_hosts"
       ".ssh/id_rsa"
+      ".ssh/config"
       ".config/monitors.xml" # Gnome
     ];
   };

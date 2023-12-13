@@ -46,6 +46,7 @@
       esbenp.prettier-vscode
       vscode-icons-team.vscode-icons
       christian-kohler.path-intellisense
+      tailscale.vscode-tailscale
     ];
   };
 }
