@@ -6,6 +6,7 @@
         CaptivePortal = false;
         DisableFirefoxStudies = true;
         DisableTelemetry = true;
+        DisablePocket = true;
         DisableFirefoxAccounts = false;
         NoDefaultBookmarks = true;
         OfferToSaveLogins = false;
