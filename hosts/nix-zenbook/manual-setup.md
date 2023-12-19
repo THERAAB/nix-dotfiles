@@ -22,8 +22,8 @@ sudo updatedb
 
 ### Forge
 
-Disable Split Direction Hint
-Change Colors
+- Disable Split Direction Hint
+- Change Colors
 
 ### Ulauncher
 

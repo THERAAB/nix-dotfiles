@@ -7,13 +7,6 @@ Some apps can't be managed declaratively, so additional setup needed for them is
 - Enable steam play
 - Change default dir
 
-### Dropbox
-
-```console
-maestral stop
-maestral start
-```
-
 ### Firefox
 
 Sign in
@@ -28,8 +21,8 @@ Disable minimize to tray
 
 ### Forge
 
-Disable Split Direction Hint
-Change Colors
+- Disable Split Direction Hint
+- Change Colors
 
 ### Ulauncher
 
