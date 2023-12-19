@@ -9,4 +9,7 @@
       Install.WantedBy = ["timers.target"];
     };
   };
+  home.packages = with pkgs; [
+    headsetcontrol
+  ];
 }
