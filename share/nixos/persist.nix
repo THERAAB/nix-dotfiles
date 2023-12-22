@@ -5,7 +5,7 @@
     "d  /nix/persist/nix-dotfiles                   -   raab        -           -   -"
     "d  /nix/persist/nix-homelab                    -   raab        -           -   -"
     "Z  /nix/persist/nix-dotfiles                   700 raab        -           -   -"
-    "Z  /nix/persist/nix-homelab                    700 raab        -           -   -"
+    "Z  /nix/persist/nix-homelab                    755 raab        -           -   -"
     "Z  /nix/persist/home/raab                      740 raab        -           -   -"
     "Z  /nix/persist/home/raab/.ssh                 700 raab        -           -   -"
     "Z  /dropbox                                    770 syncthing   syncthing   -   -"
