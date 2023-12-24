@@ -18,7 +18,7 @@ in {
     timers.wallpaper-rotate = {
       Timer = {
         Unit = "wallpaper-rotate.service";
-        OnCalendar = "*:0/15"; # Every 15 minutes
+        OnCalendar = "*:0/30"; # Every 30 minutes
       };
       Install.WantedBy = ["timers.target"];
     };
