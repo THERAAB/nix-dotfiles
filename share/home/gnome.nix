@@ -11,7 +11,6 @@
         "blur-my-shell@aunetx"
         "just-perfection-desktop@just-perfection"
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
-        "rounded-window-corners@yilozt"
         "unite@hardpixel.eu"
         "forge@jmmaranan.com"
         "gsconnect@andyholmes.github.io"
@@ -69,9 +68,6 @@
     "org/gnome/shell/extensions/blur-my-shell/panel" = {
       blur = true;
       sigma = 0;
-    };
-    "org/gnome/shell/extensions/rounded-window-corners" = {
-      black-list = ["ulauncher"];
     };
     "org/gnome/settings-daemon/plugins/power" = {
       sleep-inactive-ac-type = lib.mkDefault "nothing";
@@ -157,7 +153,6 @@
     gnomeExtensions.blur-my-shell
     gnomeExtensions.just-perfection
     gnomeExtensions.auto-move-windows
-    gnomeExtensions.rounded-window-corners
     gnomeExtensions.unite
     gnomeExtensions.forge
     gnomeExtensions.gsconnect

@@ -29,10 +29,6 @@ sudo updatedb
 
 Set theme & number of favorites
 
-### Gesture improvements
-
-Manually move folder to location
-
 ### nix-homelab
 
 ```console

@@ -7,7 +7,7 @@
     "org/gnome/shell" = {
       last-selected-power-profile = "power-saver";
       enabled-extensions = [
-        "gestureImprovements@gestures"
+        "swap-finger-gestures-3-4@icedman.github.com"
       ];
     };
     "org/gnome/desktop/interface" = {
@@ -22,12 +22,6 @@
     "org/gnome/desktop/screensaver" = {
       lock-enabled = false;
     };
-    "org/gnome/shell/extensions/gestureImprovements" = {
-      enable-window-manipulation-gesture = false;
-      enable-alttab-gesture = false;
-      pinch-4-finger-gesture = "NONE";
-      pinch-3-finger-gesture = "CLOSE_WINDOW";
-    };
     "org/gnome/desktop/interface" = {
       show-battery-percentage = true;
     };
@@ -40,6 +34,6 @@
     };
   };
   home.packages = with pkgs; [
-    gnomeExtensions.gesture-improvements
+    gnomeExtensions.swap-finger-gestures-3-to-4
   ];
 }
