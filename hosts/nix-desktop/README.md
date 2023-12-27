@@ -54,7 +54,7 @@ git remote set-url origin git@github.com:THERAAB/nix-dotfiles.git
 Finally, update, optimize store, and reboot
 
 ```console
-nox update-full
+nox update
 nix-store --optimise
 sudo reboot
 ```
