@@ -1,31 +1,40 @@
 {pkgs, ...}: {
-  services.fstrim.enable = true;
-  services.irqbalance.enable = true;
-  services.fwupd.enable = true;
-  services.smartd.enable = true;
-
-  networking.networkmanager = {
-    enable = true;
-    wifi.powersave = true;
+  services = {
+    fstrim.enable = true;
+    irqbalance.enable = true;
+    fwupd.enable = true;
+    smartd.enable = true;
+    tailscale.enable = true;
+    avahi = {
+      enable = true;
+      nssmdns = true;
+      openFirewall = true;
+    };
+    printing = {
+      enable = true;
+      drivers = [pkgs.epson-escpr];
+    };
+    pipewire = {
+      enable = true;
+      alsa.enable = true;
+      alsa.support32Bit = true;
+      pulse.enable = true;
+    };
   };
-  services.tailscale.enable = true;
-  networking.firewall = {
-    enable = true;
-    trustedInterfaces = ["tailscale0"];
+
+  networking = {
+    networkmanager = {
+      enable = true;
+      wifi.powersave = true;
+    };
+    firewall = {
+      enable = true;
+      trustedInterfaces = ["tailscale0"];
+    };
   };
 
   time.timeZone = "America/New_York";
   i18n.defaultLocale = "en_US.utf8";
-
-  services.avahi = {
-    enable = true;
-    nssmdns = true;
-    openFirewall = true;
-  };
-  services.printing = {
-    enable = true;
-    drivers = [pkgs.epson-escpr];
-  };
 
   # Enable sound with pipewire.
   sound.enable = true;
@@ -33,13 +42,6 @@
     rtkit.enable = true;
     polkit.enable = true;
   };
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-  };
-
   hardware = {
     enableAllFirmware = true;
     enableRedistributableFirmware = true;
