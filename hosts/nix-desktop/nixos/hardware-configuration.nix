@@ -42,7 +42,7 @@
     fsType = "btrfs";
     options = ["subvol=games" "compress=zstd" "noatime"];
   };
-  fileSystems."/dropbox" = {
+  fileSystems."/sync" = {
     device = "/dev/disk/by-label/nixos";
     fsType = "btrfs";
     options = ["subvol=dropbox" "compress=zstd" "noatime"];

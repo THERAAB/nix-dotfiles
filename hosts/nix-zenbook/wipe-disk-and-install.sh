@@ -42,12 +42,12 @@ sudo umount /mnt
 
 # Create dirs, Mount tmpfs & subvolumes
 sudo mount -t tmpfs none /mnt
-sudo mkdir -p /mnt/{home/raab,nix,boot,dropbox,etc/nixos,swap}
+sudo mkdir -p /mnt/{home/raab,nix,boot,sync,etc/nixos,swap}
 sudo mount -t tmpfs none /mnt/home/raab
 sudo mount -o compress=zstd,noatime,subvol=nix /dev/disk/by-label/nixos /mnt/nix
 sudo mkdir -p /mnt/nix/persist
 sudo mount -o compress=zstd,noatime,subvol=persist /dev/disk/by-label/nixos /mnt/nix/persist
-sudo mount -o compress=zstd,noatime,subvol=dropbox /dev/disk/by-label/nixos /mnt/dropbox
+sudo mount -o compress=zstd,noatime,subvol=dropbox /dev/disk/by-label/nixos /mnt/sync
 sudo mkdir -p /mnt/nix/persist/system/etc/nixos
 sudo mkdir -p /mnt/nix/persist/home/raab
 sudo mount -o bind /mnt/nix/persist/system/etc/nixos /mnt/etc/nixos

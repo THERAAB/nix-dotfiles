@@ -34,7 +34,7 @@
     options = ["subvol=persist" "compress=zstd" "noatime"];
     neededForBoot = true;
   };
-  fileSystems."/dropbox" = {
+  fileSystems."/sync" = {
     device = "/dev/disk/by-label/nixos";
     fsType = "btrfs";
     options = ["subvol=dropbox" "compress=zstd" "noatime"];
