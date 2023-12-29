@@ -45,7 +45,7 @@
   fileSystems."/sync" = {
     device = "/dev/disk/by-label/nixos";
     fsType = "btrfs";
-    options = ["subvol=dropbox" "compress=zstd" "noatime"];
+    options = ["subvol=sync" "compress=zstd" "noatime"];
   };
   fileSystems."/boot" = {
     device = "/dev/disk/by-label/BOOT";

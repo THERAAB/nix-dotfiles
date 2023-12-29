@@ -35,7 +35,7 @@ sudo mount /dev/disk/by-label/nixos /mnt
 cd /mnt
 sudo btrfs subvolume create nix
 sudo btrfs subvolume create persist
-sudo btrfs subvolume create dropbox
+sudo btrfs subvolume create sync
 sudo btrfs subvolume create swap
 cd ..
 sudo umount /mnt
@@ -47,7 +47,7 @@ sudo mount -t tmpfs none /mnt/home/raab
 sudo mount -o compress=zstd,noatime,subvol=nix /dev/disk/by-label/nixos /mnt/nix
 sudo mkdir -p /mnt/nix/persist
 sudo mount -o compress=zstd,noatime,subvol=persist /dev/disk/by-label/nixos /mnt/nix/persist
-sudo mount -o compress=zstd,noatime,subvol=dropbox /dev/disk/by-label/nixos /mnt/sync
+sudo mount -o compress=zstd,noatime,subvol=sync /dev/disk/by-label/nixos /mnt/sync
 sudo mkdir -p /mnt/nix/persist/system/etc/nixos
 sudo mkdir -p /mnt/nix/persist/home/raab
 sudo mount -o bind /mnt/nix/persist/system/etc/nixos /mnt/etc/nixos
