@@ -19,18 +19,19 @@
     };
     nixos-update-flake = {
       script = ''
-        ${pkgs.nix}/bin/nix flake update  --extra-experimental-features nix-command                   \
-                                          --extra-experimental-features flakes                        \
-                                          --output-lock-file /nix/persist/nix-dotfiles/flake.lock     \
-                                          --debug                                                     \
-                                          github:THERAAB/nix-dotfiles/main
-      ''; 
+        dir=/nix/persist/nix-dotfiles
+        nix flake update $dir --commit-lock-file
+      '';
+      path = with pkgs; [
+        gitMinimal
+        config.nix.package.out
+      ];
     };
   };
 
   system.autoUpgrade = {
     enable = true;
-    dates = lib.mkDefault "daily";
+    dates = "daily";
     flake = "github:THERAAB/nix-dotfiles/main";
     persistent = true;
     allowReboot = false;
