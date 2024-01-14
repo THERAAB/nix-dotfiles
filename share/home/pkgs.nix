@@ -19,5 +19,6 @@
     audible-cli
     aaxtomp3
     jellyfin-media-player
+    neofetch
   ];
 }
