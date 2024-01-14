@@ -13,5 +13,6 @@
     ./pkgs.nix
     ./boot.nix
     ./syncthing.nix
+    ./auto-upgrade.nix
   ];
 }

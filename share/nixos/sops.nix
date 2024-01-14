@@ -14,6 +14,7 @@
         owner = "raab";
         path = "/nix/persist/home/raab/.ssh/id_rsa";
       };
+      gotify_homelab_token.neededForUsers = true;
     };
   };
 }
