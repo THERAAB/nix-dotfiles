@@ -1,7 +1,6 @@
 {
   config,
   pkgs,
-  lib,
   ...
 }: {
   systemd.services = {
@@ -34,6 +33,9 @@
     dates = "daily";
     flake = "github:THERAAB/nix-dotfiles/main";
     persistent = true;
+    flags = [
+      "--no-write-lock-file"
+    ];
     allowReboot = false;
   };
 }
