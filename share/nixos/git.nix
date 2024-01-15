@@ -1,3 +1,7 @@
-{...} : {
-  programs.git.enable = true;
+{...}: {
+  programs.git = {
+    enable = true;
+    push.autoSetupRemote = true;
+    safe.directory = "*";
+  };
 }

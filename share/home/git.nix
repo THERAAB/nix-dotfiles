@@ -9,7 +9,6 @@ in {
     userName = "THERAAB";
     extraConfig = {
       push.autoSetupRemote = true;
-      safe.directory = "*";
     };
   };
 }
