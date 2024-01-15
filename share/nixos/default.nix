@@ -14,6 +14,5 @@
     ./boot.nix
     ./syncthing.nix
     ./auto-upgrade.nix
-    ./git.nix
   ];
 }
