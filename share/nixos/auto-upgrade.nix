@@ -32,7 +32,6 @@
       after = ["network-online.target"];
     };
   };
-
   system.autoUpgrade = {
     enable = true;
     dates = "daily";
