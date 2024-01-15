@@ -18,6 +18,7 @@
     };
     nix-flake-update = {
       script = ''
+        sleep 10
         dir=/nix/persist/nix-dotfiles
         nix flake update $dir --commit-lock-file
         su -c "git -C $dir push" raab
@@ -27,6 +28,7 @@
         config.nix.package.out
         config.programs.ssh.package
         su
+        coreutils-full
       ];
       wantedBy = ["network-online.target"];
       after = ["network-online.target"];
