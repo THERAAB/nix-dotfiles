@@ -28,6 +28,8 @@
         config.programs.ssh.package
         su
       ];
+      wantedBy = ["network-online.target"];
+      after = ["network-online.target"];
     };
   };
 
@@ -35,6 +37,7 @@
     enable = true;
     dates = "daily";
     flake = "github:THERAAB/nix-dotfiles/main";
+    operation = "boot";
     persistent = true;
     flags = [
       "--no-write-lock-file"
