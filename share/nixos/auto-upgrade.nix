@@ -16,7 +16,7 @@
                                 -F "priority=5"                                                                         \
       '';
     };
-    nixos-update-flake = {
+    nix-flake-update = {
       script = ''
         dir=/nix/persist/nix-dotfiles
         nix flake update $dir --commit-lock-file
