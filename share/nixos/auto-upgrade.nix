@@ -20,11 +20,12 @@
       script = ''
         dir=/nix/persist/nix-dotfiles
         nix flake update $dir --commit-lock-file
-        git -C $dir push
+    git -C $dir push
       '';
       path = with pkgs; [
         gitMinimal
         config.nix.package.out
+        config.programs.ssh.package
       ];
     };
   };
