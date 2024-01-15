@@ -1,7 +1,9 @@
 {...}: {
   programs.git = {
     enable = true;
-    push.autoSetupRemote = true;
-    safe.directory = "*";
+    config = {
+      push.autoSetupRemote = true;
+      safe.directory = "*";
+    };
   };
 }
