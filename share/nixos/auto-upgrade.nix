@@ -18,7 +18,7 @@
     };
     nix-flake-update = {
       script = ''
-        sleep 10
+        sleep 30
         dir=/nix/persist/nix-dotfiles
         su -c "git -C $dir pull" raab
         nix flake update $dir --commit-lock-file
@@ -31,14 +31,16 @@
         su
         coreutils-full
       ];
-      wantedBy = ["network-online.target"];
-      after = ["network-online.target"];
+      # Disabled because latest update breaks vscode
+      # wantedBy = ["network-online.target"];
+      # after = ["network-online.target"];
     };
   };
   system.autoUpgrade = {
     enable = true;
     dates = "daily";
     flake = "github:THERAAB/nix-dotfiles/main";
+    randomizedDelaySec = "45min";
     operation = "boot";
     persistent = true;
     flags = [
