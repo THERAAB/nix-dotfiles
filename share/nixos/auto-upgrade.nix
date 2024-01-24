@@ -31,7 +31,7 @@
         su
         coreutils-full
       ];
-      dates = "weekly";
+      wantedBy = ["network-online.target"];
       after = ["network-online.target"];
     };
   };
