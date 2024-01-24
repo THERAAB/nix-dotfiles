@@ -31,14 +31,13 @@
         su
         coreutils-full
       ];
-      # Disabled because latest update breaks vscode
-      # wantedBy = ["network-online.target"];
-      # after = ["network-online.target"];
+      dates = "weekly";
+      after = ["network-online.target"];
     };
   };
   system.autoUpgrade = {
     enable = true;
-    dates = "daily";
+    dates = "weekly";
     flake = "github:THERAAB/nix-dotfiles/main";
     randomizedDelaySec = "45min";
     operation = "boot";
