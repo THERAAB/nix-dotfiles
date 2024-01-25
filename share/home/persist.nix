@@ -9,6 +9,7 @@
       "Videos"
       ".mozilla"
       ".config/VSCodium"
+      ".config/Code"
       ".config/sops/age"
       ".config/openrazer"
       ".config/polychromatic"
