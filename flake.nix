@@ -58,17 +58,19 @@
           sops-nix.nixosModules.sops
           home-manager.nixosModules.home-manager
           {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.extraSpecialArgs = {
-              inherit inputs self;
-            };
-            home-manager.users.raab = {pkgs, ...}: {
-              imports = [
-                impermanence.nixosModules.home-manager.impermanence
-                ./share/home
-                ./hosts/nix-desktop/home
-              ];
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              extraSpecialArgs = {
+                inherit inputs self;
+              };
+              users.raab = {pkgs, ...}: {
+                imports = [
+                  impermanence.nixosModules.home-manager.impermanence
+                  ./share/home
+                  ./hosts/nix-desktop/home
+                ];
+              };
             };
           }
         ];
@@ -82,17 +84,19 @@
           sops-nix.nixosModules.sops
           home-manager.nixosModules.home-manager
           {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.extraSpecialArgs = {
-              inherit inputs self;
-            };
-            home-manager.users.raab = {pkgs, ...}: {
-              imports = [
-                impermanence.nixosModules.home-manager.impermanence
-                ./share/home
-                ./hosts/nix-zenbook/home
-              ];
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              extraSpecialArgs = {
+                inherit inputs self;
+              };
+              users.raab = {pkgs, ...}: {
+                imports = [
+                  impermanence.nixosModules.home-manager.impermanence
+                  ./share/home
+                  ./hosts/nix-zenbook/home
+                ];
+              };
             };
           }
         ];

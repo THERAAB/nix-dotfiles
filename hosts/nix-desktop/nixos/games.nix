@@ -3,13 +3,15 @@
     "Z  /games  700 raab    -   -   -"
   ];
   hardware.opengl.enable = true;
-  programs.steam.enable = true;
-  programs.gamemode = {
-    enable = true;
-    settings = {
-      general = {
-        softrealtime = "auto";
-        renice = 10;
+  programs = {
+    steam.enable = true;
+    gamemode = {
+      enable = true;
+      settings = {
+        general = {
+          softrealtime = "auto";
+          renice = 10;
+        };
       };
     };
   };

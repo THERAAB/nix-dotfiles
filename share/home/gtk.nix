@@ -20,9 +20,11 @@
     gtk3.extraConfig.gtk-application-prefer-dark-theme = 1;
     gtk4.extraConfig.gtk-application-prefer-dark-theme = 1;
   };
-  home.sessionVariables.GTK_THEME = "Catppuccin-Frappe-Standard-Blue-Dark";
-  home.sessionVariables.XCURSOR_THEME = "phinger-cursors-light";
-  home.sessionVariables.XCURSOR_SIZE = 40;
+  home.sessionVariables = {
+    GTK_THEME = "Catppuccin-Frappe-Standard-Blue-Dark";
+    XCURSOR_THEME = "phinger-cursors-light";
+    XCURSOR_SIZE = 40;
+  };
 
   home.packages = with pkgs; [
     catppuccin-gtk
