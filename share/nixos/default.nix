@@ -14,5 +14,6 @@
     ./boot.nix
     ./syncthing.nix
     ./auto-upgrade.nix
+    ./firefox.nix
   ];
 }
