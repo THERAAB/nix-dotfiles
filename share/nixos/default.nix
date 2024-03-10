@@ -15,5 +15,6 @@
     ./syncthing.nix
     ./auto-upgrade.nix
     ./firefox.nix
+    ./nox.nix
   ];
 }

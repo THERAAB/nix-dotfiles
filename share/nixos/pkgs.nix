@@ -42,5 +42,6 @@
     stress
     libva-utils
     sysfsutils
+    git
   ];
 }
