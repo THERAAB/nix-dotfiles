@@ -38,6 +38,7 @@
             $git -C $dir pull
         }
         apply() {
+            $git -C $applyDir pull
             sudo nix run $applyDir#apps.nixinate.$1
         }
 
