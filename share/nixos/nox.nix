@@ -7,6 +7,7 @@
         # nox: NixOs eXecute
 
         dir=/nix/persist/nix-dotfiles
+        applyDir=/nix/persist/nix-homelab
         git=${pkgs.git}/bin/git
 
         inputs() {
@@ -36,6 +37,10 @@
         pull() {
             $git -C $dir pull
         }
+        apply() {
+            sudo nix run $applyDir#apps.nixinate.$1
+        }
+
         case "$1" in
             inputs)
                 inputs;;
@@ -51,6 +56,8 @@
                 status;;
             pull)
                 pull;;
+            apply)
+                apply $2;;
         esac
       ''
     )
