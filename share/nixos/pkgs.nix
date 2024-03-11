@@ -43,5 +43,6 @@
     libva-utils
     sysfsutils
     git
+    unstable.delfin
   ];
 }

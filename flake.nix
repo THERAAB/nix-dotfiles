@@ -2,6 +2,7 @@
   description = "nix-dotfiles flake";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
+    nixpkgs-unstable.url = "nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager/release-23.11";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -19,6 +20,7 @@
     home-manager,
     impermanence,
     sops-nix,
+    nixpkgs-unstable,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -50,7 +52,7 @@
     overlays = import ./share/lib/overlays;
     nixosConfigurations = {
       nix-desktop = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs outputs;};
+        specialArgs = {inherit inputs outputs nixpkgs-unstable;};
         modules = [
           impermanence.nixosModules.impermanence
           ./share/nixos
@@ -76,7 +78,7 @@
         ];
       };
       nix-zenbook = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs outputs;};
+        specialArgs = {inherit inputs outputs nixpkgs-unstable;};
         modules = [
           impermanence.nixosModules.impermanence
           ./share/nixos
