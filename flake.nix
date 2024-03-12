@@ -39,7 +39,6 @@
 
       snowfall = {
         namespace = "nix-dotfiles";
-        meta.name = "nix-dotfiles";
       };
     };
 }
