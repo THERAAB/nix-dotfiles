@@ -59,4 +59,4 @@ nix-store --optimise
 sudo reboot
 ```
 
-Check [manual-setup.md](https://github.com/THERAAB/nix-dotfiles/blob/main/hosts/nix-desktop/manual-setup.md) for specific manual app setups
+Check [manual-setup.md](https://github.com/THERAAB/nix-dotfiles/blob/main/systems/x86_64-linux/nix-desktop/manual-setup.md) for specific manual app setups

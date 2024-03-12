@@ -5,5 +5,6 @@
     ./hardware.nix
     ./pkgs.nix
     ./hardware-configuration.nix
+    ../../../share/nixos
   ];
 }

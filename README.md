@@ -22,9 +22,9 @@ My NixOS Machines, with:
 
 ## Machine Specific documentation
 
-[Nix-Desktop](https://github.com/THERAAB/nix-dotfiles/blob/main/hosts/nix-desktop/README.md)
+[Nix-Desktop](https://github.com/THERAAB/nix-dotfiles/blob/main/systems/x86_64-linux/nix-desktop/README.md)
 
-[Nix-Zenbook](https://github.com/THERAAB/nix-dotfiles/blob/main/hosts/nix-zenbook/README.md)
+[Nix-Zenbook](https://github.com/THERAAB/nix-dotfiles/blob/main/systems/x86_64-linux/nix-zenbook/README.md)
 
 ## Maintenance
 

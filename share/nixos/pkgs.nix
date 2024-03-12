@@ -1,5 +1,4 @@
 {pkgs, ...}: {
-  nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     killall
     pulseaudio # needed to use pactl on pipewire
@@ -43,6 +42,5 @@
     libva-utils
     sysfsutils
     git
-    unstable.delfin
   ];
 }
