@@ -5,6 +5,5 @@
     ./pkgs.nix
     ./steam.nix
     ./gnome.nix
-    ../../../share/home
   ];
 }

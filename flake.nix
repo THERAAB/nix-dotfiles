@@ -21,24 +21,24 @@
     inputs.snowfall-lib.mkFlake {
       inherit inputs;
       src = ./.;
-
+      snowfall.namespace = "nix-dotfiles";
       channels-config.allowUnfree = true;
 
       systems.modules.nixos = with inputs; [
         impermanence.nixosModules.impermanence
         sops-nix.nixosModules.sops
         home-manager.nixosModules.home-manager
+        ./share/nixos
       ];
 
       homes.users."raab@nix-desktop".modules = with inputs; [
         impermanence.nixosModules.home-manager.impermanence
+        ./share/home
       ];
       homes.users."raab@nix-zenbook".modules = with inputs; [
         impermanence.nixosModules.home-manager.impermanence
+        ./share/home
       ];
 
-      snowfall = {
-        namespace = "nix-dotfiles";
-      };
     };
 }

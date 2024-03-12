@@ -4,6 +4,5 @@
     ./pkgs.nix
     ./gnome.nix
     ./wall.nix
-    ../../../share/home
   ];
 }
