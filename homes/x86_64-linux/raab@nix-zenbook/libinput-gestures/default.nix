@@ -1,6 +1,6 @@
 {pkgs, ...}: let
   local-dir = "/home/raab/.config";
-  config-dir = "/nix/persist/nix-dotfiles/hosts/nix-zenbook/home/libinput-gestures";
+  config-dir = "/nix/persist/nix-dotfiles/homes/x86_64-linux/raab@nix-zenbook/libinput-gestures";
   evemu-script-name = "evemu-event-sendkeys.sh";
   libinput-conf-name = "libinput-gestures.conf";
 in {

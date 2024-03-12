@@ -1,31 +1,10 @@
 {
   inputs,
-  outputs,
   lib,
   config,
   pkgs,
-  nixpkgs-unstable,
   ...
 }: {
-  nixpkgs = {
-    # You can add overlays here
-    overlays = [
-      # Add overlays your own flake exports (from overlays and pkgs dir):
-      outputs.overlays.modifications
-      outputs.overlays.additions
-      (final: prev: {
-        unstable = import nixpkgs-unstable {
-          system = prev.system;
-        };
-      })
-    ];
-    # Configure your nixpkgs instance
-    config = {
-      # Disable if you don't want unfree packages
-      allowUnfree = true;
-    };
-  };
-
   nix = {
     # This will add each flake input as a registry
     # To make nix3 commands consistent with your flake
@@ -53,7 +32,11 @@
       options = "--delete-older-than 14d";
     };
   };
-
+  home-manager = {
+    useGlobalPkgs = true;
+    useUserPackages = true;
+  };
+  
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave

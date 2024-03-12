@@ -1,5 +1,5 @@
 {pkgs, ...}: let
-  wall-dir = "/nix/persist/nix-dotfiles/hosts/nix-zenbook/assets/wall/";
+  wall-dir = "/nix/persist/nix-dotfiles/systems/x86_64-linux/nix-zenbook/assets/wall/";
 in {
   systemd.user = {
     services.wallpaper-rotate = {
