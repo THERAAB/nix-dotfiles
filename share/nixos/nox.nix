@@ -39,7 +39,7 @@
         }
         apply() {
             $git -C $applyDir pull
-            sudo nix run $applyDir#apps.nixinate.$1
+            sudo deploy $applyDir#$1
         }
 
         case "$1" in
