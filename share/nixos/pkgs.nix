@@ -42,6 +42,5 @@
     libva-utils
     sysfsutils
     git
-    deploy-rs
   ];
 }
