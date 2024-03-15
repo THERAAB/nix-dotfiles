@@ -41,24 +41,21 @@
             $git -C $applyDir pull
             sudo nix run $applyDir#apps.nixinate.$1
         }
+        microvm() {
+            $git -C $applyDir pull
+            sudo ${pkgs.openssh}/bin/ssh -t raab@nix-hypervisor "sudo flock -w 60 /dev/shm/microvm-$1 microvm -Ru $1"
+        }
 
         case "$1" in
-            inputs)
-                inputs;;
-            rebuild)
-                rebuild;;
-            commit)
-                commit;;
-            update)
-                update;;
-            gc)
-                gc;;
-            status)
-                status;;
-            pull)
-                pull;;
-            apply)
-                apply $2;;
+            inputs) inputs;;
+            rebuild) rebuild;;
+            commit) commit;;
+            update) update;;
+            gc) gc;;
+            status) status;;
+            pull) pull;;
+            apply) apply $2;;
+            microvm) microvm $2;;
         esac
       ''
     )
