@@ -41,10 +41,6 @@
             $git -C $applyDir pull
             sudo nix run $applyDir#apps.nixinate.$1
         }
-        microvm() {
-            $git -C $applyDir pull
-            sudo ${pkgs.openssh}/bin/ssh -t raab@nix-hypervisor "sudo flock -w 60 /dev/shm/microvm-$1 microvm -Ru $1"
-        }
 
         case "$1" in
             inputs) inputs;;
@@ -55,7 +51,13 @@
             status) status;;
             pull) pull;;
             apply) apply $2;;
-            microvm) microvm $2;;
+            micro)
+            if [ $# -lt 2 ]; then
+                sudo ${pkgs.openssh}/bin/ssh -t raab@nix-hypervisor "sudo flock -w 60 /dev/shm/nox-micro nox micro"
+            else
+                shift
+                sudo ${pkgs.openssh}/bin/ssh -t raab@nix-hypervisor "sudo flock -w 60 /dev/shm/nox-micro nox micro $@"
+            fi
         esac
       ''
     )
