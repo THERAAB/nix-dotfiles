@@ -1,6 +1,5 @@
 {...}: {
   networking.hostName = "nix-desktop"; # Define your hostname.
-
   services = {
     snapper = {
       snapshotInterval = "*:0/20";
@@ -34,5 +33,6 @@
       enable = true;
       users = ["raab"];
     };
+    opengl.enable = true;
   };
 }

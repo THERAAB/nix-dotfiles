@@ -1,4 +1,36 @@
 {pkgs, ...}: {
+  # Workaround for GNOME autologin: https://github.com/NixOS/nixpkgs/issues/103746#issuecomment-945091229
+  systemd.services = {
+    "getty@tty1".enable = false;
+    "autovt@tty1".enable = false;
+  };
+  boot = {
+    loader.grub.extraConfig = ''
+      acpi /ssdt-csc3551.aml
+      set timeout=1
+    '';
+    # Power Management stuff
+    kernel.sysctl = {
+      "vm.dirty_writeback_centisecs" = 6000;
+      "vm.laptop_mode" = 5;
+    };
+    kernelParams = [
+      "kernel.nmi_watchdog=0"
+      "nvme.noacpi=1" # Sleep performance
+      "acpi.no_ec_wakeup=1" # Sleep performance
+      "resume_offset=11609344"
+      "acpi_sleep=s4_nohwsig" # Fix unreliable resume from hibernate
+    ];
+    extraModprobeConfig = ''
+      options iwlwifi power_save=1
+      options iwlmvm power_scheme=3
+      options iwlwifi uapsd_disable=0
+      options i915 enable_guc=3
+      options i915 enable_fbc=1
+      options snd_hda_intel power_save=1
+    '';
+    resumeDevice = "/dev/disk/by-label/nixos";
+  };
   hardware = {
     cpu.intel.updateMicrocode = true;
     bluetooth.settings = {
@@ -16,6 +48,9 @@
       ];
     };
   };
+  environment.systemPackages = with pkgs; [
+    gnome.gnome-power-manager
+  ];
   networking.hostName = "nix-zenbook";
   powerManagement = {
     enable = true;
