@@ -24,6 +24,7 @@ in {
         syncthing.enable = true;
         system.enable = true;
         users.enable = true;
+        hardware-configuration.enable = true;
       };
       utils.nox.enable = true;
     };
