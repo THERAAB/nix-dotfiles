@@ -4,7 +4,7 @@ A [NixOS](https://nixos.org/) configuration repository for my local dotfiles.
 [NixOS](https://nixos.org/) allows you to create a fully declarative operating system using the [Nix language](https://nixos.wiki/wiki/Overview_of_the_Nix_Language).
 This repo contains everything needed to rebuild my workstations from scratch, with the only manual steps being in the README file(s) in each machine's directory.
 
-![screenshot-png](https://github.com/THERAAB/nix-dotfiles/blob/main/share/assets/screenshot.png?raw=true "PNG of Screenshot")
+![screenshot-png](https://github.com/THERAAB/nix-dotfiles/blob/main/assets/screenshot.png?raw=true "PNG of Screenshot")
 
 ## What's inside
 
@@ -39,7 +39,7 @@ sudo nix-env -p /nix/var/nix/profiles/system --list-generations
 journalctl -b -1 -p 0..5
 
 # Add/modify secrets
-sops /nix/persist/nix-dotfiles/share/secrets/secrets.yaml
+sops /nix/persist/nix-dotfiles/secrets/secrets.yaml
 
 # See anything not persisted by NixOs Persistence module (non 0B files will be wiped on boot)
 ncdu -x /

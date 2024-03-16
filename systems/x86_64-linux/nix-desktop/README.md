@@ -23,7 +23,7 @@ if you're not me for 3 reasons:
 ```console
 nix-shell -p git
 sudo git clone https://github.com/THERAAB/nix-dotfiles instructions
-gnome-text-editor instructions/hosts/nix-desktop/wipe-disk-and-install.sh &
+gnome-text-editor instructions/systems/x86_64-linux/nix-desktop/wipe-disk-and-install.sh &
 ```
 
 I recommend copy-pasting what commands you need because this script is dangerous (will wipe entire system). It also
