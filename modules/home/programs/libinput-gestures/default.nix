@@ -8,7 +8,7 @@ with lib;
 with lib.nix-dotfiles; let
   cfg = config.nix-dotfiles.programs.libinput-gestures;
   local-dir = "/home/raab/.config";
-  config-dir = "/nix/persist/nix-dotfiles/homes/x86_64-linux/raab@nix-zenbook/libinput-gestures";
+  config-dir = "/nix/persist/nix-dotfiles/modules/home/programs/libinput-gestures";
   evemu-script-name = "evemu-event-sendkeys.sh";
   libinput-conf-name = "libinput-gestures.conf";
 in {
