@@ -3,11 +3,7 @@
   git-config-dir = "/nix/persist/home/raab/.config";
 in {
   imports = [
-    ./kitty.nix
-    ./vscodium.nix
-    ./nvim.nix
     ./persist.nix
-    ./pkgs.nix
   ];
   nix-dotfiles.workstation = {
     ulauncher = {
@@ -24,5 +20,8 @@ in {
     gnome.enable = true;
     gtk.enable = true;
     home.enable = true;
+    kitty.enable = true;
+    nvim.enable = true;
+    vscode.enable = true;
   };
 }
