@@ -21,11 +21,9 @@
     steam.enable = true;
     gamemode = {
       enable = true;
-      settings = {
-        general = {
-          softrealtime = "auto";
-          renice = 10;
-        };
+      settings.general = {
+        softrealtime = "auto";
+        renice = 10;
       };
     };
   };
