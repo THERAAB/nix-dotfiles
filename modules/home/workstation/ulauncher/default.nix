@@ -10,7 +10,7 @@ with lib.nix-dotfiles; let
   cfg = config.nix-dotfiles.workstation.ulauncher;
 in {
   options.nix-dotfiles.workstation.ulauncher = with types; {
-    enable = mkEnableOption (lib.mdDoc "Setp Ulauncher");
+    enable = mkEnableOption (lib.mdDoc "Setup Ulauncher");
     theme-dir = mkOption {
       type = str;
     };
