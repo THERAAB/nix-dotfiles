@@ -1,6 +1,5 @@
-{...}: {
+{pkgs, ...}: {
   imports = [
-    ./pkgs.nix
     ./gnome.nix
     ./wall.nix
   ];
@@ -8,4 +7,7 @@
     workstation.enable = true;
     programs.libinput-gestures.enable = true;
   };
+  home.packages = with pkgs; [
+    powertop
+  ];
 }

@@ -1,5 +1,0 @@
-{...}: {
-  imports = [
-    ./headset-lights.nix
-  ];
-}

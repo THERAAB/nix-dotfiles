@@ -1,10 +1,22 @@
-{...}: {
+{pkgs, ...}: {
   imports = [
-    ./nix-scripts
-    ./mangohud.nix
-    ./pkgs.nix
-    ./steam.nix
     ./gnome.nix
   ];
-  nix-dotfiles.workstation.enable = true;
+  nix-dotfiles = {
+    workstation.enable = true;
+    programs.headsetcontrol.enable = true;
+    wrappers.mangohud.enable = true;
+  };
+  home.packages = with pkgs; [
+    heroic
+    protonup
+    polychromatic
+    snapper-gui
+    jetbrains.idea-community
+  ];
+  systemd.user.services.steam = {
+    Install.WantedBy = ["graphical-session.target"];
+    Unit.After = ["graphical-session.target"];
+    Service.ExecStart = "${pkgs.steam}/bin/steam -nochatui -nofriendsui -silent";
+  };
 }
