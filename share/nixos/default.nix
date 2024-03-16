@@ -4,13 +4,10 @@
     ./users.nix
     ./system.nix
     ./sops.nix
-    ./gnome.nix
-    ./fish.nix
     ./starship.nix
     ./persist.nix
     ./pkgs.nix
     ./syncthing.nix
-    ./firefox.nix
     ./nox.nix
   ];
   nix-dotfiles.workstation = {
@@ -18,5 +15,8 @@
     auto-upgrade.enable = true;
     configuration.enable = true;
     plymouth.enable = true;
+    fish.enable = true;
+    gnome.enable = true;
   };
+  programs.firefox.enable = true;
 }
