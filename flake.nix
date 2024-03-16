@@ -28,7 +28,6 @@
         impermanence.nixosModules.impermanence
         sops-nix.nixosModules.sops
         home-manager.nixosModules.home-manager
-        ./share/nixos
       ];
 
       homes.users."raab@nix-desktop".modules = with inputs; [
