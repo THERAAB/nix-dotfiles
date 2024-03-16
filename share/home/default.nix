@@ -1,6 +1,7 @@
-{...}: {
+{...}: let
+  ulauncher-theme-dir = "/nix/persist/nix-dotfiles/share/home/ulauncher/custom";
+in {
   imports = [
-    ./ulauncher
     ./git.nix
     ./firefox.nix
     ./home.nix
@@ -14,4 +15,8 @@
     ./persist.nix
     ./pkgs.nix
   ];
+  nix-dotfiles.workstation.ulauncher = {
+    theme-dir = ulauncher-theme-dir;
+    enable = true;
+  };
 }
