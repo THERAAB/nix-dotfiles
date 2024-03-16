@@ -1,6 +1,5 @@
 {...}: {
   imports = [
-    ./plymouth
     ./hardware.nix
     ./users.nix
     ./system.nix
@@ -18,5 +17,6 @@
     boot.enable = true;
     auto-upgrade.enable = true;
     configuration.enable = true;
+    plymouth.enable = true;
   };
 }
