@@ -13,6 +13,7 @@ in {
     enable = mkEnableOption (lib.mdDoc "Setup Ulauncher");
     theme-dir = mkOption {
       type = str;
+      default = "/nix/persist/nix-dotfiles/share/home/ulauncher/custom";
     };
   };
   config = mkIf cfg.enable {

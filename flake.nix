@@ -32,11 +32,9 @@
 
       homes.users."raab@nix-desktop".modules = with inputs; [
         impermanence.nixosModules.home-manager.impermanence
-        ./share/home
       ];
       homes.users."raab@nix-zenbook".modules = with inputs; [
         impermanence.nixosModules.home-manager.impermanence
-        ./share/home
       ];
     };
 }

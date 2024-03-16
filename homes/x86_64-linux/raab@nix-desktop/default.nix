@@ -6,4 +6,5 @@
     ./steam.nix
     ./gnome.nix
   ];
+  nix-dotfiles.workstation.enable = true;
 }

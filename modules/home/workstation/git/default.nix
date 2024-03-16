@@ -11,6 +11,7 @@ in {
     enable = mkEnableOption (lib.mdDoc "Setup git");
     config-dir = mkOption {
       type = str;
+      default = "/nix/persist/home/raab/.config";
     };
   };
   config = mkIf cfg.enable {
