@@ -7,7 +7,7 @@
 with lib;
 with lib.nix-dotfiles; let
   user-themes-dir = "/home/raab/.config/ulauncher/user-themes/";
-  system-themes-dir = "/nix/persist/nix-dotfiles/modules/workstation/home/ulauncher/custom";
+  system-themes-dir = "/nix/persist/nix-dotfiles/modules/home/workstation/ulauncher/custom";
   cfg = config.nix-dotfiles.workstation.ulauncher;
 in {
   options.nix-dotfiles.workstation.ulauncher = with types; {
