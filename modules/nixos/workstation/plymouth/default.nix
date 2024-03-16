@@ -30,7 +30,7 @@ with lib.nix-dotfiles; let
   '';
 in {
   options.nix-dotfiles.workstation.plymouth = with types; {
-    enable = mkEnableOption (lib.mdDoc "Setup boot");
+    enable = mkEnableOption (lib.mdDoc "Setup plymouth boot");
   };
   config = mkIf cfg.enable {
     boot.plymouth = {

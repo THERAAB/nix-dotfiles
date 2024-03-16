@@ -1,11 +1,8 @@
 {...}: {
   imports = [
     ./users.nix
-    ./system.nix
     ./sops.nix
-    ./starship.nix
     ./persist.nix
-    ./syncthing.nix
   ];
   nix-dotfiles = {
     workstation = {
@@ -16,6 +13,9 @@
       fish.enable = true;
       gnome.enable = true;
       hardware.enable = true;
+      starship.enable = true;
+      syncthing.enable = true;
+      system.enable = true;
     };
     utils.nox.enable = true;
   };
